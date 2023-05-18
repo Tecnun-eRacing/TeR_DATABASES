@@ -26,7 +26,7 @@ jobs:
         pip install cantools
 
     - name: Crear carpeta c_codegen
-      run: mkdir c_codegen
+      run: mkdir -p c_codegen
 
     - name: Generar código C desde archivos dbc
       run: |
