@@ -32,6 +32,6 @@ jobs:
       run: |
         dbc_files=$(find . -name "*.dbc")  # Encuentra todos los archivos .dbc en el directorio actual y subdirectorios
         for dbc_file in $dbc_files; do
-          python3 -m cantools generate_c_source -o c_codegen/  # Ejecuta el comando y redirige la salida al archivo
+          python3 -m cantools generate_c_source "$dbc_file" -o c_codegen/  # Ejecuta el comando y redirige la salida al archivo
         done
 
