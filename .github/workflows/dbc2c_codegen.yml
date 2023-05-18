@@ -13,12 +13,12 @@ jobs:
 
     steps:
     - name: Checkout del código fuente
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Configurar Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
-        python-version: 3.x  # Cambia a la versión de Python que necesites
+        python-version: 3.11  # Cambia a la versión de Python que necesites
 
     - name: Instalar dependencias
       run: |
