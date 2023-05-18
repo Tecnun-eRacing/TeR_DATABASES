@@ -33,7 +33,7 @@ NS_ :
 
 BS_: 
 BU_: TER_PEDAL 
-BO_ 1 APPS: 0 TER_PEDAL
+BO_ 1 APPS: 8 TER_PEDAL
    SG_ APPS_1 : 7|8@0+ (1,0) [0|255] "" Vector__XXX
    SG_ APPS_2 : 15|8@0+ (1,0) [0|255] "" Vector__XXX
    SG_ IMP_FLAGS : 23|8@0+ (1,0) [0|255] "" Vector__XXX
