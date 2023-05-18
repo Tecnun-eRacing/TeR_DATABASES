@@ -25,10 +25,15 @@ jobs:
         python -m pip install --upgrade pip
         pip install cantools
 
+<<<<<<< HEAD
     - name: Borrar archivos viejos y Crear carpeta c_codegen
       run: |
         rm -rf c_codegen
         mkdir c_codegen
+=======
+    - name: Crear carpeta c_codegen
+      run: mkdir -p c_codegen
+>>>>>>> 71f69657d6944f692dffe58da48502d667e0a634
 
     - name: Generar código C desde archivos dbc
       run: |
