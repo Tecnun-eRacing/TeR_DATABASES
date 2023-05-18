@@ -1,4 +1,4 @@
-iname: Generar código C desde archivos dbc
+name: Generar código C desde archivos dbc
 on:
   push:
     branches:
