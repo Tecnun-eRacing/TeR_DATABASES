@@ -1,0 +1,37 @@
+name: Generar código C desde archivos dbc
+on:
+  push:
+    branches:
+      - main  # Cambia el nombre de la rama si es necesario
+  pull_request:
+    branches:
+      - main  # Cambia el nombre de la rama si es necesario
+
+jobs:
+  generate_c_code:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout del código fuente
+      uses: actions/checkout@v2
+
+    - name: Configurar Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.x  # Cambia a la versión de Python que necesites
+
+    - name: Instalar dependencias
+      run: |
+        python -m pip install --upgrade pip
+        pip install cantools
+
+    - name: Crear carpeta c_codegen
+      run: mkdir c_codegen
+
+    - name: Generar código C desde archivos dbc
+      run: |
+        dbc_files=$(find . -name "*.dbc")  # Encuentra todos los archivos .dbc en el directorio actual y subdirectorios
+        for dbc_file in $dbc_files; do
+          python3 -m cantools generate_c_source -o c_codegen/  # Ejecuta el comando y redirige la salida al archivo
+        done
+
