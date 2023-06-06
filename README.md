@@ -4,4 +4,4 @@ Aqui se guardan las bases de datos generales del TER, Son Creadas con el program
 
 ## Automatización
 Todos los dbcs que se suban a este repositorio serán convertidos a sus correspondientes .h y .c para su uso
-en los programas, mediante github actions. Puedes encontrarlos en c_codegen
+en los programas, mediante github actions.
