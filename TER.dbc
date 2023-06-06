@@ -58,7 +58,7 @@ BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
 BA_DEF_DEF_ "matchingcriteria" 0;
 BA_DEF_DEF_ "filterlabeling" 0;
 BA_DEF_DEF_ "matchingcriteria" 0;
-BA_DEF_DEF_ "filterlabeling" true;
+BA_DEF_DEF_ "filterlabeling" 1;
 CM_ BU_ TER_PEDAL "APPS,BPPS, Implausabilities...";
 CM_ BU_ ECU_CMDS "Contains messages to control ECUs";
 CM_ BO_ 1 "Accelerator Pedal Position Sensor and Implausability";
