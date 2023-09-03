@@ -46,8 +46,8 @@ BO_ 2 BPPS: 1 TER_PEDAL
    SG_ BPPS : 7|8@0+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 5 STEER: 8 TER_PEDAL
-   SG_ STEERING_ANGLE : 7|32@2- (1,0) [-360|360] "" Vector__XXX
-   SG_ WHEEL_ANGLE : 39|32@2- (1,0) [-360|360] "" Vector__XXX
+   SG_ STEERING_ANGLE : 7|16@0- (1,0) [-360|360] "" Vector__XXX
+   SG_ WHEEL_ANGLE : 23|16@0+ (1,0) [-360|360] "" Vector__XXX
 
 BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
 BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
