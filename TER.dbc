@@ -46,7 +46,7 @@ BO_ 2 BPPS: 1 TER_PEDAL
    SG_ BPPS : 7|8@0+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 5 STEER: 8 TER_PEDAL
-   SG_ ANGLE : 7|32@2- (1,0) [0|1] "" Vector__XXX
+   SG_ ANGLE : 7|16@0- (1,0) [-360|360] "Grad" Vector__XXX
 
 CM_ BU_ TER_PEDAL "APPS,BPPS, Implausabilities...";
 CM_ BU_ ECU_CMDS "Contains messages to control ECUs";
@@ -54,7 +54,6 @@ CM_ BO_ 1 "Accelerator Pedal Position Sensor and Implausability";
 CM_ BO_ 4 "Format:[1byte](Command)[7byte](Arguments)";
 CM_ BO_ 2 "Brake Pedal position Sensor";
 CM_ BO_ 5 "Steering Wheel + Steer angle";
-CM_ SG_ 5 ANGLE "Angle_of_the_wheel_from_the_heading_axis";
 BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
 BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
 BA_DEF_ BO_ "matchingcriteria" INT 0 0;
