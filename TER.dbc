@@ -46,8 +46,8 @@ BO_ 2 BPPS: 1 TER_PEDAL
    SG_ BPPS : 7|8@0+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 5 STEER: 8 TER_PEDAL
-   SG_ WHEEL_ANGLE : 39|32@2- (1,0) [0|1] "" Vector__XXX
-   SG_ STEERING_ANGLE : 7|32@2- (1,0) [0|1] "" Vector__XXX
+   SG_ STEERING_ANGLE : 7|32@2- (1,0) [-360|360] "" Vector__XXX
+   SG_ WHEEL_ANGLE : 39|32@2- (1,0) [-360|360] "" Vector__XXX
 
 BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
 BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
@@ -67,6 +67,5 @@ CM_ BO_ 1 "Accelerator Pedal Position Sensor and Implausability";
 CM_ BO_ 4 "Format:[1byte](Command)[7byte](Arguments)";
 CM_ BO_ 2 "Brake Pedal position Sensor";
 CM_ BO_ 5 "Steering Wheel + Steer angle";
-CM_ SG_ 5 WHEEL_ANGLE "Angle_of_the_wheel_with_the_heading_axis";
 CM_ SG_ 5 STEERING_ANGLE "Angle_of_the_steering_Wheel";
 VAL_ 1 APPS_1 0 "No Description";
