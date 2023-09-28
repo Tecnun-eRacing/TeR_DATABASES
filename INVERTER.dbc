@@ -1,0 +1,50 @@
+VERSION ""
+
+
+BS_:
+
+BU_:
+
+
+BO_ 1888 EMCU_STATUS_1: 4 Vector__XXX
+ SG_ Uptime : 0|32@1+ (1,0) [0|4.29497e+009] "" Vector__XXX
+
+BO_ 1889 EMCU_STATUS_2: 3 Vector__XXX
+ SG_ App_State_App : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ EMCtrl_FOC_BitState : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PwrStg_BitState : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1890 EMCU_STATUS_3: 8 Vector__XXX
+ SG_ EMachine_Speed : 16|16@1- (1,0) [-32768|32767] "" Vector__XXX
+ SG_ Volt_Modulus : 32|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ Current_Q : 16|16@1- (0.03125,0) [-1024|1023.97] "" Vector__XXX
+ SG_ Current_D : 0|16@1- (0.03125,0) [-1024|1023.97] "" Vector__XXX
+
+BO_ 1891 EMCU_STATUS_4: 4 Vector__XXX
+ SG_ EMachine_Temp_2 : 24|8@1- (1,0) [-128|127] "" Vector__XXX
+ SG_ EMachine_Temp_1 : 16|8@1- (1,0) [-128|127] "" Vector__XXX
+ SG_ DP_Temp : 8|8@1- (1,0) [-128|127] "" Vector__XXX
+ SG_ PwrStg_Temp : 0|8@1- (1,0) [-128|127] "" Vector__XXX
+
+BO_ 1892 EMCU_STATUS_5: 2 Vector__XXX
+ SG_ PosFb_Src_App : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Ctrl_Mode_App : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Ctrl_Type_App : 3|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Cmd_Src_App : 0|3@1+ (1,0) [0|7] "" Vector__XXX
+
+BO_ 1893 EMCU_STATUS_6: 2 Vector__XXX
+ SG_ Dem : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 1632 EMCU_SETPOINT_1: 1 Vector__XXX
+ SG_ App_State_Req : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1633 EMCU_SETPOINT_2: 4 Vector__XXX
+ SG_ Current_Q_Req : 16|16@1- (0.03125,0) [-1024|1023.97] "" Vector__XXX
+ SG_ Current_D_Req : 0|16@1- (0.03125,0) [-1024|1023.97] "" Vector__XXX
+
+BO_ 1634 EMCU_SETPOINT_3: 2 Vector__XXX
+ SG_ Torque_Req : 0|16@1- (1,0) [-32768|32767] "" Vector__XXX
+
+
+
+

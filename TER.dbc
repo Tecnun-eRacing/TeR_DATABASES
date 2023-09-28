@@ -48,22 +48,7 @@ BO_ 2 BPPS: 1 TER_PEDAL
 BO_ 5 STEER: 8 TER_PEDAL
    SG_ ANGLE : 7|16@0- (1,0) [-360|360] "Grad" Vector__XXX
 
-CM_ BU_ TER_PEDAL "APPS,BPPS, Implausabilities...";
-CM_ BU_ ECU_CMDS "Contains messages to control ECUs";
-CM_ BO_ 1 "Accelerator Pedal Position Sensor and Implausability";
-CM_ BO_ 4 "Format:[1byte](Command)[7byte](Arguments)";
-CM_ BO_ 2 "Brake Pedal position Sensor";
-CM_ BO_ 5 "Steering Wheel + Steer angle";
 BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
 BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
 BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
 BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
-BA_DEF_DEF_ "matchingcriteria" 0;
-BA_DEF_DEF_ "filterlabeling" 1;
-BA_ "GenMsgForegroundColor" BO_ 1 "#000000";
-BA_ "GenMsgBackgroundColor" BO_ 1 "#ffffff";
-VAL_ 1 APPS_1 0 "No Description";
