@@ -15,7 +15,6 @@ BO_ 1889 EMCU_STATUS_2: 3 Vector__XXX
  SG_ PwrStg_BitState : 0|8@1+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 1890 EMCU_STATUS_3: 8 Vector__XXX
- SG_ EMachine_Speed : 16|16@1- (1,0) [-32768|32767] "" Vector__XXX
  SG_ Volt_Modulus : 32|12@1+ (1,0) [0|4095] "" Vector__XXX
  SG_ Current_Q : 16|16@1- (0.03125,0) [-1024|1023.97] "" Vector__XXX
  SG_ Current_D : 0|16@1- (0.03125,0) [-1024|1023.97] "" Vector__XXX
