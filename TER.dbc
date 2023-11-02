@@ -54,8 +54,13 @@ BO_ 277 rWheel: 8 TER_F_AXLE
 BO_ 278 lWheel: 8 TER_F_AXLE
    SG_ RPM : 7|16@0+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 42 YPR: 5 TER_IMU
+BO_ 42 YPR: 8 TER_IMU
    SG_ mux M : 7|8@0+ (1,0) [0|2] "" Vector__XXX
    SG_ YAW m0 : 15|32@2- (1,0) [0|1] "" Vector__XXX
    SG_ PITCH m1 : 15|32@2- (1,0) [0|1] "" Vector__XXX
    SG_ ROLL m2 : 15|32@2- (1,0) [0|1] "" Vector__XXX
+
+BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
+BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
+BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
