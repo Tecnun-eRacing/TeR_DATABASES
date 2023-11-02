@@ -32,7 +32,7 @@ NS_ :
     SG_MUL_VAL_
 
 BS_: 
-BU_: TER_PEDAL ECU_CMDS TER_F_AXLE 
+BU_: TER_PEDAL ECU_CMDS TER_F_AXLE TER_IMU 
 BO_ 1 APPS: 8 TER_PEDAL
    SG_ APPS_1 : 7|8@0+ (1,0) [0|255] "" Vector__XXX
    SG_ APPS_2 : 15|8@0+ (1,0) [0|255] "" Vector__XXX
@@ -54,7 +54,17 @@ BO_ 277 rWheel: 8 TER_F_AXLE
 BO_ 278 lWheel: 8 TER_F_AXLE
    SG_ RPM : 7|16@0+ (1,0) [0|1] "" Vector__XXX
 
+BO_ 42 YPR: 5 TER_IMU
+   SG_ mux M : 7|8@0+ (1,0) [0|2] "" Vector__XXX
+   SG_ YAW m0 : 15|32@2- (1,0) [0|1] "" Vector__XXX
+   SG_ PITCH m1 : 15|32@2- (1,0) [0|1] "" Vector__XXX
+   SG_ ROLL m2 : 15|32@2- (1,0) [0|1] "" Vector__XXX
+
 BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
 BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
 BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
 BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
+BA_DEF_DEF_ "matchingcriteria" 0;
+BA_DEF_DEF_ "filterlabeling" false;
