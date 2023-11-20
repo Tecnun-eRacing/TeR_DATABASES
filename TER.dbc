@@ -54,14 +54,12 @@ BO_ 277 rWheel: 8 TER_F_AXLE
 BO_ 278 lWheel: 8 TER_F_AXLE
    SG_ RPM : 7|16@0+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 42 YPR: 5 TER_IMU
-   SG_ YAW m0 : 15|32@2- (1,0) [0|1] "" Vector__XXX
-   SG_ PITCH m1 : 15|32@2- (1,0) [0|1] "" Vector__XXX
-   SG_ ROLL m2 : 15|32@2- (1,0) [0|1] "" Vector__XXX
-   SG_ Yaw_Signal : 7|16@0+ (1,0) [0|1] "" Vector__XXX
-   SG_ Pitch_Signal70 : 23|16@0+ (1,0) [0|1] "" Vector__XXX
-   SG_ Roll_Signal : 39|16@0+ (1,0) [0|1] "" Vector__XXX
+BO_ 2147483927 YPR: 8 TER_IMU
+   SG_ YAW : 7|16@0+ (0.01,0) [0|1] "" Vector__XXX
+   SG_ PITCH : 23|16@0+ (0.01,0) [0|1] "" Vector__XXX
+   SG_ ROLL : 39|16@0+ (0.01,0) [0|1] "" Vector__XXX
 
+CM_ BO_ 2147483927 "Signals for Yaw,Pitch,Roll in fixed Point";
 BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
 BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
 BA_DEF_ BO_ "matchingcriteria" INT 0 0;
@@ -69,14 +67,4 @@ BA_DEF_ BO_ "filterlabeling" INT 0 0;
 BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
 BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
 BA_DEF_DEF_ "matchingcriteria" 0;
-
-BO_ 42 YPR: 8 TER_IMU
-   SG_ mux M : 7|8@0+ (1,0) [0|2] "" Vector__XXX
-   SG_ YAW m0 : 15|32@2- (1,0) [0|1] "" Vector__XXX
-   SG_ PITCH m1 : 15|32@2- (1,0) [0|1] "" Vector__XXX
-   SG_ ROLL m2 : 15|32@2- (1,0) [0|1] "" Vector__XXX
-
-BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
-BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
-BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
-BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
+BA_DEF_DEF_ "filterlabeling" 0;
