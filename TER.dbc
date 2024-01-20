@@ -54,12 +54,12 @@ BO_ 277 rWheel: 8 F_AXLE
 BO_ 278 lWheel: 8 F_AXLE
    SG_ RPM : 0|16@1+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 279 YPR: 8 IMU
+BO_ 2147483927 YPR: 8 IMU
    SG_ YAW : 32|16@1+ (0.01,0) [0|1] "" Vector__XXX
    SG_ PITCH : 0|16@1+ (0.01,0) [0|1] "" Vector__XXX
    SG_ ROLL : 16|16@1+ (0.01,0) [0|1] "" Vector__XXX
 
-BO_ 16 LV_Voltages: 0 LVBMS
+BO_ 16 LV_Voltages: 8 LVBMS
    SG_ V1 : 0|10@1+ (0.01,0) [0|1] "" Vector__XXX
    SG_ V2 : 10|10@1+ (0.01,0) [0|1] "" Vector__XXX
    SG_ V3 : 20|10@1+ (0.01,0) [0|1] "" Vector__XXX
@@ -67,12 +67,12 @@ BO_ 16 LV_Voltages: 0 LVBMS
    SG_ V5 : 40|10@1+ (0.01,0) [0|1] "" Vector__XXX
    SG_ V6 : 50|10@1+ (0.01,0) [0|1] "" Vector__XXX
 
-BO_ 17 LV_Temps: 0 LVBMS
+BO_ 2147483665 LV_Temps: 3 LVBMS
    SG_ T1 : 0|8@1+ (1,0) [0|1] "" Vector__XXX
    SG_ T2 : 8|8@1+ (1,0) [0|1] "" Vector__XXX
    SG_ T3 : 16|8@1+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 18 LV_Status: 0 LVBMS
+BO_ 2147483666 LV_Status: 3 LVBMS
    SG_ LV_ON : 7|1@1+ (1,0) [0|1] "" Vector__XXX
    SG_ REFRI_ON : 6|1@1+ (1,0) [0|1] "" Vector__XXX
    SG_ LV_Current : 8|16@1+ (1,0) [0|1] "" Vector__XXX
@@ -82,7 +82,7 @@ BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
 BA_DEF_ BO_ "matchingcriteria" INT 0 0;
 BA_DEF_ BO_ "filterlabeling" INT 0 0;
 BA_ "GenMsgForegroundColor" BO_ 16 "#000000";
-BA_ "GenMsgForegroundColor" BO_ 17 "#000000";
+BA_ "GenMsgForegroundColor" BO_ 2147483665 "#000000";
 BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
 BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
 BA_DEF_DEF_ "matchingcriteria" 0;
