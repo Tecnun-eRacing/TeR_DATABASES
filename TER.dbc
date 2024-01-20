@@ -32,8 +32,8 @@ NS_ :
     SG_MUL_VAL_
 
 BS_: 
-BU_: TER_PEDAL ECU_CMDS TER_F_AXLE TER_IMU 
-BO_ 1 APPS: 8 TER_PEDAL
+BU_: PEDAL ECU_CMDS F_AXLE IMU LVBMS 
+BO_ 1 APPS: 8 PEDAL
    SG_ APPS_1 : 7|8@0+ (1,0) [0|255] "" Vector__XXX
    SG_ APPS_2 : 15|8@0+ (1,0) [0|255] "" Vector__XXX
    SG_ IMP_FLAG : 23|8@0+ (1,0) [0|255] "" Vector__XXX
@@ -42,28 +42,47 @@ BO_ 4 PEDAL_CMD: 8 ECU_CMDS
    SG_ CMD : 7|8@0+ (1,0) [0|1] "" Vector__XXX
    SG_ ARGS : 15|56@0+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 2 BPPS: 1 TER_PEDAL
+BO_ 2 BPPS: 1 PEDAL
    SG_ BPPS : 7|8@0+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 5 STEER: 8 TER_PEDAL
+BO_ 5 STEER: 8 PEDAL
    SG_ ANGLE : 7|16@0- (1,0) [-360|360] "Grad" Vector__XXX
 
-BO_ 277 rWheel: 8 TER_F_AXLE
+BO_ 277 rWheel: 8 F_AXLE
    SG_ RPM : 7|16@0+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 278 lWheel: 8 TER_F_AXLE
+BO_ 278 lWheel: 8 F_AXLE
    SG_ RPM : 7|16@0+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 2147483927 YPR: 8 TER_IMU
+BO_ 2147483927 YPR: 8 IMU
    SG_ YAW : 7|16@0+ (0.01,0) [0|1] "" Vector__XXX
    SG_ PITCH : 23|16@0+ (0.01,0) [0|1] "" Vector__XXX
    SG_ ROLL : 39|16@0+ (0.01,0) [0|1] "" Vector__XXX
 
-CM_ BO_ 2147483927 "Signals for Yaw,Pitch,Roll in fixed Point";
+BO_ 2147483664 LV_Voltages: 0 LVBMS
+   SG_ V1 : 7|10@0+ (0.01,0) [0|1] "" Vector__XXX
+   SG_ V2 : 13|10@0+ (0.01,0) [0|1] "" Vector__XXX
+   SG_ V3 : 19|10@0+ (0.01,0) [0|1] "" Vector__XXX
+   SG_ V4 : 25|10@0+ (0.01,0) [0|1] "" Vector__XXX
+   SG_ V5 : 47|10@0+ (0.01,0) [0|1] "" Vector__XXX
+   SG_ V6 : 53|10@0+ (0.01,0) [0|1] "" Vector__XXX
+
+BO_ 2147483665 LV_Temps: 0 LVBMS
+   SG_ T1 : 7|8@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ T2 : 15|8@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ T3 : 23|8@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147483666 LV_Status: 0 LVBMS
+   SG_ LV_ON : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ REFRI_ON : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+   SG_ LV_Current : 15|16@0+ (1,0) [0|1] "" Vector__XXX
+
 BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
 BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
 BA_DEF_ BO_ "matchingcriteria" INT 0 0;
 BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_ "GenMsgForegroundColor" BO_ 2147483664 "#000000";
+BA_ "GenMsgForegroundColor" BO_ 2147483665 "#000000";
 BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
 BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
 BA_DEF_DEF_ "matchingcriteria" 0;
