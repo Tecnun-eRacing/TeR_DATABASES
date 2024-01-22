@@ -105,8 +105,8 @@ BO_ 2147483939 VelBody: 8 IMU
 
 BO_ 2147483940 Status: 8 IMU
    SG_ Status : 0|16@1+ (1,0) [0|1] "" Vector__XXX
-   SG_ PosU : 0|16@1+ (0.001,0) [0|1] "" Vector__XXX
-   SG_ VelU : 0|16@1+ (0.001,0) [0|1] "" Vector__XXX
+   SG_ PosU : 16|16@1+ (0.001,0) [0|1] "" Vector__XXX
+   SG_ VelU : 32|16@1+ (0.001,0) [0|1] "" Vector__XXX
 
 BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
 BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
