@@ -33,6 +33,7 @@ jobs:
     - name: Generar código C desde archivos dbc
       run: |
         dbc_files=$(find . -name "*.dbc")  # Encuentra todos los archivos .dbc en el directorio actual y subdirectorios
+        sed -i '/^BA_/d' *.dbc    # Limpia los dbcs de mensajes de definicion de programas externos para que no de problemas
         for dbc_file in $dbc_files; do
           python3 -m cantools generate_c_source --use-float "$dbc_file" -o .  # Ejecuta el comando y redirige la salida al archivo
         done
