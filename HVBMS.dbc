@@ -1162,8 +1162,6 @@ BO_ 130 HV_Rear_Acc: 8 VCU
 
 
 CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
-BA_DEF_  "BusType" STRING ;
-BA_DEF_DEF_  "BusType" "CAN";
 VAL_ 150 Ext_Contactor_Status 8 "Contactor_Status_Error" 7 "Contactor_Status_Retry_error" 6 "Contactor_Status_Timeout" 5 "Contactor_Status_Changing_State" 4 "Contactor_Status_OKEY" 3 "Contactor_Status_VS_SCircuit" 2 "Contactor_Status_Overload" 1 "Contactor_Status_Relay_Fault" 0 "Contactor_Status_Open_Circuit" ;
 VAL_ 150 Pre_Contactor_Status 8 "Contactor_Status_Error" 7 "Contactor_Status_Retry_error" 6 "Contactor_Status_Timeout" 5 "Contactor_Status_Changing_State" 4 "Contactor_Status_OKEY" 3 "Contactor_Status_VS_SCircuit" 2 "Contactor_Status_Overload" 1 "Contactor_Status_Relay_Fault" 0 "Contactor_Status_Open_Circuit" ;
 VAL_ 150 Pos_Contactor_Status 8 "Contactor_Status_Error" 7 "Contactor_Status_Retry_error" 6 "Contactor_Status_Timeout" 5 "Contactor_Status_Changing_State" 4 "Contactor_Status_OKEY" 3 "Contactor_Status_VS_SCircuit" 2 "Contactor_Status_Overload" 1 "Contactor_Status_Relay_Fault" 0 "Contactor_Status_Open_Circuit" ;
