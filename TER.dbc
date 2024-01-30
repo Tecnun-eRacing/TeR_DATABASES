@@ -75,7 +75,7 @@ BO_ 17 LV_Temps: 3 LVBMS
 BO_ 18 LV_Status: 3 LVBMS
    SG_ LV_ON : 7|1@1+ (1,0) [0|1] "" Vector__XXX
    SG_ REFRI_ON : 6|1@1+ (1,0) [0|1] "" Vector__XXX
-   SG_ LV_Current : 8|16@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ LV_Current : 8|16@1+ (0.1,0) [0|1] "" Vector__XXX
 
 BO_ 280 AngRate: 8 IMU
    SG_ Roll_Rate_x : 0|20@1- (0.001,0) [0|1] "" Vector__XXX
@@ -108,3 +108,7 @@ BO_ 292 ImuStatus: 8 IMU
    SG_ PosU : 16|16@1- (0.001,0) [0|1] "" Vector__XXX
    SG_ VelU : 32|16@1- (0.001,0) [0|1] "" Vector__XXX
 
+BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
+BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
+BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
