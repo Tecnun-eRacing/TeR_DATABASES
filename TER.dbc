@@ -36,7 +36,8 @@ BU_: PEDAL ECU_CMDS F_AXLE IMU LVBMS
 BO_ 1 APPS: 8 PEDAL
    SG_ APPS_1 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
    SG_ APPS_2 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
-   SG_ IMP_FLAG : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+   SG_ IMP_FLAG : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+   SG_ APPS_AV : 16|8@1+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 4 PEDAL_CMD: 8 ECU_CMDS
    SG_ CMD : 0|8@1+ (1,0) [0|1] "" Vector__XXX
