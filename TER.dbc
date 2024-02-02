@@ -112,9 +112,3 @@ BO_ 292 ImuStatus: 8 IMU
    SG_ PosU : 16|16@1- (0.001,0) [0|1] "" Vector__XXX
    SG_ VelU : 32|16@1- (0.001,0) [0|1] "" Vector__XXX
 
-BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
-BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
-BA_ "GenMsgForegroundColor" BO_ 1 "#000000";
-BA_ "GenMsgForegroundColor" BO_ 4 "#000000";
-BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
-BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
