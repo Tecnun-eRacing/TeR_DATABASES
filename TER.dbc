@@ -33,20 +33,20 @@ NS_ :
 
 BS_: 
 BU_: PEDAL ECU_CMDS F_AXLE IMU LVBMS 
-BO_ 1 APPS: 8 PEDAL
+BO_ 2 APPS: 8 PEDAL
    SG_ APPS_1 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
    SG_ APPS_2 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
    SG_ IMP_FLAG : 24|8@1+ (1,0) [0|255] "" Vector__XXX
    SG_ APPS_AV : 16|8@1+ (1,0) [0|255] "" Vector__XXX
 
-BO_ 4 PEDAL_CMD: 8 ECU_CMDS
+BO_ 1 TeR_CMD: 8 ECU_CMDS
    SG_ CMD : 0|8@1+ (1,0) [0|1] "" Vector__XXX
    SG_ ARGS : 8|56@1+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 2 BPPS: 1 PEDAL
+BO_ 3 BPPS: 1 PEDAL
    SG_ BPPS : 0|8@1+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 5 STEER: 8 PEDAL
+BO_ 4 STEER: 8 PEDAL
    SG_ ANGLE : 0|16@1- (1,0) [-360|360] "Grad" Vector__XXX
 
 BO_ 277 Front_RPM: 8 F_AXLE
@@ -112,3 +112,9 @@ BO_ 292 ImuStatus: 8 IMU
    SG_ PosU : 16|16@1- (0.001,0) [0|1] "" Vector__XXX
    SG_ VelU : 32|16@1- (0.001,0) [0|1] "" Vector__XXX
 
+BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
+BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_ "GenMsgForegroundColor" BO_ 1 "#000000";
+BA_ "GenMsgForegroundColor" BO_ 4 "#000000";
+BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
+BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
