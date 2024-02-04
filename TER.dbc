@@ -36,6 +36,12 @@ BS_:
 BU_: PEDAL ECU_CMDS F_AXLE IMU LVBMS
 
 
+BO_ 5 New_Message_19: 8 Vector__XXX
+ SG_ New_Signal_55 : 4|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 0 New_Message_18: 8 Vector__XXX
+ SG_ New_Signal_54 : 3|8@1+ (1,0) [0|0] "" Vector__XXX
+
 BO_ 2 APPS: 8 PEDAL
  SG_ APPS_1 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
  SG_ APPS_2 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
@@ -80,14 +86,17 @@ BO_ 17 LV_Temps: 3 LVBMS
  SG_ T3 : 16|8@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 18 LV_Status: 8 LVBMS
+ SG_ LV_VoltageOK : 1|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ LV_TempOK : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LV_CurrentOK : 3|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ LV_Status : 0|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ V_tot : 49|12@1+ (0.01,0) [0|0] "" Vector__XXX
- SG_ V_min : 39|10@1+ (0.01,0) [0|0] "" Vector__XXX
- SG_ V_mean : 29|10@1+ (0.01,0) [0|0] "" Vector__XXX
- SG_ V_max : 19|10@1+ (0.01,0) [0|0] "" Vector__XXX
- SG_ LV_ON : 2|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ REFRI_ON : 1|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ LV_Current : 3|16@1+ (0.1,0) [0|1] "" Vector__XXX
+ SG_ V_tot : 52|12@1+ (0.01,0) [0|0] "" Vector__XXX
+ SG_ V_min : 42|10@1+ (0.01,0) [0|0] "" Vector__XXX
+ SG_ V_mean : 32|10@1+ (0.01,0) [0|0] "" Vector__XXX
+ SG_ V_max : 22|10@1+ (0.01,0) [0|0] "" Vector__XXX
+ SG_ LV_ON : 5|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ REFRI_ON : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LV_Current : 6|16@1+ (0.1,0) [0|1] "" Vector__XXX
 
 BO_ 280 AngRate: 8 IMU
  SG_ Roll_Rate_x : 0|20@1- (0.001,0) [0|1] "" Vector__XXX
