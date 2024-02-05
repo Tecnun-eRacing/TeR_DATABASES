@@ -130,8 +130,3 @@ BO_ 2147483809 ECU_Status: 8 ECU
    SG_ SL_Status : 0|1@1+ (1,0) [0|1] "" Vector__XXX
    SG_ State : 1|4@1+ (1,0) [0|1] "" Vector__XXX
 
-BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
-BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
-BA_ "GenMsgForegroundColor" BO_ 2147483809 "#000000";
-BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
-BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
