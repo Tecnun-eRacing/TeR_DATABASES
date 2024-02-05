@@ -33,12 +33,6 @@ NS_ :
 
 BS_: 
 BU_: PEDAL ECU_CMDS F_AXLE IMU LVBMS ECU 
-BO_ 5 New_Message_19: 8 Vector__XXX
-   SG_ New_Signal_55 : 4|8@1+ (1,0) [0|0] "" Vector__XXX
-
-BO_ 37 ECU_Status: 8 Vector__XXX
-   SG_ New_Signal_54 : 3|8@1+ (1,0) [0|0] "" Vector__XXX
-
 BO_ 2 APPS: 8 PEDAL
    SG_ APPS_1 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
    SG_ APPS_2 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
@@ -126,7 +120,12 @@ BO_ 292 ImuStatus: 8 IMU
    SG_ PosU : 16|16@1- (0.001,0) [0|1] "" Vector__XXX
    SG_ VelU : 32|16@1- (0.001,0) [0|1] "" Vector__XXX
 
-BO_ 2147483809 ECU_Status: 8 ECU
+BO_ 2147483685 ECU_Status: 8 ECU
    SG_ SL_Status : 0|1@1+ (1,0) [0|1] "" Vector__XXX
    SG_ State : 1|4@1+ (1,0) [0|1] "" Vector__XXX
 
+BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
+BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_ "GenMsgForegroundColor" BO_ 2147483685 "#000000";
+BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
+BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
