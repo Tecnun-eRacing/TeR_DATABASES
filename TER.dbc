@@ -125,3 +125,11 @@ BO_ 2147483685 ECU_Status: 8 ECU
    SG_ State : 1|4@1+ (1,0) [0|1] "" Vector__XXX
    SG_ r2d : 5|1@1+ (1,0) [0|1] "" Vector__XXX
 
+BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
+BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
+BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
+BA_DEF_DEF_ "matchingcriteria" 0;
+BA_DEF_DEF_ "filterlabeling" 0;
