@@ -33,8 +33,32 @@ NS_ :
 
 BS_:
 
-BU_: SteeringWheel PEDAL ECU_CMDS F_AXLE IMU LVBMS ECU
+BU_: RL_Wheel RR_Wheel FL_Wheel FR_Wheel SteeringWheel PEDAL ECU_CMDS F_AXLE IMU LVBMS ECU
 
+
+BO_ 1016 Temp_RR: 8 RR_Wheel
+ SG_ TW4 : 55|16@0- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ TW3 : 39|16@0- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ TW2 : 23|16@0- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ TW1 : 7|16@0- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+
+BO_ 1020 Temp_RL: 8 RL_Wheel
+ SG_ TW4 : 55|16@0- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ TW3 : 39|16@0- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ TW2 : 23|16@0- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ TW1 : 7|16@0- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+
+BO_ 1012 Temp_FR: 8 FR_Wheel
+ SG_ TW4 : 55|16@0- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ TW3 : 39|16@0- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ TW2 : 23|16@0- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ TW1 : 7|16@0- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+
+BO_ 1008 Temp_FL: 8 FL_Wheel
+ SG_ TW4 : 55|16@0- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ TW3 : 39|16@0- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ TW2 : 23|16@0- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ TW1 : 7|16@0- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
 
 BO_ 9 Buttons_BitMap: 8 SteeringWheel
  SG_ r6 : 7|1@1+ (1,0) [0|0] "" Vector__XXX
