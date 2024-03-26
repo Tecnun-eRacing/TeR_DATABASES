@@ -34,6 +34,10 @@ NS_ :
 BS_:
 
 BU_:
+VAL_TABLE_ DIO_State 1 "HIGH" 0 "LOW" ;
+VAL_TABLE_ AppState 7 "Fault" 6 "HV Shutdown" 5 "HV Charging" 4 "HV Ready" 3 "HV Precharge" 2 "Sleep" 1 "Stand By" 0 "Uninit" ;
+VAL_TABLE_ ContactorFeedbackState 1 "Contactor Feedback ON" 0 "Contactor Feedback OFF" ;
+VAL_TABLE_ ContactorState 1 "Contactor ON" 0 "Contactor OFF" ;
 
 
 BO_ 1559 BMS_TX_CMD_24: 6 Vector__XXX
@@ -383,9 +387,11 @@ BO_ 1632 BMS_RX_CTRL_1: 8 Vector__XXX
  SG_ Contactor_4_Req : 11|1@1- (1,0) [0|1] "" Vector__XXX
  SG_ Balance_Auth : 12|1@1- (1,0) [0|1] "" Vector__XXX
 
-BO_ 1889 BMS_TX_STATE_1: 5 Vector__XXX
+BO_ 1889 BMS_TX_STATE_1: 7 Vector__XXX
+ SG_ CPU_2_Load : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ CPU_1_Load : 40|8@1+ (1,0) [0|255] "" Vector__XXX
  SG_ Uptime_ms : 0|32@1+ (1,0) [0|4294970000] "" Vector__XXX
- SG_ CPU_Load : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ CPU_0_Load : 32|8@1+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 1890 BMS_TX_STATE_2: 4 Vector__XXX
  SG_ Dem : 0|32@1+ (1,0) [0|4294970000] "" Vector__XXX
@@ -676,12 +682,14 @@ BO_ 1536 BMS_TX_CMD_1: 6 Vector__XXX
  SG_ Cell10 m3 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
  SG_ Cell1 m0 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
 
-BO_ 1892 BMS_TX_STATE_4: 6 Vector__XXX
+BO_ 1892 BMS_TX_STATE_4: 8 Vector__XXX
+ SG_ Power : 48|16@1- (1,0) [0|0] "" Vector__XXX
  SG_ Volt_Synth_x10_V : 32|16@1+ (0.03052,0) [0|2000.13] "" Vector__XXX
  SG_ Curr_2_x10_A : 16|16@1- (0.03052,0) [-1000.08|1000.05] "" Vector__XXX
  SG_ Curr_1_x10_A : 0|16@1- (0.03052,0) [-1000.08|1000.05] "" Vector__XXX
 
-BO_ 1893 BMS_TX_STATE_5: 6 Vector__XXX
+BO_ 1893 BMS_TX_STATE_5: 8 Vector__XXX
+ SG_ Volt_KL30 : 48|16@1+ (1,0) [-32768|32767] "" Vector__XXX
  SG_ Volt_3_x10_V : 32|16@1- (0.03052,0) [-1000.08|1000.05] "" Vector__XXX
  SG_ Volt_2_x10_V : 16|16@1- (0.03052,0) [-1000.08|1000.05] "" Vector__XXX
  SG_ Volt_1_x10_V : 0|16@1- (0.03052,0) [-1000.08|1000.05] "" Vector__XXX
@@ -693,7 +701,11 @@ BO_ 1894 BMS_TX_STATE_6: 7 Vector__XXX
  SG_ Cell_Max_V : 12|12@1+ (1,0) [405|4095] "" Vector__XXX
  SG_ Cell_Min_V : 0|12@1+ (1,0) [405|4095] "" Vector__XXX
 
-BO_ 1891 BMS_TX_STATE_3: 1 Vector__XXX
+BO_ 1891 BMS_TX_STATE_3: 2 Vector__XXX
+ SG_ DIO4_State : 11|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DIO3_State : 10|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DIO2_State : 9|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DIO1_State : 8|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ App_State_App : 0|8@1+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 1895 BMS_TX_STATE_7: 7 Vector__XXX
@@ -724,4 +736,14 @@ BO_ 1897 BMS_TX_STATE_9: 3 Vector__XXX
 
 
 
+VAL_ 1632 App_State_Req 7 "Fault" 6 "HV Shutdown" 5 "HV Charging" 4 "HV Ready" 3 "HV Precharge" 2 "Sleep" 1 "Stand By" 0 "Uninit" ;
+VAL_ 1632 Contactor_1_Req 1 "Contactor ON" 0 "Contactor OFF" ;
+VAL_ 1632 Contactor_2_Req 1 "Contactor ON" 0 "Contactor OFF" ;
+VAL_ 1632 Contactor_3_Req 1 "Contactor ON" 0 "Contactor OFF" ;
+VAL_ 1632 Contactor_4_Req 1 "Contactor ON" 0 "Contactor OFF" ;
+VAL_ 1891 DIO4_State 1 "HIGH" 0 "LOW" ;
+VAL_ 1891 DIO3_State 1 "HIGH" 0 "LOW" ;
+VAL_ 1891 DIO2_State 1 "HIGH" 0 "LOW" ;
+VAL_ 1891 DIO1_State 1 "HIGH" 0 "LOW" ;
+VAL_ 1891 App_State_App 7 "Fault" 6 "HV Shutdown" 5 "HV Charging" 4 "HV Ready" 3 "HV Precharge" 2 "Sleep" 1 "Stand By" 0 "Uninit" ;
 
