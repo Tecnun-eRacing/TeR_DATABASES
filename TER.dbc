@@ -160,15 +160,6 @@ BO_ 37 ECU_Status: 2 ECU
    SG_ State : 1|4@1+ (1,0) [0|1] "" Vector__XXX
    SG_ r2d : 5|1@1+ (1,0) [0|1] "" Vector__XXX
 
-BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
-BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_ "GenMsgForegroundColor" BO_ 1 "#000000";
-BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
-BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
-BA_DEF_DEF_ "matchingcriteria" 0;
-BA_DEF_DEF_ "filterlabeling" false;
 CM_ BO_ 1 "Command Subsystem";
 CM_ SG_ 1 kwLim "Power_Limit_in_KW";
 VAL_ 1 CMD 1 "Calibrate_APPS_min" 2 "Calibrate_APPS_max" 3 "Calibrate_BPPS_min" 4 "Calibrate_BPPS_max" 5 "Calibrate_STEER_Leftest" 6 "Calibrate_STEER_Rightest" 7 "Reset_APPS_Implausability" 8 "Precharge" 9 "Discharge" 10 "BEEP" 11 "PowerLimit" 12 "Ready2drive";
