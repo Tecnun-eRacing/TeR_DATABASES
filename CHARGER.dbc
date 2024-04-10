@@ -222,18 +222,4 @@ CM_ SG_ 1553 NLG5_MV_ACT "Actual mains voltage";
 CM_ SG_ 1553 NLG5_OV_ACT "Actual battery output voltage";
 CM_ SG_ 1553 NLG5_OC_ACT "Output current to the battery";
 
-BA_DEF_ BO_ "MsgPeriodMS" INT 0 65535;
-BA_DEF_ BO_ "GenMsgCycleTime" INT 0 1000;
-BA_DEF_ BO_ "GenMsgSendType" ENUM "NoMsgSendType","Cyclic","IfActive","cyclicIfActive","NotUsed";
-BA_DEF_ SG_ "GenSigSendType" ENUM "NoSigSendType","Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NotUsed";
-BA_DEF_DEF_ "MsgPeriodMS" 0;
-BA_DEF_DEF_ "GenMsgCycleTime" 0;
-BA_DEF_DEF_ "GenMsgSendType" "NoMsgSendType";
-BA_DEF_DEF_ "GenSigSendType" "NoSigSendType";
-BA_ "GenMsgCycleTime" BO_ 1553 100;
-BA_ "GenMsgCycleTime" BO_ 1554 100;
-BA_ "GenMsgCycleTime" BO_ 1555 1000;
-BA_ "GenMsgCycleTime" BO_ 1556 1000;
-BA_ "GenMsgCycleTime" BO_ 1560 100;
-BA_ "GenMsgCycleTime" BO_ 1552 100;
 
