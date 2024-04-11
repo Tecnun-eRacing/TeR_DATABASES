@@ -171,11 +171,6 @@ BO_ 2147484165 CHRG_Status: 8 CHARGER
 
 CM_ BO_ 1 "Command Subsystem";
 CM_ SG_ 1 kwLim "Power_Limit_in_KW";
-BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
-BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
-BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
-BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
-BA_ "GenMsgForegroundColor" BO_ 2147484165 "#000000";
 VAL_ 1 CMD 1 "Calibrate_APPS_min" 2 "Calibrate_APPS_max" 3 "Calibrate_BPPS_min" 4 "Calibrate_BPPS_max" 5 "Calibrate_STEER_Leftest" 6 "Calibrate_STEER_Rightest" 7 "Reset_APPS_Implausability" 8 "Precharge" 9 "Discharge" 10 "BEEP" 11 "Ready2drive" 128 "PowerLimit";
 VAL_ 37 State 0 "WAIT_SL" 1 "READY2PRECH" 2 "PRECHARGING" 3 "PRECHARGED" 4 "DRIVING";
 VAL_ 2147483650 CODE 1 "OK" 2 "ERROR" 3 "INVALID_STATE" 4 "OUT_OF_RANGE";
