@@ -32,7 +32,7 @@ NS_ :
     SG_MUL_VAL_
 
 BS_: 
-BU_: RL_Wheel RR_Wheel FL_Wheel FR_Wheel SteeringWheel PEDAL TER_CMDS F_AXLE IMU LVBMS ECU 
+BU_: RL_Wheel RR_Wheel FL_Wheel FR_Wheel SteeringWheel PEDAL TER_CMDS F_AXLE IMU LVBMS ECU CHARGER 
 BO_ 1016 Temp_RR: 8 RR_Wheel
    SG_ TW4 : 55|16@0- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
    SG_ TW3 : 39|16@0- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
@@ -164,11 +164,19 @@ BO_ 2147483650 RESPONSE: 8 TER_CMDS
    SG_ CMD M : 0|8@1+ (1,0) [0|1] "" Vector__XXX
    SG_ CODE : 56|8@1+ (1,0) [0|1] "" Vector__XXX
 
+BO_ 2147484165 CHRG_Status: 8 CHARGER
+   SG_ State : 0|8@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ Voltage : 8|10@1+ (1,0) [0|1] "V" Vector__XXX
+   SG_ Current : 18|6@1+ (1,0) [0|1] "A" Vector__XXX
+
 CM_ BO_ 1 "Command Subsystem";
 CM_ SG_ 1 kwLim "Power_Limit_in_KW";
-CM_ BO_ 2147483650 "Response Subsytem";
-CM_ SG_ 2147483650 CMD "The_CMD_its_Responding_to";
-CM_ SG_ 2147483650 CODE "The_CMD_its_Responding_to";
+BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
+BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
+BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
+BA_ "GenMsgForegroundColor" BO_ 2147484165 "#000000";
 VAL_ 1 CMD 1 "Calibrate_APPS_min" 2 "Calibrate_APPS_max" 3 "Calibrate_BPPS_min" 4 "Calibrate_BPPS_max" 5 "Calibrate_STEER_Leftest" 6 "Calibrate_STEER_Rightest" 7 "Reset_APPS_Implausability" 8 "Precharge" 9 "Discharge" 10 "BEEP" 11 "Ready2drive" 128 "PowerLimit";
+VAL_ 37 State 0 "WAIT_SL" 1 "READY2PRECH" 2 "PRECHARGING" 3 "PRECHARGED" 4 "DRIVING";
 VAL_ 2147483650 CODE 1 "OK" 2 "ERROR" 3 "INVALID_STATE" 4 "OUT_OF_RANGE";
-SG_MUL_VAL_ 1 kwLim CMD 11-11;
+VAL_ 2147484165 State 0 "IDLE" 1 "READY" 2 "PRECHARGING" 3 "PRECHARGED" 4 "CHARGING";
