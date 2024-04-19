@@ -75,7 +75,9 @@ BO_ 3 APPS: 8 PEDAL
 
 BO_ 1 COMMAND: 8 TER_CMDS
    SG_ CMD M : 0|8@1+ (1,0) [0|1] "" Vector__XXX
-   SG_ kwLim m11 : 8|8@1+ (1,0) [0|120] "" Vector__XXX
+   SG_ kwLimit m128 : 8|8@1+ (1,0) [0|1] "kW" Vector__XXX
+   SG_ trqLimit m128 : 16|8@1+ (1,0) [0|1] "N/m" Vector__XXX
+   SG_ speedLimit m128 : 24|8@1+ (1,0) [0|1] "km/h" Vector__XXX
 
 BO_ 4 BPPS: 1 PEDAL
    SG_ BPPS : 0|8@1+ (1,0) [0|1] "" Vector__XXX
@@ -177,23 +179,18 @@ BO_ 38 DynamicConfig: 8 ECU
    SG_ trqLimit m0 : 24|8@1+ (1,0) [0|1] "n/m" Vector__XXX
    SG_ speedLimit m1 : 24|8@1+ (1,0) [0|120] "km/h" Vector__XXX
 
+CM_ BO_ 1 "Command Subsystem";
 BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
 BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
 BA_DEF_ BO_ "matchingcriteria" INT 0 0;
 BA_DEF_ BO_ "filterlabeling" INT 0 0;
-SG_MUL_VAL_ 1 kwLim COMMAND 11-11;
-SG_MUL_VAL_ 2147483686 kwLimit DynamicConfig 2-3;
-SG_MUL_VAL_ 2147483686 trqLimit DynamicConfig 0-0;
-SG_MUL_VAL_ 2147483686 speedLimit DynamicConfig 1-1;
-BA_ "GenMsgForegroundColor" BO_ 2 "#000000";
-BA_ "GenMsgForegroundColor" BO_ 38 "#000000";
 BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
 BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
 BA_DEF_DEF_ "matchingcriteria" 0;
-BA_DEF_DEF_ "filterlabeling" false;
-CM_ BO_ 1 "Command Subsystem";
-CM_ SG_ 1 kwLim "Power_Limit_in_KW";
-VAL_ 1 CMD 1 "Calibrate_APPS_min" 2 "Calibrate_APPS_max" 3 "Calibrate_BPPS_min" 4 "Calibrate_BPPS_max" 5 "Calibrate_STEER_Leftest" 6 "Calibrate_STEER_Rightest" 7 "resetAppsImplausability" 8 "discharge" 9 "precharge" 10 "beep" 11 "ready2Drive" 128 "powerLimit" 129 "torqueLimit" 0 "No Description";
+BA_DEF_DEF_ "filterlabeling" 0;
+BA_ "GenMsgForegroundColor" BO_ 2 "#000000";
+BA_ "GenMsgForegroundColor" BO_ 38 "#000000";
+VAL_ 1 CMD 1 "Calibrate_APPS_min" 2 "Calibrate_APPS_max" 3 "Calibrate_BPPS_min" 4 "Calibrate_BPPS_max" 5 "Calibrate_STEER_Leftest" 6 "Calibrate_STEER_Rightest" 7 "resetAppsImplausability" 8 "discharge" 9 "precharge" 10 "beep" 11 "ready2Drive" 128 "setLimits";
 VAL_ 37 State 0 "WAIT_SL" 1 "READY2PRECH" 2 "PRECHARGING" 3 "PRECHARGED" 4 "DRIVING";
 VAL_ 2 CODE 1 "OK" 2 "ERROR" 3 "INVALID_STATE" 4 "OUT_OF_RANGE";
 VAL_ 2147484165 State 0 "IDLE" 1 "READY" 2 "PRECHARGING" 3 "PRECHARGED" 4 "CHARGING";
