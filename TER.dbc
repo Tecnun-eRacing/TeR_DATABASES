@@ -75,9 +75,9 @@ BO_ 3 APPS: 8 PEDAL
 
 BO_ 1 COMMAND: 8 TER_CMDS
    SG_ CMD M : 0|8@1+ (1,0) [0|1] "" Vector__XXX
-   SG_ kwLimit m128 : 8|8@1+ (1,0) [0|1] "kW" Vector__XXX
-   SG_ trqLimit m128 : 16|8@1+ (1,0) [0|1] "N/m" Vector__XXX
-   SG_ speedLimit m128 : 24|8@1+ (1,0) [0|1] "km/h" Vector__XXX
+   SG_ kwLimit m128 : 8|8@1+ (1,0) [1|120] "kW" Vector__XXX
+   SG_ trqLimit m128 : 16|8@1+ (1,0) [1|180] "N/m" Vector__XXX
+   SG_ speedLimit m128 : 24|8@1+ (1,0) [1|120] "km/h" Vector__XXX
    SG_ cfgLimiter m129 : 8|8@1+ (1,0) [0|1] "" Vector__XXX
    SG_ cfgMode m129 : 16|8@1+ (1,0) [0|1] "" Vector__XXX
    SG_ cfgTractionControl m129 : 24|8@1+ (1,0) [0|1] "" Vector__XXX
@@ -103,7 +103,7 @@ BO_ 279 YPR: 8 IMU
    SG_ ROLL : 20|20@1- (0.01,0) [0|1] "" Vector__XXX
 
 BO_ 16 LV_Voltages: 8 LVBMS
-   SG_ V1 : 0|10@1+ (0.01,0) [0|1] "" Vector__XXX
+   SG_ V1 : 0|10@1+ (0.001,0) [0|1] "" Vector__XXX
    SG_ V2 : 10|10@1+ (0.01,0) [0|1] "" Vector__XXX
    SG_ V3 : 20|10@1+ (0.01,0) [0|1] "" Vector__XXX
    SG_ V4 : 30|10@1+ (0.01,0) [0|1] "" Vector__XXX
@@ -189,6 +189,10 @@ BO_ 2147483687 DrivetrainState: 8 ECU
    SG_ rlTRQ : 40|8@1+ (1,0) [0|1] "" Vector__XXX
 
 CM_ BO_ 1 "Command Subsystem";
+BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
+BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
+BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
 VAL_ 1 CMD 1 "Calibrate_APPS_min" 2 "Calibrate_APPS_max" 3 "Calibrate_BPPS_min" 4 "Calibrate_BPPS_max" 5 "Calibrate_STEER_Leftest" 6 "Calibrate_STEER_Rightest" 7 "resetAppsImplausability" 8 "discharge" 9 "precharge" 10 "beep" 11 "ready2Drive" 128 "setLimits" 129 "setDynamicConfig" 12 "toggleRefri";
 VAL_ 37 State 0 "WAIT_SL" 1 "READY2PRECH" 2 "PRECHARGING" 3 "PRECHARGED" 4 "DRIVING";
 VAL_ 2 CODE 1 "OK" 2 "ERROR" 3 "INVALID_STATE" 4 "OUT_OF_RANGE";
