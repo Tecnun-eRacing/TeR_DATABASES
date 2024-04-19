@@ -186,7 +186,7 @@ BO_ 2147483687 DrivetrainState: 8 ECU
    SG_ rrRPM : 0|16@1+ (1,0) [0|1] "" Vector__XXX
    SG_ rlRPM : 24|16@1+ (1,0) [0|1] "" Vector__XXX
    SG_ rrTRQ : 16|8@1+ (1,0) [0|1] "" Vector__XXX
-   SG_ rlTRQ : 16|8@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ rlTRQ : 40|8@1+ (1,0) [0|1] "" Vector__XXX
 
 CM_ BO_ 1 "Command Subsystem";
 BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
