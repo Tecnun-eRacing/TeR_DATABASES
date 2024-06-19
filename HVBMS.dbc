@@ -40,7 +40,7 @@ VAL_TABLE_ ContactorFeedbackState 1 "Contactor Feedback ON" 0 "Contactor Feedbac
 VAL_TABLE_ ContactorState 1 "Contactor ON" 0 "Contactor OFF" ;
 
 
-BO_ 1559 BMS_TX_CMD_24: 6 Vector__XXX
+BO_ 1047 BMS_TX_CMD_24: 6 Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-0|255] "" Vector__XXX
@@ -66,7 +66,7 @@ BO_ 1559 BMS_TX_CMD_24: 6 Vector__XXX
  SG_ Cell10 m3 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
  SG_ Cell1 m0 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
 
-BO_ 1558 BMS_TX_CMD_23: 6 Vector__XXX
+BO_ 1046 BMS_TX_CMD_23: 6 Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-0|255] "" Vector__XXX
@@ -92,7 +92,7 @@ BO_ 1558 BMS_TX_CMD_23: 6 Vector__XXX
  SG_ Cell10 m3 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
  SG_ Cell1 m0 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
 
-BO_ 1557 BMS_TX_CMD_22: 6 Vector__XXX
+BO_ 1045 BMS_TX_CMD_22: 6 Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-0|255] "" Vector__XXX
@@ -118,7 +118,7 @@ BO_ 1557 BMS_TX_CMD_22: 6 Vector__XXX
  SG_ Cell10 m3 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
  SG_ Cell1 m0 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
 
-BO_ 1556 BMS_TX_CMD_21: 6 Vector__XXX
+BO_ 1044 BMS_TX_CMD_21: 6 Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-0|255] "" Vector__XXX
@@ -144,7 +144,7 @@ BO_ 1556 BMS_TX_CMD_21: 6 Vector__XXX
  SG_ Cell10 m3 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
  SG_ Cell1 m0 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
 
-BO_ 1555 BMS_TX_CMD_20: 6 Vector__XXX
+BO_ 1043 BMS_TX_CMD_20: 6 Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-0|255] "" Vector__XXX
@@ -170,7 +170,7 @@ BO_ 1555 BMS_TX_CMD_20: 6 Vector__XXX
  SG_ Cell10 m3 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
  SG_ Cell1 m0 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
 
-BO_ 1554 BMS_TX_CMD_19: 6 Vector__XXX
+BO_ 1042 BMS_TX_CMD_19: 6 Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-0|255] "" Vector__XXX
@@ -196,7 +196,7 @@ BO_ 1554 BMS_TX_CMD_19: 6 Vector__XXX
  SG_ Cell10 m3 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
  SG_ Cell1 m0 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
 
-BO_ 1553 BMS_TX_CMD_18: 6 Vector__XXX
+BO_ 1041 BMS_TX_CMD_18: 6 Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-0|255] "" Vector__XXX
@@ -222,7 +222,7 @@ BO_ 1553 BMS_TX_CMD_18: 6 Vector__XXX
  SG_ Cell10 m3 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
  SG_ Cell1 m0 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
 
-BO_ 1552 BMS_TX_CMD_17: 6 Vector__XXX
+BO_ 1040 BMS_TX_CMD_17: 6 Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-0|255] "" Vector__XXX
@@ -248,7 +248,7 @@ BO_ 1552 BMS_TX_CMD_17: 6 Vector__XXX
  SG_ Cell10 m3 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
  SG_ Cell1 m0 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
 
-BO_ 1551 BMS_TX_CMD_16: 6 Vector__XXX
+BO_ 1039 BMS_TX_CMD_16: 6 Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-0|255] "" Vector__XXX
@@ -274,7 +274,7 @@ BO_ 1551 BMS_TX_CMD_16: 6 Vector__XXX
  SG_ Cell10 m3 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
  SG_ Cell1 m0 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
 
-BO_ 1550 BMS_TX_CMD_15: 6 Vector__XXX
+BO_ 1038 BMS_TX_CMD_15: 6 Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-0|255] "" Vector__XXX
@@ -300,7 +300,7 @@ BO_ 1550 BMS_TX_CMD_15: 6 Vector__XXX
  SG_ Cell10 m3 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
  SG_ Cell1 m0 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
 
-BO_ 1549 BMS_TX_CMD_14: 6 Vector__XXX
+BO_ 1037 BMS_TX_CMD_14: 6 Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-0|255] "" Vector__XXX
@@ -326,7 +326,7 @@ BO_ 1549 BMS_TX_CMD_14: 6 Vector__XXX
  SG_ Cell10 m3 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
  SG_ Cell1 m0 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
 
-BO_ 1548 BMS_TX_CMD_13: 6 Vector__XXX
+BO_ 1036 BMS_TX_CMD_13: 6 Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-0|255] "" Vector__XXX
@@ -352,7 +352,7 @@ BO_ 1548 BMS_TX_CMD_13: 6 Vector__XXX
  SG_ Cell10 m3 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
  SG_ Cell1 m0 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
 
-BO_ 1547 BMS_TX_CMD_12: 6 Vector__XXX
+BO_ 1035 BMS_TX_CMD_12: 6 Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-0|255] "" Vector__XXX
@@ -378,7 +378,7 @@ BO_ 1547 BMS_TX_CMD_12: 6 Vector__XXX
  SG_ Cell10 m3 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
  SG_ Cell1 m0 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
 
-BO_ 1632 BMS_RX_CTRL_1: 8 Vector__XXX
+BO_ 864 BMS_RX_CTRL_1: 8 Vector__XXX
  SG_ BalancingThreshold : 13|12@1+ (1,0) [405|4095] "" Vector__XXX
  SG_ App_State_Req : 0|8@1+ (1,0) [0|255] "" Vector__XXX
  SG_ Contactor_1_Req : 8|1@1- (1,0) [0|1] "" Vector__XXX
@@ -387,16 +387,16 @@ BO_ 1632 BMS_RX_CTRL_1: 8 Vector__XXX
  SG_ Contactor_4_Req : 11|1@1- (1,0) [0|1] "" Vector__XXX
  SG_ Balance_Auth : 12|1@1- (1,0) [0|1] "" Vector__XXX
 
-BO_ 1889 BMS_TX_STATE_1: 7 Vector__XXX
+BO_ 1120 BMS_TX_STATE_1: 7 Vector__XXX
  SG_ CPU_2_Load : 48|8@1+ (1,0) [0|255] "" Vector__XXX
  SG_ CPU_1_Load : 40|8@1+ (1,0) [0|255] "" Vector__XXX
  SG_ Uptime_ms : 0|32@1+ (1,0) [0|4294970000] "" Vector__XXX
  SG_ CPU_0_Load : 32|8@1+ (1,0) [0|255] "" Vector__XXX
 
-BO_ 1890 BMS_TX_STATE_2: 4 Vector__XXX
+BO_ 1121 BMS_TX_STATE_2: 4 Vector__XXX
  SG_ Dem : 0|32@1+ (1,0) [0|4294970000] "" Vector__XXX
 
-BO_ 1546 BMS_TX_CMD_11: 6 Vector__XXX
+BO_ 1034 BMS_TX_CMD_11: 6 Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-0|255] "" Vector__XXX
@@ -422,7 +422,7 @@ BO_ 1546 BMS_TX_CMD_11: 6 Vector__XXX
  SG_ Cell10 m3 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
  SG_ Cell1 m0 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
 
-BO_ 1545 BMS_TX_CMD_10: 6 Vector__XXX
+BO_ 1033 BMS_TX_CMD_10: 6 Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-0|255] "" Vector__XXX
@@ -448,7 +448,7 @@ BO_ 1545 BMS_TX_CMD_10: 6 Vector__XXX
  SG_ Cell10 m3 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
  SG_ Cell1 m0 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
 
-BO_ 1544 BMS_TX_CMD_9: 6 Vector__XXX
+BO_ 1032 BMS_TX_CMD_9: 6 Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-0|255] "" Vector__XXX
@@ -474,7 +474,7 @@ BO_ 1544 BMS_TX_CMD_9: 6 Vector__XXX
  SG_ Cell10 m3 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
  SG_ Cell1 m0 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
 
-BO_ 1543 BMS_TX_CMD_8: 6 Vector__XXX
+BO_ 1031 BMS_TX_CMD_8: 6 Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-0|255] "" Vector__XXX
@@ -500,7 +500,7 @@ BO_ 1543 BMS_TX_CMD_8: 6 Vector__XXX
  SG_ Cell10 m3 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
  SG_ Cell1 m0 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
 
-BO_ 1542 BMS_TX_CMD_7: 6 Vector__XXX
+BO_ 1030 BMS_TX_CMD_7: 6 Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-0|255] "" Vector__XXX
@@ -526,7 +526,7 @@ BO_ 1542 BMS_TX_CMD_7: 6 Vector__XXX
  SG_ Cell10 m3 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
  SG_ Cell1 m0 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
 
-BO_ 1541 BMS_TX_CMD_6: 6 Vector__XXX
+BO_ 1029 BMS_TX_CMD_6: 6 Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-0|255] "" Vector__XXX
@@ -552,7 +552,7 @@ BO_ 1541 BMS_TX_CMD_6: 6 Vector__XXX
  SG_ Cell10 m3 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
  SG_ Cell1 m0 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
 
-BO_ 1540 BMS_TX_CMD_5: 6 Vector__XXX
+BO_ 1028 BMS_TX_CMD_5: 6 Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-0|255] "" Vector__XXX
@@ -578,7 +578,7 @@ BO_ 1540 BMS_TX_CMD_5: 6 Vector__XXX
  SG_ Cell10 m3 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
  SG_ Cell1 m0 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
 
-BO_ 1539 BMS_TX_CMD_4: 6 Vector__XXX
+BO_ 1027 BMS_TX_CMD_4: 6 Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-0|255] "" Vector__XXX
@@ -604,7 +604,7 @@ BO_ 1539 BMS_TX_CMD_4: 6 Vector__XXX
  SG_ Cell10 m3 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
  SG_ Cell1 m0 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
 
-BO_ 1538 BMS_TX_CMD_3: 6 Vector__XXX
+BO_ 1026 BMS_TX_CMD_3: 6 Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-0|255] "" Vector__XXX
@@ -630,7 +630,7 @@ BO_ 1538 BMS_TX_CMD_3: 6 Vector__XXX
  SG_ Cell10 m3 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
  SG_ Cell1 m0 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
 
-BO_ 1537 BMS_TX_CMD_2: 6 Vector__XXX
+BO_ 1025 BMS_TX_CMD_2: 6 Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-0|255] "" Vector__XXX
@@ -656,7 +656,7 @@ BO_ 1537 BMS_TX_CMD_2: 6 Vector__XXX
  SG_ Cell10 m3 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
  SG_ Cell1 m0 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
 
-BO_ 1536 BMS_TX_CMD_1: 6 Vector__XXX
+BO_ 1024 BMS_TX_CMD_1: 6 Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-0|255] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-0|255] "" Vector__XXX
@@ -682,42 +682,42 @@ BO_ 1536 BMS_TX_CMD_1: 6 Vector__XXX
  SG_ Cell10 m3 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
  SG_ Cell1 m0 : 8|12@1+ (1,0) [405|4095] "" Vector__XXX
 
-BO_ 1892 BMS_TX_STATE_4: 8 Vector__XXX
- SG_ Power : 48|16@1- (1,0) [0|0] "" Vector__XXX
+BO_ 1123 BMS_TX_STATE_4: 8 Vector__XXX
+ SG_ Power_W : 48|16@1- (1,0) [0|0] "" Vector__XXX
  SG_ Volt_Synth_x10_V : 32|16@1+ (0.03052,0) [0|2000.13] "" Vector__XXX
  SG_ Curr_2_x10_A : 16|16@1- (0.03052,0) [-1000.08|1000.05] "" Vector__XXX
  SG_ Curr_1_x10_A : 0|16@1- (0.03052,0) [-1000.08|1000.05] "" Vector__XXX
 
-BO_ 1893 BMS_TX_STATE_5: 8 Vector__XXX
+BO_ 1124 BMS_TX_STATE_5: 8 Vector__XXX
  SG_ Volt_KL30 : 48|16@1+ (1,0) [-32768|32767] "" Vector__XXX
  SG_ Volt_3_x10_V : 32|16@1- (0.03052,0) [-1000.08|1000.05] "" Vector__XXX
  SG_ Volt_2_x10_V : 16|16@1- (0.03052,0) [-1000.08|1000.05] "" Vector__XXX
  SG_ Volt_1_x10_V : 0|16@1- (0.03052,0) [-1000.08|1000.05] "" Vector__XXX
 
-BO_ 1894 BMS_TX_STATE_6: 7 Vector__XXX
+BO_ 1125 BMS_TX_STATE_6: 7 Vector__XXX
  SG_ Cell_Max_Idx : 45|9@1+ (1,0) [0|511] "" Vector__XXX
  SG_ Cell_Min_Idx : 36|9@1+ (1,0) [0|511] "" Vector__XXX
  SG_ Cell_Avg_V : 24|12@1+ (1,0) [405|4095] "" Vector__XXX
  SG_ Cell_Max_V : 12|12@1+ (1,0) [405|4095] "" Vector__XXX
  SG_ Cell_Min_V : 0|12@1+ (1,0) [405|4095] "" Vector__XXX
 
-BO_ 1891 BMS_TX_STATE_3: 2 Vector__XXX
+BO_ 1122 BMS_TX_STATE_3: 2 Vector__XXX
  SG_ DIO4_State : 11|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ DIO3_State : 10|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ DIO2_State : 9|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ DIO1_State : 8|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ App_State_App : 0|8@1+ (1,0) [0|255] "" Vector__XXX
 
-BO_ 1895 BMS_TX_STATE_7: 7 Vector__XXX
- SG_ Cell_Temp_Min_degC : 48|8@1- (1,0) [-128|127] "" Vector__XXX
- SG_ Cell_Temp_Max_degC : 40|8@1- (1,0) [-128|127] "" Vector__XXX
- SG_ Cell_Temp_Avg_degC : 32|8@1- (1,0) [-128|127] "" Vector__XXX
+BO_ 1126 BMS_TX_STATE_7: 7 Vector__XXX
+ SG_ Cell_Temp_Min_degC : 48|8@1- (1,-40) [-168|87] "" Vector__XXX
+ SG_ Cell_Temp_Max_degC : 40|8@1- (1,-40) [-168|87] "" Vector__XXX
+ SG_ Cell_Temp_Avg_degC : 32|8@1- (1,-40) [-168|87] "" Vector__XXX
  SG_ Temp_4_degC : 24|8@1+ (1,-40) [0|255] "" Vector__XXX
  SG_ Temp_3_degC : 16|8@1+ (1,-40) [0|255] "" Vector__XXX
  SG_ Temp_2_degC : 8|8@1+ (1,-40) [0|255] "" Vector__XXX
- SG_ Temp_1_degC : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Temp_1_degC : 0|8@1+ (1,-40) [-40|215] "" Vector__XXX
 
-BO_ 1896 BMS_TX_STATE_8: 8 Vector__XXX
+BO_ 1127 BMS_TX_STATE_8: 8 Vector__XXX
  SG_ Diag_Temp_3_Undertemp : 9|1@1- (1,0) [0|1] "" Vector__XXX
  SG_ Diag_Temp_3_Overtemp : 8|1@1- (1,0) [0|1] "" Vector__XXX
  SG_ Diag_Temp_2_Undertemp : 7|1@1- (1,0) [0|1] "" Vector__XXX
@@ -729,21 +729,21 @@ BO_ 1896 BMS_TX_STATE_8: 8 Vector__XXX
  SG_ Diag_Cell_Overvolt : 1|1@1- (1,0) [0|1] "" Vector__XXX
  SG_ Diag_Cell_Overtemp : 0|1@1- (1,0) [0|1] "" Vector__XXX
 
-BO_ 1897 BMS_TX_STATE_9: 3 Vector__XXX
+BO_ 1128 BMS_TX_STATE_9: 3 Vector__XXX
  SG_ Cell_Temp_Max_degC : 16|8@1- (1,0) [-128|127] "" Vector__XXX
  SG_ Cell_Temp_Min_degC : 8|8@1- (1,0) [-128|127] "" Vector__XXX
  SG_ Cell_Temp_Avg_degC : 0|8@1- (1,0) [-128|127] "" Vector__XXX
 
 
 
-VAL_ 1632 App_State_Req 7 "Fault" 6 "HV Shutdown" 5 "HV Charging" 4 "HV Ready" 3 "HV Precharge" 2 "Sleep" 1 "Stand By" 0 "Uninit" ;
-VAL_ 1632 Contactor_1_Req 1 "Contactor ON" 0 "Contactor OFF" ;
-VAL_ 1632 Contactor_2_Req 1 "Contactor ON" 0 "Contactor OFF" ;
-VAL_ 1632 Contactor_3_Req 1 "Contactor ON" 0 "Contactor OFF" ;
-VAL_ 1632 Contactor_4_Req 1 "Contactor ON" 0 "Contactor OFF" ;
-VAL_ 1891 DIO4_State 1 "HIGH" 0 "LOW" ;
-VAL_ 1891 DIO3_State 1 "HIGH" 0 "LOW" ;
-VAL_ 1891 DIO2_State 1 "HIGH" 0 "LOW" ;
-VAL_ 1891 DIO1_State 1 "HIGH" 0 "LOW" ;
-VAL_ 1891 App_State_App 7 "Fault" 6 "HV Shutdown" 5 "HV Charging" 4 "HV Ready" 3 "HV Precharge" 2 "Sleep" 1 "Stand By" 0 "Uninit" ;
+VAL_ 864 App_State_Req 9 "Reset" 8 "Fault" 7 "HV Shutdown" 6 "HV Charging" 5 "HV Ready" 4 "HV Precharge" 3 "Ready" 2 "Sleep" 1 "Self Test" 0 "Uninit" ;
+VAL_ 864 Contactor_1_Req 1 "Contactor ON" 0 "Contactor OFF" ;
+VAL_ 864 Contactor_2_Req 1 "Contactor ON" 0 "Contactor OFF" ;
+VAL_ 864 Contactor_3_Req 1 "Contactor ON" 0 "Contactor OFF" ;
+VAL_ 864 Contactor_4_Req 1 "Contactor ON" 0 "Contactor OFF" ;
+VAL_ 1122 DIO4_State 1 "HIGH" 0 "LOW" ;
+VAL_ 1122 DIO3_State 1 "HIGH" 0 "LOW" ;
+VAL_ 1122 DIO2_State 1 "HIGH" 0 "LOW" ;
+VAL_ 1122 DIO1_State 1 "HIGH" 0 "LOW" ;
+VAL_ 1122 App_State_App 9 "RESET" 8 "Fault" 7 "HV Shutdown" 6 "HV Charging" 5 "HV Ready" 4 "HV Precharge" 3 "Ready" 2 "Sleep" 1 "Self Test" 0 "Uninit" ;
 
