@@ -159,17 +159,25 @@ BO_ 292 ImuStatus: 8 IMU
    SG_ PosU : 16|16@1- (0.001,0) [0|1] "" Vector__XXX
    SG_ VelU : 32|16@1- (0.001,0) [0|1] "" Vector__XXX
 
-BO_ 37 ECU_Status: 2 ECU
-   SG_ BSPD_Status : 6|1@1+ (1,0) [0|0] "" Vector__XXX
-   SG_ SL_Status : 0|1@1+ (1,0) [0|1] "" Vector__XXX
-   SG_ State : 1|4@1+ (1,0) [0|1] "" Vector__XXX
-   SG_ r2d : 5|1@1+ (1,0) [0|1] "" Vector__XXX
+BO_ 37 TER_STATUS: 4 ECU
+   SG_ BSPD : 9|1@1+ (1,0) [0|0] "" Vector__XXX
+   SG_ SL : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ STATE : 0|4@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ R2D : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ APPS : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ IMD : 10|1@1+ (1,0) [0|0] "" Vector__XXX
+   SG_ AMS : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ IMU : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ LEFT_INV : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ REFRI : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ RIGHT_INV : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ SCS : 5|1@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 2 RESPONSE: 8 TER_CMDS
    SG_ CMD M : 0|8@1+ (1,0) [0|1] "" Vector__XXX
    SG_ CODE : 56|8@1+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 2147484165 CHRG_Status: 8 CHARGER
+BO_ 517 CHRG_Status: 8 CHARGER
    SG_ State : 0|8@1+ (1,0) [0|1] "" Vector__XXX
    SG_ Voltage : 8|10@1+ (1,0) [0|1] "V" Vector__XXX
    SG_ Current : 18|6@1+ (1,0) [0|1] "A" Vector__XXX
@@ -182,17 +190,18 @@ BO_ 38 DynamicConfig: 8 ECU
    SG_ trqLimit m0 : 24|8@1+ (1,0) [0|1] "n/m" Vector__XXX
    SG_ speedLimit m1 : 24|8@1+ (1,0) [0|120] "km/h" Vector__XXX
 
-BO_ 2147483687 DrivetrainState: 8 ECU
+BO_ 39 WheelInfo: 8 ECU
    SG_ rrRPM : 0|16@1+ (1,0) [0|1] "" Vector__XXX
    SG_ rlRPM : 24|16@1+ (1,0) [0|1] "" Vector__XXX
    SG_ rrTRQ : 16|8@1+ (1,0) [0|1] "" Vector__XXX
    SG_ rlTRQ : 40|8@1+ (1,0) [0|1] "" Vector__XXX
 
+CM_ BU_ TER_CMDS "The Command Subsystem For TeR Vehicle";
 CM_ BO_ 1 "Command Subsystem";
-VAL_ 1 CMD 1 "Calibrate_APPS_min" 2 "Calibrate_APPS_max" 3 "Calibrate_BPPS_min" 4 "Calibrate_BPPS_max" 5 "Calibrate_STEER_Leftest" 6 "Calibrate_STEER_Rightest" 7 "resetAppsImplausability" 8 "discharge" 9 "precharge" 10 "beep" 11 "ready2Drive" 128 "setLimits" 129 "setDynamicConfig" 12 "toggleRefri";
-VAL_ 37 State 0 "WAIT_SL" 1 "READY2PRECH" 2 "PRECHARGING" 3 "PRECHARGED" 4 "DRIVING";
+VAL_ 1 CMD 1 "Calibrate_APPS_min" 2 "Calibrate_APPS_max" 3 "Calibrate_BPPS_min" 4 "Calibrate_BPPS_max" 5 "Calibrate_STEER_Leftest" 6 "Calibrate_STEER_Rightest" 7 "resetAppsImplausability" 8 "discharge" 9 "precharge" 10 "beep" 11 "ready2Drive" 128 "setLimits" 129 "setDynamicConfig" 12 "toggleRefri" 13 "toggleSCS";
+VAL_ 37 STATE 0 "WAIT_SL" 1 "READY2PRECH" 2 "PRECHARGING" 3 "PRECHARGED" 4 "DRIVING";
 VAL_ 2 CODE 1 "OK" 2 "ERROR" 3 "INVALID_STATE" 4 "OUT_OF_RANGE";
-VAL_ 2147484165 State 0 "IDLE" 1 "READY" 2 "PRECHARGING" 3 "PRECHARGED" 4 "CHARGING";
+VAL_ 517 State 0 "IDLE" 1 "READY" 2 "PRECHARGING" 3 "PRECHARGED" 4 "CHARGING";
 VAL_ 38 Limiter 0 "limitTorque" 1 "limitSpeed" 2 "limitMechPWR" 3 "limitElecPWR";
 VAL_ 38 Mode 0 "Lineal" 1 "basicTorque" 2 "mdsTorque" 3 "Backwards";
 VAL_ 38 TractionControl 0 "OFF" 1 "Basic";
