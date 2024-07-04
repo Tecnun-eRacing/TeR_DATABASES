@@ -196,10 +196,6 @@ BO_ 39 WheelInfo: 8 ECU
    SG_ rrTRQ : 16|8@1+ (1,0) [0|1] "" Vector__XXX
    SG_ rlTRQ : 40|8@1+ (1,0) [0|1] "" Vector__XXX
 
-BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
-BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
-BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
-BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
 CM_ BU_ TER_CMDS "The Command Subsystem For TeR Vehicle";
 CM_ BO_ 1 "Command Subsystem";
 VAL_ 1 CMD 14 "resetBMS" 1 "Calibrate_APPS_min" 2 "Calibrate_APPS_max" 3 "Calibrate_BPPS_min" 4 "Calibrate_BPPS_max" 5 "Calibrate_STEER_Leftest" 6 "Calibrate_STEER_Rightest" 7 "resetAppsImplausability" 8 "discharge" 9 "precharge" 10 "beep" 11 "ready2Drive" 128 "setLimits" 129 "setDynamicConfig" 12 "toggleRefri" 13 "toggleSCS" 0 "charge";
