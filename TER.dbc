@@ -200,8 +200,6 @@ BO_ 39 WheelInfo: 8 ECU
    SG_ rrTRQ : 16|8@1+ (1,0) [0|1] "" Vector__XXX
    SG_ rlTRQ : 40|8@1+ (1,0) [0|1] "" Vector__XXX
 
-BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
-BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
 SG_MUL_VAL_ 1 kwLimit COMMAND 193-193;
 SG_MUL_VAL_ 1 trqLimit COMMAND 193-193;
 SG_MUL_VAL_ 1 speedLimit COMMAND 193-193;
@@ -213,9 +211,6 @@ SG_MUL_VAL_ 1 VALUE COMMAND 128-191;
 SG_MUL_VAL_ 38 kwLimit DynamicConfig 2-2;
 SG_MUL_VAL_ 38 trqLimit DynamicConfig 0-0;
 SG_MUL_VAL_ 38 speedLimit DynamicConfig 1-1;
-BA_ "GenMsgForegroundColor" BO_ 1 "#000000";
-BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
-BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
 CM_ BU_ TER_CMDS "The Command Subsystem For TeR Vehicle";
 CM_ BO_ 1 "(0-63)No Args, (64-127)OnOff,(128-191)Value,(192-256)Custom";
 VAL_ 1 CMD 14 "resetBMS" 1 "Calibrate_APPS_min" 2 "Calibrate_APPS_max" 3 "Calibrate_BPPS_min" 4 "Calibrate_BPPS_max" 5 "Calibrate_STEER_Leftest" 6 "Calibrate_STEER_Rightest" 7 "resetAppsImplausability" 8 "discharge" 9 "precharge" 10 "beep" 11 "ready2Drive" 193 "setLimits" 194 "setDynamicConfig" 63 "switchRefri" 64 "switchScs" 0 "charge";
