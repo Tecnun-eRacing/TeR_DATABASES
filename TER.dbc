@@ -85,7 +85,7 @@ BO_ 1 COMMAND: 8 TER_CMDS
    SG_ VALUE m128 : 8|32@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 4 BPPS: 1 PEDAL
-   SG_ BPPS : 0|8@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ BPPS : 0|8@1+ (1,0) [0|1] "Bar" Vector__XXX
 
 BO_ 5 STEER: 8 PEDAL
    SG_ ANGLE : 0|16@1- (1,0) [-360|360] "Grad" Vector__XXX
@@ -199,10 +199,24 @@ BO_ 39 WheelInfo: 8 ECU
    SG_ rlRPM : 24|16@1+ (1,0) [0|1] "" Vector__XXX
    SG_ rrTRQ : 16|8@1+ (1,0) [0|1] "" Vector__XXX
    SG_ rlTRQ : 40|8@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ speed : 48|8@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147483688 InverterInfo: 8 ECU
+   SG_ leftDem : 0|8@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ rightDem : 8|8@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ leftPowerStageTemp : 16|8@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ rightPowerStageTemp : 24|8@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ leftMotorTemp : 32|8@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ rightMotorTemp : 40|8@1+ (1,0) [0|1] "" Vector__XXX
 
 CM_ BU_ TER_CMDS "The Command Subsystem For TeR Vehicle";
 CM_ BO_ 1 "(0-63)No Args, (64-127)OnOff,(128-191)Value,(192-256)Custom";
-VAL_ 1 CMD 14 "resetBMS" 1 "Calibrate_APPS_min" 2 "Calibrate_APPS_max" 3 "Calibrate_BPPS_min" 4 "Calibrate_BPPS_max" 5 "Calibrate_STEER_Leftest" 6 "Calibrate_STEER_Rightest" 7 "resetAppsImplausability" 8 "discharge" 9 "precharge" 10 "beep" 11 "ready2Drive" 193 "setLimits" 194 "setDynamicConfig" 64 "switchRefri" 65 "switchScs" 0 "charge";
+BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
+BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
+BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
+BA_ "GenMsgForegroundColor" BO_ 2147483688 "#000000";
+VAL_ 1 CMD 14 "resetBMS" 1 "Calibrate_APPS_min" 2 "Calibrate_APPS_max" 5 "Calibrate_STEER_Leftest" 6 "Calibrate_STEER_Rightest" 8 "discharge" 9 "precharge" 10 "beep" 11 "ready2Drive" 193 "setLimits" 194 "setDynamicConfig" 64 "switchRefri" 65 "switchScs" 0 "charge";
 VAL_ 1 ONOFF 0 "OFF" 1 "ON";
 VAL_ 37 STATE 0 "WAIT_SL" 1 "READY2PRECH" 2 "PRECHARGING" 3 "PRECHARGED" 4 "DRIVING";
 VAL_ 2 CODE 1 "OK" 2 "ERROR" 3 "INVALID_STATE" 4 "OUT_OF_RANGE";
@@ -210,3 +224,14 @@ VAL_ 517 State 0 "IDLE" 1 "READY" 2 "PRECHARGING" 3 "PRECHARGED" 4 "CHARGING";
 VAL_ 38 Limiter 0 "limitTorque" 1 "limitSpeed" 2 "limitMechPWR" 3 "limitElecPWR";
 VAL_ 38 Mode 0 "Lineal" 1 "basicTorque" 2 "mdsTorque" 3 "Backwards";
 VAL_ 38 TractionControl 0 "OFF" 1 "Basic";
+SG_MUL_VAL_ 1 kwLimit CMD 193-193;
+SG_MUL_VAL_ 1 trqLimit CMD 193-193;
+SG_MUL_VAL_ 1 speedLimit CMD 193-193;
+SG_MUL_VAL_ 1 cfgLimiter CMD 194-194;
+SG_MUL_VAL_ 1 cfgMode CMD 194-194;
+SG_MUL_VAL_ 1 cfgTractionControl CMD 194-194;
+SG_MUL_VAL_ 1 ONOFF CMD 64-127;
+SG_MUL_VAL_ 1 VALUE CMD 128-128;
+SG_MUL_VAL_ 38 kwLimit Limiter 2-2;
+SG_MUL_VAL_ 38 trqLimit Limiter 0-0;
+SG_MUL_VAL_ 38 speedLimit Limiter 1-1;
