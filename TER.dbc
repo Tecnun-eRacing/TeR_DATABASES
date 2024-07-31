@@ -210,14 +210,6 @@ BO_ 40 InverterInfo: 8 ECU
    SG_ leftMotorTemp : 32|8@1+ (1,0) [0|1] "" Vector__XXX
    SG_ rightMotorTemp : 40|8@1+ (1,0) [0|1] "" Vector__XXX
 
-BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
-BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
-BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
-BA_DEF_DEF_ "matchingcriteria" 0;
-BA_DEF_DEF_ "filterlabeling" false;
 CM_ BU_ SteeringWheel "The Steering Input MOdule";
 CM_ BU_ PEDAL "The Drivers Sensor Board";
 CM_ BU_ TER_CMDS "The Command Subsystem For TeR Vehicle";
