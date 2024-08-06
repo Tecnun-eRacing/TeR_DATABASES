@@ -686,13 +686,13 @@ BO_ 1123 BMS_TX_STATE_4: 8 Vector__XXX
  SG_ Power_W : 48|16@1- (1,0) [0|0] "" Vector__XXX
  SG_ Volt_Synth_x10_V : 32|16@1+ (0.03052,0) [0|2000.13] "" Vector__XXX
  SG_ Curr_2_x10_A : 16|16@1- (0.03052,0) [-1000.08|1000.05] "" Vector__XXX
- SG_ Curr_1_x10_A : 0|16@1- (0.03052,0) [-1000.08|1000.05] "" Vector__XXX
+ SG_ Curr_1_x10_A : 0|16@1- (0.03052,0) [-1000.07936|1000.04884] "" Vector__XXX
 
 BO_ 1124 BMS_TX_STATE_5: 8 Vector__XXX
  SG_ Volt_KL30 : 48|16@1+ (1,0) [-32768|32767] "" Vector__XXX
- SG_ Volt_3_x10_V : 32|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
- SG_ Volt_2_x10_V : 16|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
- SG_ Volt_1_x10_V : 0|16@1- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
+ SG_ Volt_3_x10_V : 32|16@1- (0.03052,0) [-1000.07936|1000.04884] "" Vector__XXX
+ SG_ Volt_2_x10_V : 16|16@1- (0.03052,0) [-1000.07936|1000.04884] "" Vector__XXX
+ SG_ Volt_1_x10_V : 0|16@1- (0.03052,0) [-1000.07936|1000.04884] "" Vector__XXX
 
 BO_ 1125 BMS_TX_STATE_6: 7 Vector__XXX
  SG_ Cell_Max_Idx : 45|9@1+ (1,0) [0|511] "" Vector__XXX
