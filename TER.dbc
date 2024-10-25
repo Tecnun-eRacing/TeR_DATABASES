@@ -216,8 +216,8 @@ BO_ 36 Front_Temps: 8 FRONT_AXLE
 
 
 BO_ 35 Front_Susp: 8 FRONT_AXLE
-   SG_ frDisp : 0|16@1+ (0.1,0) [0|1] "mm" Vector__XXX
-   SG_ flDisp : 16|16@1+ (0.1,0) [0|1] "mm" Vector__XXX
+   SG_ frDisp : 0|16@1- (0.1,0) [0|1] "mm" Vector__XXX
+   SG_ flDisp : 16|16@1- (0.1,0) [0|1] "mm" Vector__XXX
 
 
 
