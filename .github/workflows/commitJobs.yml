@@ -27,7 +27,7 @@ jobs:
 
         - name: Find and merge all DBC files
           run: |
-            chmod +x ./utils/merge_dbc.py
+            chmod +x ./utils/dbc_merge.py
             # Encuentra todos los dbcs
             DBC_FILES=$(find ./dbc-directory -name "*.dbc" | tr '\n' ' ')
             if [ -z "$DBC_FILES" ]; then
@@ -35,7 +35,7 @@ jobs:
               exit 1
             fi
             echo "Found DBC files: $DBC_FILES"
-            ./utils/merge_dbc.py $DBC_FILES -o ALL.dbc
+            ./utils/dbc_merge.py $DBC_FILES -o ALL.dbc
 
         - name: Upload merged DBC file
           uses: actions/upload-artifact@v3
