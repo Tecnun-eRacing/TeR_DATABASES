@@ -27,7 +27,7 @@ jobs:
 
         - name: Find and merge all DBC files
           run: |
-            chmod +x merge_dbc.py
+            chmod +x ./utils/merge_dbc.py
             # Encuentra todos los dbcs
             DBC_FILES=$(find ./dbc-directory -name "*.dbc" | tr '\n' ' ')
             if [ -z "$DBC_FILES" ]; then
