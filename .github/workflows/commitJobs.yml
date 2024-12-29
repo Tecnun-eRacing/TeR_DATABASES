@@ -2,13 +2,48 @@ name: Generar código C desde archivos dbc
 on:
   push:
     branches:
-      - main  # Cambia el nombre de la rama si es necesario
+      - main  
   pull_request:
     branches:
-      - main  # Cambia el nombre de la rama si es necesario
+      - main 
 
 jobs:
-  generate_c_code:
+  merge-dbc: # Compila los dbc en uno solo llamado ALL
+      runs-on: ubuntu-latest
+
+      steps:
+        - name: Checkout repository
+          uses: actions/checkout@v3
+
+        - name: Set up Python
+          uses: actions/setup-python@v4
+          with:
+            python-version: '3.8'
+
+        - name: Install dependencies
+          run: |
+            python -m pip install --upgrade pip
+            pip install cantools
+
+        - name: Find and merge all DBC files
+          run: |
+            chmod +x merge_dbc.py
+            # Encuentra todos los dbcs
+            DBC_FILES=$(find ./dbc-directory -name "*.dbc" | tr '\n' ' ')
+            if [ -z "$DBC_FILES" ]; then
+              echo "No DBC files found in the directory. Exiting."
+              exit 1
+            fi
+            echo "Found DBC files: $DBC_FILES"
+            ./utils/merge_dbc.py $DBC_FILES -o ALL.dbc
+
+        - name: Upload merged DBC file
+          uses: actions/upload-artifact@v3
+          with:
+            name: merged_database
+            path: merged_database.dbc
+
+  generate_c_code: # genera las librerías
     runs-on: ubuntu-latest
 
     steps:
