@@ -33,7 +33,7 @@ NS_ :
 
 BS_:
 
-BU_: Control STEER PEDAL TER_CMDS FRONT_AXLE IMU LVBMS ECU CHARGER TireTemps Control STEER PEDAL TER_CMDS FRONT_AXLE IMU LVBMS ECU CHARGER TireTemps Control STEER PEDAL TER_CMDS FRONT_AXLE IMU LVBMS ECU CHARGER TireTemps
+BU_: Control STEER PEDAL TER_CMDS FRONT_AXLE IMU LVBMS ECU CHARGER TireTemps Control STEER PEDAL TER_CMDS FRONT_AXLE IMU LVBMS ECU CHARGER TireTemps Control STEER PEDAL TER_CMDS FRONT_AXLE IMU LVBMS ECU CHARGER TireTemps Control STEER PEDAL TER_CMDS FRONT_AXLE IMU LVBMS ECU CHARGER TireTemps REFRI
 
 
 BO_ 1552 NLG5_ST: 4 Control
@@ -75,10 +75,10 @@ BO_ 1554 NLG5_ACT_II: 8 Control
  SG_ NLG5_S_MC_M_CP : 7|16@0+ (0.1,0) [0|100] "A" Vector__XXX
 
 BO_ 1555 NLG5_TEMP: 8 Control
- SG_ NLG5_TMP_EXT3 : 55|16@0+ (0.1,0) [-40|300] "Ãƒâ€šÃ‚Â°C" Vector__XXX
- SG_ NLG5_TMP_EXT2 : 39|16@0+ (0.1,0) [-40|300] "Ãƒâ€šÃ‚Â°C" Vector__XXX
- SG_ NLG5_TMP_EXT1 : 23|16@0+ (0.1,0) [-40|300] "Ãƒâ€šÃ‚Â°C" Vector__XXX
- SG_ NLG5_P_TMP : 7|16@0+ (0.1,0) [-40|300] "Ãƒâ€šÃ‚Â°C" Vector__XXX
+ SG_ NLG5_TMP_EXT3 : 55|16@0+ (0.1,0) [-40|300] "ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°C" Vector__XXX
+ SG_ NLG5_TMP_EXT2 : 39|16@0+ (0.1,0) [-40|300] "ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°C" Vector__XXX
+ SG_ NLG5_TMP_EXT1 : 23|16@0+ (0.1,0) [-40|300] "ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°C" Vector__XXX
+ SG_ NLG5_P_TMP : 7|16@0+ (0.1,0) [-40|300] "ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°C" Vector__XXX
 
 BO_ 1556 NLG5_ERR: 5 Control
  SG_ NLG5_W_PL_MV : 32|1@0+ (1,0) [0|1] "" Vector__XXX
@@ -135,340 +135,340 @@ BO_ 1818 NLG5_DIAG_TX: 8 Control
  SG_ LAD_D_ParamRp : 7|64@0+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 1047 BMS_TX_CMD_24: 6 Vector__XXX
- SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell8 m2 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp1 m6 : 8|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell_Cnt : 4|4@1+ (1,0) [0|15] "" Vector__XXX
  SG_ Cell_Idx M : 0|4@1+ (1,0) [0|4095] "" Vector__XXX
 
 BO_ 1046 BMS_TX_CMD_23: 6 Vector__XXX
- SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell8 m2 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp1 m6 : 8|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell_Cnt : 4|4@1+ (1,0) [0|15] "" Vector__XXX
  SG_ Cell_Idx M : 0|4@1+ (1,0) [0|4095] "" Vector__XXX
 
 BO_ 1045 BMS_TX_CMD_22: 6 Vector__XXX
- SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell8 m2 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp1 m6 : 8|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell_Cnt : 4|4@1+ (1,0) [0|15] "" Vector__XXX
  SG_ Cell_Idx M : 0|4@1+ (1,0) [0|4095] "" Vector__XXX
 
 BO_ 1044 BMS_TX_CMD_21: 6 Vector__XXX
- SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell8 m2 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp1 m6 : 8|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell_Cnt : 4|4@1+ (1,0) [0|15] "" Vector__XXX
  SG_ Cell_Idx M : 0|4@1+ (1,0) [0|4095] "" Vector__XXX
 
 BO_ 1043 BMS_TX_CMD_20: 6 Vector__XXX
- SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell8 m2 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp1 m6 : 8|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell_Cnt : 4|4@1+ (1,0) [0|15] "" Vector__XXX
  SG_ Cell_Idx M : 0|4@1+ (1,0) [0|4095] "" Vector__XXX
 
 BO_ 1042 BMS_TX_CMD_19: 6 Vector__XXX
- SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell8 m2 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp1 m6 : 8|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell_Cnt : 4|4@1+ (1,0) [0|15] "" Vector__XXX
  SG_ Cell_Idx M : 0|4@1+ (1,0) [0|4095] "" Vector__XXX
 
 BO_ 1041 BMS_TX_CMD_18: 6 Vector__XXX
- SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell8 m2 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp1 m6 : 8|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell_Cnt : 4|4@1+ (1,0) [0|15] "" Vector__XXX
  SG_ Cell_Idx M : 0|4@1+ (1,0) [0|4095] "" Vector__XXX
 
 BO_ 1040 BMS_TX_CMD_17: 6 Vector__XXX
- SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell8 m2 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp1 m6 : 8|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell_Cnt : 4|4@1+ (1,0) [0|15] "" Vector__XXX
  SG_ Cell_Idx M : 0|4@1+ (1,0) [0|4095] "" Vector__XXX
 
 BO_ 1039 BMS_TX_CMD_16: 6 Vector__XXX
- SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell8 m2 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp1 m6 : 8|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell_Cnt : 4|4@1+ (1,0) [0|15] "" Vector__XXX
  SG_ Cell_Idx M : 0|4@1+ (1,0) [0|4095] "" Vector__XXX
 
 BO_ 1038 BMS_TX_CMD_15: 6 Vector__XXX
- SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell8 m2 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp1 m6 : 8|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell_Cnt : 4|4@1+ (1,0) [0|15] "" Vector__XXX
  SG_ Cell_Idx M : 0|4@1+ (1,0) [0|4095] "" Vector__XXX
 
 BO_ 1037 BMS_TX_CMD_14: 6 Vector__XXX
- SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell8 m2 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp1 m6 : 8|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell_Cnt : 4|4@1+ (1,0) [0|15] "" Vector__XXX
  SG_ Cell_Idx M : 0|4@1+ (1,0) [0|4095] "" Vector__XXX
 
 BO_ 1036 BMS_TX_CMD_13: 6 Vector__XXX
- SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell8 m2 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp1 m6 : 8|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell_Cnt : 4|4@1+ (1,0) [0|15] "" Vector__XXX
  SG_ Cell_Idx M : 0|4@1+ (1,0) [0|4095] "" Vector__XXX
 
 BO_ 1035 BMS_TX_CMD_12: 6 Vector__XXX
- SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell8 m2 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp1 m6 : 8|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell_Cnt : 4|4@1+ (1,0) [0|15] "" Vector__XXX
  SG_ Cell_Idx M : 0|4@1+ (1,0) [0|4095] "" Vector__XXX
 
@@ -491,288 +491,288 @@ BO_ 1121 BMS_TX_STATE_2: 4 Vector__XXX
  SG_ Dem : 0|32@1+ (1,0) [0|4294970000] "" Vector__XXX
 
 BO_ 1034 BMS_TX_CMD_11: 6 Vector__XXX
- SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell8 m2 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp1 m6 : 8|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell_Cnt : 4|4@1+ (1,0) [0|15] "" Vector__XXX
  SG_ Cell_Idx M : 0|4@1+ (1,0) [0|4095] "" Vector__XXX
 
 BO_ 1033 BMS_TX_CMD_10: 6 Vector__XXX
- SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell8 m2 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp1 m6 : 8|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell_Cnt : 4|4@1+ (1,0) [0|15] "" Vector__XXX
  SG_ Cell_Idx M : 0|4@1+ (1,0) [0|4095] "" Vector__XXX
 
 BO_ 1032 BMS_TX_CMD_9: 6 Vector__XXX
- SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell8 m2 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp1 m6 : 8|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell_Cnt : 4|4@1+ (1,0) [0|15] "" Vector__XXX
  SG_ Cell_Idx M : 0|4@1+ (1,0) [0|4095] "" Vector__XXX
 
 BO_ 1031 BMS_TX_CMD_8: 6 Vector__XXX
- SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell8 m2 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp1 m6 : 8|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell_Cnt : 4|4@1+ (1,0) [0|15] "" Vector__XXX
  SG_ Cell_Idx M : 0|4@1+ (1,0) [0|4095] "" Vector__XXX
 
 BO_ 1030 BMS_TX_CMD_7: 6 Vector__XXX
- SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell8 m2 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp1 m6 : 8|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell_Cnt : 4|4@1+ (1,0) [0|15] "" Vector__XXX
  SG_ Cell_Idx M : 0|4@1+ (1,0) [0|4095] "" Vector__XXX
 
 BO_ 1029 BMS_TX_CMD_6: 6 Vector__XXX
- SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell8 m2 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp1 m6 : 8|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell_Cnt : 4|4@1+ (1,0) [0|15] "" Vector__XXX
  SG_ Cell_Idx M : 0|4@1+ (1,0) [0|4095] "" Vector__XXX
 
 BO_ 1028 BMS_TX_CMD_5: 6 Vector__XXX
- SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell8 m2 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp1 m6 : 8|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell_Cnt : 4|4@1+ (1,0) [0|15] "" Vector__XXX
  SG_ Cell_Idx M : 0|4@1+ (1,0) [0|4095] "" Vector__XXX
 
 BO_ 1027 BMS_TX_CMD_4: 6 Vector__XXX
- SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell8 m2 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp1 m6 : 8|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell_Cnt : 4|4@1+ (1,0) [0|15] "" Vector__XXX
  SG_ Cell_Idx M : 0|4@1+ (1,0) [0|4095] "" Vector__XXX
 
 BO_ 1026 BMS_TX_CMD_3: 6 Vector__XXX
- SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell8 m2 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp1 m6 : 8|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell_Cnt : 4|4@1+ (1,0) [0|15] "" Vector__XXX
  SG_ Cell_Idx M : 0|4@1+ (1,0) [0|4095] "" Vector__XXX
 
 BO_ 1025 BMS_TX_CMD_2: 6 Vector__XXX
- SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell8 m2 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp1 m6 : 8|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell_Cnt : 4|4@1+ (1,0) [0|15] "" Vector__XXX
  SG_ Cell_Idx M : 0|4@1+ (1,0) [0|4095] "" Vector__XXX
 
 BO_ 1024 BMS_TX_CMD_1: 6 Vector__XXX
- SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp4 m6 : 32|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell9 m2 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell6 m1 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell3 m0 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell18 m5 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp3 m6 : 24|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell8 m2 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell5 m1 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell2 m0 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell17 m5 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell14 m4 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell11 m3 : 20|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp2 m6 : 16|8@1+ (1,-40) [-40|140] "" Vector__XXX
- SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ CellTemp1 m6 : 8|8@1+ (1,-40) [-40|140] "" Vector__XXX
+ SG_ Cell7 m2 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell4 m1 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell16 m5 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell13 m4 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell10 m3 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Cell1 m0 : 8|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell_Cnt : 4|4@1+ (1,0) [0|15] "" Vector__XXX
  SG_ Cell_Idx M : 0|4@1+ (1,0) [0|4095] "" Vector__XXX
 
@@ -1016,14 +1016,14 @@ BO_ 3 APPS: 8 PEDAL
  SG_ APPS_1 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 1 COMMAND: 8 TER_CMDS
- SG_ cfgTractionControl m194 : 24|8@1+ (1,0) [0|1] "" Vector__XXX
  SG_ speedLimit m193 : 24|8@1+ (1,0) [1|120] "km/h" Vector__XXX
- SG_ cfgMode m194 : 16|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ cfgTractionControl m194 : 24|8@1+ (1,0) [0|1] "" Vector__XXX
  SG_ trqLimit m193 : 16|8@1+ (1,0) [1|180] "N/m" Vector__XXX
- SG_ VALUE m128 : 8|32@1+ (1,0) [0|1] "" Vector__XXX
- SG_ ONOFF m64 : 8|8@1+ (1,0) [0|1] "" Vector__XXX
- SG_ cfgLimiter m194 : 8|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ cfgMode m194 : 16|8@1+ (1,0) [0|1] "" Vector__XXX
  SG_ kwLimit m193 : 8|8@1+ (1,0) [1|120] "kW" Vector__XXX
+ SG_ cfgLimiter m194 : 8|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ONOFF m64 : 8|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VALUE m128 : 8|32@1+ (1,0) [0|1] "" Vector__XXX
  SG_ CMD M : 0|8@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 4 BPPS: 1 PEDAL
@@ -1130,9 +1130,9 @@ BO_ 517 CHRG_STATUS: 8 CHARGER
  SG_ State : 0|8@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 38 DynamicConfig: 8 ECU
- SG_ speedLimit m1 : 24|8@1+ (1,0) [0|120] "km/h" Vector__XXX
- SG_ trqLimit m0 : 24|8@1+ (1,0) [0|1] "n/m" Vector__XXX
  SG_ kwLimit m2 : 24|8@1+ (1,0) [0|1] "kW" Vector__XXX
+ SG_ trqLimit m0 : 24|8@1+ (1,0) [0|1] "n/m" Vector__XXX
+ SG_ speedLimit m1 : 24|8@1+ (1,0) [0|120] "km/h" Vector__XXX
  SG_ TractionControl : 16|8@1+ (1,0) [0|1] "" Vector__XXX
  SG_ Mode : 8|8@1+ (1,0) [0|1] "" Vector__XXX
  SG_ Limiter M : 0|8@1+ (1,0) [0|1] "" Vector__XXX
@@ -1164,6 +1164,12 @@ BO_ 2147483689 Front_TempsL: 8 FRONT_AXLE
  SG_ TempL : 16|16@1+ (0.1,0) [0|1] "grad" Vector__XXX
  SG_ TempR : 0|16@1+ (0.1,0) [0|1] "grad" Vector__XXX
 
+BO_ 2147483984 REFRI_TEMPS: 8 REFRI
+ SG_ TL_OUT : 30|10@1+ (1,0) [0|1] "C" Vector__XXX
+ SG_ TL_IN : 20|10@1+ (0.1,0) [0|1] "" Vector__XXX
+ SG_ TR_OUT : 10|10@1+ (0.1,0) [0|1] "C" Vector__XXX
+ SG_ TR_IN : 0|10@1+ (0.1,0) [0|1] "C" Vector__XXX
+
 
 
 
@@ -1191,6 +1197,15 @@ CM_ BU_ IMU "TeRs Inertial Measurement Unit";
 CM_ BU_ LVBMS "The LV battery Management System";
 CM_ BU_ ECU "The VCU for TeR Vehicle";
 CM_ BU_ CHARGER "The Control Module for TeR Charger";
+CM_ BU_ STEER "The Steering Input MOdule";
+CM_ BU_ PEDAL "The Drivers Sensor Board";
+CM_ BU_ TER_CMDS "The Command Subsystem For TeR Vehicle";
+CM_ BU_ FRONT_AXLE "The Board for Front axle sensors";
+CM_ BU_ IMU "TeRs Inertial Measurement Unit";
+CM_ BU_ LVBMS "The LV battery Management System";
+CM_ BU_ ECU "The VCU for TeR Vehicle";
+CM_ BU_ CHARGER "The Control Module for TeR Charger";
+CM_ BU_ REFRI "The refrigeration module";
 CM_ BO_ 1552 "NLG5 Status (cycle_time: 100)";
 CM_ SG_ 1552 NLG5_S_AAC "AUX 12 V Automatic Charging Active";
 CM_ SG_ 1552 NLG5_S_L_MC_MAX "Output power limited by maximum mains current capability of NLG5";
@@ -1238,7 +1253,7 @@ CM_ SG_ 1556 NLG5_W_PL_IT "Output power limited by charger internal excessive te
 CM_ SG_ 1556 NLG5_W_C_VOR "Commanded value is out of specified range; max or min applicable value is assumed instead";
 CM_ SG_ 1556 NLG5_W_CM_NA "NLG5 control message not active";
 CM_ SG_ 1556 NLG5_W_OD "LED output driver defective, LEDs can't be controlled by NLG5 anymore. Charging is still possible.";
-CM_ SG_ 1556 NLG5_W_SC_M "Save-Charging-Mode reduces primary current to 3.95 A as long as one of the four internal temperature sensors indicates -18Ãƒâ€šÃ‚Â° C or less";
+CM_ SG_ 1556 NLG5_W_SC_M "Save-Charging-Mode reduces primary current to 3.95 A as long as one of the four internal temperature sensors indicates -18ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â° C or less";
 CM_ SG_ 1556 NLG5_E_C_TX "CAN transmit buffer >127";
 CM_ SG_ 1556 NLG5_E_C_RX "CAN receiver buffer >127";
 CM_ SG_ 1556 NLG5_E_SDT_BT "Emergency shutdown threshold 'Battery Temperature' is exceeded; see ChargeStar help section 'protective features'; error can only be cleared by cycling power ON-OFF-ON";
