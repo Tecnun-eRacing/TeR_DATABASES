@@ -229,6 +229,17 @@ BO_ 2147483984 REFRI_TEMPS: 8 REFRI
    SG_ TL_IN : 20|10@1+ (0.1,0) [0|1] "C" Vector__XXX
    SG_ TL_OUT : 30|10@1+ (0.1,0) [0|1] "C" Vector__XXX
 
+BO_ 2147483699 ECU_CONFIG: 8 ECU
+   SG_ ENTRY M : 0|8@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ SCS_ENABLE m0 : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ R2D_BRAKE m1 : 8|8@1+ (1,0) [0|1] "Bar" Vector__XXX
+   SG_ LIMITER m2 : 8|8@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ DRIVING_MODE m3 : 8|8@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ TRACTION_CONTROL m4 : 8|8@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ TRQ_KP m5 : 8|32@5- (1,0) [0|1] "" Vector__XXX
+   SG_ TRQ_KI m6 : 8|32@5- (1,0) [0|1] "" Vector__XXX
+   SG_ TRQ_KD m7 : 8|32@5- (1,0) [0|1] "" Vector__XXX
+
 CM_ BU_ STEER "The Steering Input MOdule";
 CM_ BU_ PEDAL "The Drivers Sensor Board";
 CM_ BU_ TER_CMDS "The Command Subsystem For TeR Vehicle";
@@ -238,8 +249,29 @@ CM_ BU_ LVBMS "The LV battery Management System";
 CM_ BU_ ECU "The VCU for TeR Vehicle";
 CM_ BU_ CHARGER "The Control Module for TeR Charger";
 CM_ BU_ REFRI "The refrigeration module";
-CM_ BO_ 1 "(0-63)No Args, (64-127)OnOff,(128-191)Value,(192-255)Custom";
-VAL_ 1 CMD 14 "resetBMS" 1 "Calibrate_APPS_min" 2 "Calibrate_APPS_max" 5 "Calibrate_STEER_Leftest" 6 "Calibrate_STEER_Rightest" 8 "discharge" 9 "precharge" 10 "beep" 11 "ready2Drive" 193 "setLimits" 194 "setDynamicConfig" 64 "switchRefri" 65 "switchScs" 0 "charge" 12 "startLog" 13 "endLog" 195 "setTime";
+CM_ BO_ 1 "FUNCTION INDEX";
+CM_ BO_ 2 "RESPONSE of a command";
+CM_ BO_ 2147483699 "ECU CONFIGURATION MESSAGE";
+CM_ SG_ 2147483699 ENTRY "Parameter_Index";
+CM_ SG_ 2147483699 SCS_ENABLE "System_Critical_Enable/Disable";
+CM_ SG_ 2147483699 R2D_BRAKE "Brake_Pressure_Threshold_to_R2D";
+CM_ SG_ 2147483699 LIMITER "Vehicle_Limiter_Mode";
+CM_ SG_ 2147483699 DRIVING_MODE "Torque_distribution_manager";
+CM_ SG_ 2147483699 TRACTION_CONTROL "Traction_Control_System";
+CM_ SG_ 2147483699 TRQ_KP "Proportional_Gain_of_TV";
+CM_ SG_ 2147483699 TRQ_KI "Integral_Gain_of_TV";
+CM_ SG_ 2147483699 TRQ_KD "Derivative_Gain_of_TV";
+BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
+BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
+BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
+BA_DEF_DEF_ "matchingcriteria" 0;
+BA_DEF_DEF_ "filterlabeling" 0;
+BA_ "GenMsgForegroundColor" BO_ 2 "#000000";
+BA_ "GenMsgForegroundColor" BO_ 2147483699 "#000000";
+VAL_ 1 CMD 14 "resetBMS" 1 "Calibrate_APPS_min" 2 "Calibrate_APPS_max" 5 "Calibrate_STEER_Leftest" 6 "Calibrate_STEER_Rightest" 8 "discharge" 9 "precharge" 10 "beep" 11 "ready2Drive" 0 "charge" 12 "startLog" 13 "endLog";
 VAL_ 1 ONOFF 0 "OFF" 1 "ON";
 VAL_ 18 VOLTAGES_OK 0 "FAULT" 1 "OK";
 VAL_ 18 TEMPS_OK 0 "FAULT" 1 "OK";
@@ -251,3 +283,7 @@ VAL_ 517 State 0 "IDLE" 1 "READY" 2 "PRECHARGING" 3 "PRECHARGED" 4 "CHARGING";
 VAL_ 38 Limiter 0 "limitTorque" 1 "limitSpeed" 2 "limitMechPWR" 3 "limitElecPWR";
 VAL_ 38 Mode 0 "Lineal" 1 "basicTorque" 2 "mdsTorque" 3 "Backwards";
 VAL_ 38 TractionControl 0 "OFF" 1 "Basic";
+VAL_ 2147483699 ENTRY 0 "SCS_ENABLE" 1 "R2D_BRAKE_VAL" 2 "LIMITER" 3 "DRIVING_MODE" 4 "TRACTION_CONTROL" 5 "TRQV_KP" 6 "TRQV_KI" 7 "TRQV_KD" 0 "No Description";
+VAL_ 2147483699 LIMITER 0 "TORQUE" 1 "SPEED" 2 "POWER";
+VAL_ 2147483699 DRIVING_MODE 0 "LINEAL" 1 "TORQUE_VECTORING" 0 "No Description";
+VAL_ 2147483699 TRACTION_CONTROL 0 "OFF";
