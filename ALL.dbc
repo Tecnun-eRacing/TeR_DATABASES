@@ -243,6 +243,10 @@ BO_ 2147483985 REFRI_CONFIG: 8 REFRI
  SG_ POWER m0 : 8|8@1+ (1,0) [0|1] "" Vector__XXX
  SG_ ENTRY M : 0|8@1+ (1,0) [0|1] "" Vector__XXX
 
+BO_ 2147483667 LV_INFO: 8 LVBMS
+ SG_ battDuration : 8|12@1+ (0.1,0) [0|1] "min" Vector__XXX
+ SG_ SOC : 0|8@1+ (0.1,0) [0|1] "%" Vector__XXX
+
 BO_ 1552 NLG5_ST: 4 Control
  SG_ NLG5_S_AAC : 31|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ NLG5_S_L_MC_MAX : 16|1@0+ (1,0) [0|1] "" Vector__XXX
@@ -1195,23 +1199,6 @@ CM_ BU_ CHARGER "The Control Module for TeR Charger";
 CM_ BU_ REFRI "The refrigeration module";
 CM_ BO_ 1 "FUNCTION INDEX";
 CM_ BO_ 2 "RESPONSE of a command";
-CM_ BO_ 2147483686 "ECU CONFIGURATION MESSAGE";
-CM_ SG_ 2147483686 TRQ_LIMIT "Max_Torque_Producible_by_Car";
-CM_ SG_ 2147483686 TRQ_KD "Derivative_Gain_of_TV";
-CM_ SG_ 2147483686 TRQ_KI "Integral_Gain_of_TV";
-CM_ SG_ 2147483686 TRQ_KP "Proportional_Gain_of_TV";
-CM_ SG_ 2147483686 TRACTION_CONTROL "Traction_Control_System";
-CM_ SG_ 2147483686 DRIVING_MODE "Torque_distribution_manager";
-CM_ SG_ 2147483686 LIMITER "Vehicle_Limiter_Mode";
-CM_ SG_ 2147483686 R2D_BRAKE "Brake_Pressure_Threshold_to_R2D";
-CM_ SG_ 2147483686 SCS_ENABLE "System_Critical_Enable/Disable";
-CM_ SG_ 2147483686 ENTRY "Parameter_Index";
-CM_ BO_ 2147483985 "Configuration for Refri System";
-CM_ SG_ 2147483985 TARGET_TEMP "Index_of_parameter";
-CM_ SG_ 2147483985 MODE "Index_of_parameter";
-CM_ SG_ 2147483985 INTENSITY "Index_of_parameter";
-CM_ SG_ 2147483985 POWER "Activates_the_main_Relay";
-CM_ SG_ 2147483985 ENTRY "Index_of_parameter";
 CM_ BO_ 1552 "NLG5 Status (cycle_time: 100)";
 CM_ SG_ 1552 NLG5_S_AAC "AUX 12 V Automatic Charging Active";
 CM_ SG_ 1552 NLG5_S_L_MC_MAX "Output power limited by maximum mains current capability of NLG5";
