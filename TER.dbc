@@ -234,7 +234,7 @@ BO_ 2147483686 ECU_CONFIG: 8 ECU
    SG_ TRQ_LIMIT m8 : 8|8@1+ (1,0) [0|1] "NM" Vector__XXX
 
 BO_ 2147483985 REFRI_CONFIG: 8 REFRI
-   SG_ RELAY m0 : 8|8@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ POWER m0 : 8|8@1+ (1,0) [0|1] "" Vector__XXX
    SG_ ENTRY M : 0|8@1+ (1,0) [0|1] "" Vector__XXX
    SG_ INTENSITY m1 : 8|8@1+ (1,0) [0|100] "%" Vector__XXX
    SG_ MODE m2 : 8|8@1+ (1,0) [0|1] "" Vector__XXX
@@ -263,7 +263,7 @@ CM_ SG_ 2147483686 TRQ_KI "Integral_Gain_of_TV";
 CM_ SG_ 2147483686 TRQ_KD "Derivative_Gain_of_TV";
 CM_ SG_ 2147483686 TRQ_LIMIT "Max_Torque_Producible_by_Car";
 CM_ BO_ 2147483985 "Configuration for Refri System";
-CM_ SG_ 2147483985 RELAY "Activates_the_main_Relay";
+CM_ SG_ 2147483985 POWER "Activates_the_main_Relay";
 CM_ SG_ 2147483985 ENTRY "Index_of_parameter";
 CM_ SG_ 2147483985 INTENSITY "Index_of_parameter";
 CM_ SG_ 2147483985 MODE "Index_of_parameter";
@@ -286,5 +286,5 @@ VAL_ 2147483686 ENTRY 0 "SCS_ENABLE" 1 "R2D_BRAKE_VAL" 2 "LIMITER" 3 "DRIVING_MO
 VAL_ 2147483686 LIMITER 0 "TORQUE" 1 "SPEED" 2 "POWER";
 VAL_ 2147483686 DRIVING_MODE 0 "LINEAL" 1 "TORQUE_VECTORING" 0 "No Description";
 VAL_ 2147483686 TRACTION_CONTROL 0 "OFF";
-VAL_ 2147483985 RELAY 0 "OFF" 1 "ON";
+VAL_ 2147483985 POWER 0 "OFF" 1 "ON";
 VAL_ 2147483985 MODE 0 "AUTO" 1 "MANUAL";
