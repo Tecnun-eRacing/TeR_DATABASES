@@ -1191,8 +1191,8 @@ BO_ 2147483986 REFRI_RPM: 8 REFRI
  SG_ L_RPM : 0|16@1+ (1,0) [0|1] "rpm" Vector__XXX
 
 BO_ 2147483690 Rear_Susp: 8 FRONT_AXLE
- SG_ rDisp : 16|16@1+ (0.1,0) [0|1] "mm" Vector__XXX
- SG_ lDisp : 0|16@1+ (0.1,0) [0|1] "mm" Vector__XXX
+ SG_ rDisp : 16|16@1- (0.1,0) [0|1] "mm" Vector__XXX
+ SG_ lDisp : 0|16@1- (0.1,0) [0|1] "mm" Vector__XXX
 
 
 
@@ -1297,6 +1297,7 @@ CM_ SG_ 1816 LAD_D_ParamRq "Diag requested data from host";
 CM_ BO_ 1818 "NLG5 Diag Tx";
 CM_ BO_ 1 "FUNCTION INDEX";
 CM_ BO_ 2 "RESPONSE of a command";
+
 
 
 VAL_ 864 Contactor_4_Req 1 "Contactor ON" 0 "Contactor OFF" ;
