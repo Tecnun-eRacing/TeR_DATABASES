@@ -1194,6 +1194,10 @@ BO_ 2147483690 Rear_Susp: 8 FRONT_AXLE
  SG_ rrDisp : 16|16@1- (0.1,0) [0|1] "mm" Vector__XXX
  SG_ rlDisp : 0|16@1- (0.1,0) [0|1] "mm" Vector__XXX
 
+BO_ 2147483987 REFRI_STATUS: 8 REFRI
+ SG_ MODE : 16|2@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ CURRENT : 0|16@1+ (0.1,0) [0|1] "" Vector__XXX
+
 
 
 
@@ -1299,7 +1303,6 @@ CM_ BO_ 1 "FUNCTION INDEX";
 CM_ BO_ 2 "RESPONSE of a command";
 
 
-
 VAL_ 864 Contactor_4_Req 1 "Contactor ON" 0 "Contactor OFF" ;
 VAL_ 864 Contactor_3_Req 1 "Contactor ON" 0 "Contactor OFF" ;
 VAL_ 864 Contactor_2_Req 1 "Contactor ON" 0 "Contactor OFF" ;
@@ -1326,6 +1329,7 @@ VAL_ 2147483686 ENTRY 0 "SCS_ENABLE" 1 "R2D_BRAKE_VAL" 2 "LIMITER" 3 "DRIVING_MO
 VAL_ 2147483985 MODE 0 "AUTO" 1 "MANUAL" ;
 VAL_ 2147483985 POWER 0 "OFF" 1 "ON" ;
 VAL_ 2147483985 ENTRY 0 "POWER" 1 "INTENSITY" 2 "MODE" 3 "TARGET_TEMP" ;
+VAL_ 2147483987 MODE 0 "AUTO" 1 "MANUAL" ;
 
 
 
