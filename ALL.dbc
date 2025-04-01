@@ -1182,8 +1182,8 @@ BO_ 2147483985 REFRI_CONFIG: 8 REFRI
  SG_ ENTRY M : 0|8@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 2147483667 LV_INFO: 8 LVBMS
- SG_ battDuration : 8|12@1+ (0.1,0) [0|1] "min" Vector__XXX
- SG_ SOC : 0|8@1+ (0.1,0) [0|1] "%" Vector__XXX
+ SG_ battDuration : 12|12@1+ (0.1,0) [0|1] "min" Vector__XXX
+ SG_ SOC : 0|12@1+ (0.1,0) [0|1] "%" Vector__XXX
 
 BO_ 2147483986 REFRI_RPM: 8 REFRI
  SG_ ACCU_RPM : 32|16@1+ (1,0) [0|1] "rpm" Vector__XXX
