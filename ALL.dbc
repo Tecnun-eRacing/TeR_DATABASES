@@ -33,8 +33,24 @@ NS_ :
 
 BS_:
 
-BU_: Control STEER PEDAL TER_CMDS FRONT_AXLE IMU LVBMS ECU CHARGER TireTemps REFRI
+BU_: BOOT Control STEER PEDAL TER_CMDS FRONT_AXLE IMU LVBMS ECU CHARGER TireTemps REFRI
 
+
+BO_ 2147484162 BOOT_TX: 8 BOOT
+ SG_ HEX_SIZE m1 : 40|24@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ HEX_CRC m1 : 8|32@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ NODE_ID : 4|4@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ BOOT_CMD M : 0|4@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 2147484161 BOOT_RX: 8 BOOT
+ SG_ NACK m1 : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ACK m0 : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PERCENT m2 : 4|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ BOOT_CMD M : 0|4@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147484160 BOOT_DATA: 8 BOOT
+ SG_ ADRESS : 32|32@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DATA : 0|32@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 1552 NLG5_ST: 4 Control
  SG_ NLG5_S_AAC : 31|1@0+ (1,0) [0|1] "" Vector__XXX
@@ -1303,6 +1319,14 @@ CM_ BO_ 1 "FUNCTION INDEX";
 CM_ BO_ 2 "RESPONSE of a command";
 
 
+VAL_ 2147484162 HEX_SIZE 0 "" ;
+VAL_ 2147484162 HEX_CRC 0 "" ;
+VAL_ 2147484162 NODE_ID 0 "PEDAL" 1 "REFRI" 2 "LVBMS" 3 "ECU" ;
+VAL_ 2147484162 BOOT_CMD 0 "BOOT_INIT" 1 "TRANSMIT_START" 2 "TRANSMIT_END" 3 "deprecated" ;
+VAL_ 2147484161 NACK 0 "" ;
+VAL_ 2147484161 ACK 0 "" ;
+VAL_ 2147484161 PERCENT 0 "" ;
+VAL_ 2147484161 BOOT_CMD 0 "ACK" 1 "NACK" 2 "PERCENT" ;
 VAL_ 864 Contactor_4_Req 1 "Contactor ON" 0 "Contactor OFF" ;
 VAL_ 864 Contactor_3_Req 1 "Contactor ON" 0 "Contactor OFF" ;
 VAL_ 864 Contactor_2_Req 1 "Contactor ON" 0 "Contactor OFF" ;
