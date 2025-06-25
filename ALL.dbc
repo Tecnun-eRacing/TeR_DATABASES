@@ -134,6 +134,152 @@ BO_ 1816 NLG5_DIAG_RX: 8 Vector__XXX
 BO_ 1818 NLG5_DIAG_TX: 8 Control
  SG_ LAD_D_ParamRp : 7|64@0+ (1,0) [0|0] "" Vector__XXX
 
+BO_ 1400 EMCU_STATE_9_Left: 4 Vector__XXX
+ SG_ Torque_Est_Nm : 16|16@1- (1,0) [-32768|32767] "" Vector__XXX
+ SG_ E2E_P1_CNT : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ E2E_P1_ZERO : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ E2E_P1_CRC : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1399 EMCU_STATE_8_Left: 6 Vector__XXX
+ SG_ Setpoint_App_Q_A : 32|16@1- (0.03125,0) [-1024|1023.97] "" Vector__XXX
+ SG_ Setpoint_App_D_A : 16|16@1- (0.03125,0) [-1024|1023.97] "" Vector__XXX
+ SG_ Torque_Max_Feas_Ndm : 0|16@1- (1,0) [-32768|32767] "" Vector__XXX
+
+BO_ 1398 EMCU_STATE_7_Left: 2 Vector__XXX
+ SG_ Dem : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 1397 EMCU_STATE_6_Left: 8 Vector__XXX
+ SG_ ACBus_Voltage_V : 48|16@1- (1,0) [-32768|32767] "" Vector__XXX
+ SG_ DCBus_Power_W : 32|16@1- (1,0) [-32768|32767] "" Vector__XXX
+ SG_ ACBus_Power_W : 10|16@1- (32.767,0) [-1073710|1073680] "" Vector__XXX
+ SG_ DCBus_Voltage_V : 0|10@1+ (1,0) [0|1023] "" Vector__XXX
+
+BO_ 1396 EMCU_STATE_5_Left: 2 Vector__XXX
+ SG_ PosFb_Src_App : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Ctrl_Mode_App : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Ctrl_Type_App : 3|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Cmd_Src_App : 0|3@1+ (1,0) [0|7] "" Vector__XXX
+
+BO_ 1395 EMCU_STATE_4_Left: 5 Vector__XXX
+ SG_ EMachine_Temp_2_degC : 32|8@1- (1,80) [-48|207] "" Vector__XXX
+ SG_ EMachine_Temp_1_degC : 24|8@1- (1,80) [-48|207] "" Vector__XXX
+ SG_ PwrStg_Temp_degC : 16|8@1- (1,80) [-48|207] "" Vector__XXX
+ SG_ Board_2_Temp_degC : 8|8@1- (1,80) [-48|207] "" Vector__XXX
+ SG_ Board_1_Temp_degC : 0|8@1- (1,80) [-48|207] "" Vector__XXX
+
+BO_ 1394 EMCU_STATE_3_Left: 8 Vector__XXX
+ SG_ EMachine_Speed_erpm : 44|20@1- (1,0) [-524288|524287] "" Vector__XXX
+ SG_ Volt_Modulus_permil : 32|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ Current_Q_A : 16|16@1- (0.03125,0) [-1024|1023.97] "" Vector__XXX
+ SG_ Current_D_A : 0|16@1- (0.03125,0) [-1024|1023.97] "" Vector__XXX
+
+BO_ 1393 EMCU_STATE_2_Left: 3 Vector__XXX
+ SG_ App_State_App : 17|7@1+ (1,0) [0|127] "" Vector__XXX
+ SG_ EMCtrl_FOC_BitState : 9|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PwrStg_BitState : 0|9@1+ (1,0) [0|511] "" Vector__XXX
+
+BO_ 1392 EMCU_STATE_1_Left: 5 Vector__XXX
+ SG_ CPU_Load : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Uptime_ms : 0|32@1+ (1,0) [0|2704] "" Vector__XXX
+
+BO_ 1653 EMCU_SETPOINT_6_Left: 2 Vector__XXX
+ SG_ PWM_Freq_KHz : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 1651 EMCU_SETPOINT_4_Left: 4 Vector__XXX
+ SG_ Speed_erpm : 0|32@1- (1,0) [-2147480000|2147480000] "" Vector__XXX
+
+BO_ 1650 EMCU_SETPOINT_3_Left: 4 Vector__XXX
+ SG_ Torque_Nm_Req : 16|16@1- (1,0) [-32768|32767] "" Vector__XXX
+ SG_ E2E_P1_CNT : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ E2E_P1_ZERO : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ E2E_P1_CRC : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1649 EMCU_SETPOINT_2_Left: 4 Vector__XXX
+ SG_ Current_Q_A_Req : 16|16@1- (0.03125,0) [-1024|1023.97] "" Vector__XXX
+ SG_ Current_D_A_Req : 0|16@1- (0.03125,0) [-1024|1023.97] "" Vector__XXX
+
+BO_ 1648 EMCU_SETPOINT_1_Left: 3 Vector__XXX
+ SG_ App_State_Req : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ E2E_P1_CNT : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ E2E_P1_ZERO : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ E2E_P1_CRC : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2147485552 EMCU_DEBUG_1_Left: 2 Vector__XXX
+ SG_ EMachine_Angle_fract16 : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 1376 EMCU_STATE_1_Right: 5 Vector__XXX
+ SG_ CPU_Load : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Uptime_ms : 0|32@1+ (1,0) [0|2704] "" Vector__XXX
+
+BO_ 1377 EMCU_STATE_2_Right: 3 Vector__XXX
+ SG_ App_State_App : 17|7@1+ (1,0) [0|127] "" Vector__XXX
+ SG_ EMCtrl_FOC_BitState : 9|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PwrStg_BitState : 0|9@1+ (1,0) [0|511] "" Vector__XXX
+
+BO_ 1378 EMCU_STATE_3_Right: 8 Vector__XXX
+ SG_ EMachine_Speed_erpm : 44|20@1- (1,0) [-524288|524287] "" Vector__XXX
+ SG_ Volt_Modulus_permil : 32|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ Current_Q_A : 16|16@1- (0.03125,0) [-1024|1023.97] "" Vector__XXX
+ SG_ Current_D_A : 0|16@1- (0.03125,0) [-1024|1023.97] "" Vector__XXX
+
+BO_ 1379 EMCU_STATE_4_Right: 5 Vector__XXX
+ SG_ EMachine_Temp_2_degC : 32|8@1- (1,80) [-48|207] "" Vector__XXX
+ SG_ EMachine_Temp_1_degC : 24|8@1- (1,80) [-48|207] "" Vector__XXX
+ SG_ PwrStg_Temp_degC : 16|8@1- (1,80) [-48|207] "" Vector__XXX
+ SG_ Board_2_Temp_degC : 8|8@1- (1,80) [-48|207] "" Vector__XXX
+ SG_ Board_1_Temp_degC : 0|8@1- (1,80) [-48|207] "" Vector__XXX
+
+BO_ 1380 EMCU_STATE_5_Right: 2 Vector__XXX
+ SG_ PosFb_Src_App : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Ctrl_Mode_App : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Ctrl_Type_App : 3|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Cmd_Src_App : 0|3@1+ (1,0) [0|7] "" Vector__XXX
+
+BO_ 1381 EMCU_STATE_6_Right: 8 Vector__XXX
+ SG_ ACBus_Voltage_V : 48|16@1- (1,0) [-32768|32767] "" Vector__XXX
+ SG_ DCBus_Power_W : 32|16@1- (1,0) [-32768|32767] "" Vector__XXX
+ SG_ ACBus_Power_W : 10|16@1- (32.767,0) [-1073710|1073680] "" Vector__XXX
+ SG_ DCBus_Voltage_V : 0|10@1+ (1,0) [0|1023] "" Vector__XXX
+
+BO_ 1382 EMCU_STATE_7_Right: 2 Vector__XXX
+ SG_ Dem : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 1383 EMCU_STATE_8_Right: 6 Vector__XXX
+ SG_ Setpoint_App_Q_A : 32|16@1- (0.03125,0) [-1024|1023.97] "" Vector__XXX
+ SG_ Setpoint_App_D_A : 16|16@1- (0.03125,0) [-1024|1023.97] "" Vector__XXX
+ SG_ Torque_Max_Feas_Ndm : 0|16@1- (1,0) [-32768|32767] "" Vector__XXX
+
+BO_ 1384 EMCU_STATE_9_Right: 4 Vector__XXX
+ SG_ Torque_Est_Nm : 16|16@1- (1,0) [-32768|32767] "" Vector__XXX
+ SG_ E2E_P1_CNT : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ E2E_P1_ZERO : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ E2E_P1_CRC : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1632 EMCU_SETPOINT_1_Right: 3 Vector__XXX
+ SG_ App_State_Req : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ E2E_P1_CNT : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ E2E_P1_ZERO : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ E2E_P1_CRC : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1633 EMCU_SETPOINT_2_Right: 4 Vector__XXX
+ SG_ Current_Q_A_Req : 16|16@1- (0.03125,0) [-1024|1023.97] "" Vector__XXX
+ SG_ Current_D_A_Req : 0|16@1- (0.03125,0) [-1024|1023.97] "" Vector__XXX
+
+BO_ 1634 EMCU_SETPOINT_3_Right: 4 Vector__XXX
+ SG_ Torque_Nm_Req : 16|16@1- (1,0) [-32768|32767] "" Vector__XXX
+ SG_ E2E_P1_CNT : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ E2E_P1_ZERO : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ E2E_P1_CRC : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1635 EMCU_SETPOINT_4_Right: 4 Vector__XXX
+ SG_ Speed_erpm : 0|32@1- (1,0) [-2147480000|2147480000] "" Vector__XXX
+
+BO_ 1637 EMCU_SETPOINT_6_Right: 2 Vector__XXX
+ SG_ PWM_Freq_KHz : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 2147485536 EMCU_DEBUG_1_Right: 2 Vector__XXX
+ SG_ EMachine_Angle_fract16 : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+
 BO_ 1047 BMS_TX_CMD_24: 6 Vector__XXX
  SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
@@ -1029,6 +1175,10 @@ BO_ 2147483686 ECU_CONFIG: 8 ECU
  SG_ ENTRY M : 0|8@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 2147483985 REFRI_CONFIG: 8 REFRI
+ SG_ POWER_ACCU m4 : 8|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ INTENSITY_ACCU m5 : 8|8@1+ (1,0) [0|100] "%" Vector__XXX
+ SG_ MODE_ACCU m6 : 8|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TARGET_TEMP_ACCU m7 : 8|8@1+ (1,0) [0|1] "ÂºC" Vector__XXX
  SG_ TARGET_TEMP m3 : 8|8@1+ (1,0) [0|1] "ÂºC" Vector__XXX
  SG_ MODE m2 : 8|8@1+ (1,0) [0|1] "" Vector__XXX
  SG_ INTENSITY m1 : 8|8@1+ (1,0) [0|100] "%" Vector__XXX
@@ -1051,152 +1201,6 @@ BO_ 2147483690 Rear_Susp: 8 FRONT_AXLE
 BO_ 2147483987 REFRI_STATUS: 8 REFRI
  SG_ MODE : 16|2@1+ (1,0) [0|1] "" Vector__XXX
  SG_ CURRENT : 0|16@1+ (0.1,0) [0|1] "" Vector__XXX
-
-BO_ 1400 EMCU_STATE_9_Left: 4 Vector__XXX
- SG_ Torque_Est_Nm : 16|16@1- (1,0) [-32768|32767] "" Vector__XXX
- SG_ E2E_P1_CNT : 12|4@1+ (1,0) [0|15] "" Vector__XXX
- SG_ E2E_P1_ZERO : 8|4@1+ (1,0) [0|15] "" Vector__XXX
- SG_ E2E_P1_CRC : 0|8@1+ (1,0) [0|255] "" Vector__XXX
-
-BO_ 1399 EMCU_STATE_8_Left: 6 Vector__XXX
- SG_ Setpoint_App_Q_A : 32|16@1- (0.03125,0) [-1024|1023.97] "" Vector__XXX
- SG_ Setpoint_App_D_A : 16|16@1- (0.03125,0) [-1024|1023.97] "" Vector__XXX
- SG_ Torque_Max_Feas_Ndm : 0|16@1- (1,0) [-32768|32767] "" Vector__XXX
-
-BO_ 1398 EMCU_STATE_7_Left: 2 Vector__XXX
- SG_ Dem : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
-
-BO_ 1397 EMCU_STATE_6_Left: 8 Vector__XXX
- SG_ ACBus_Voltage_V : 48|16@1- (1,0) [-32768|32767] "" Vector__XXX
- SG_ DCBus_Power_W : 32|16@1- (1,0) [-32768|32767] "" Vector__XXX
- SG_ ACBus_Power_W : 10|16@1- (32.767,0) [-1073710|1073680] "" Vector__XXX
- SG_ DCBus_Voltage_V : 0|10@1+ (1,0) [0|1023] "" Vector__XXX
-
-BO_ 1396 EMCU_STATE_5_Left: 2 Vector__XXX
- SG_ PosFb_Src_App : 12|4@1+ (1,0) [0|15] "" Vector__XXX
- SG_ Ctrl_Mode_App : 8|4@1+ (1,0) [0|15] "" Vector__XXX
- SG_ Ctrl_Type_App : 3|3@1+ (1,0) [0|7] "" Vector__XXX
- SG_ Cmd_Src_App : 0|3@1+ (1,0) [0|7] "" Vector__XXX
-
-BO_ 1395 EMCU_STATE_4_Left: 5 Vector__XXX
- SG_ EMachine_Temp_2_degC : 32|8@1- (1,80) [-48|207] "" Vector__XXX
- SG_ EMachine_Temp_1_degC : 24|8@1- (1,80) [-48|207] "" Vector__XXX
- SG_ PwrStg_Temp_degC : 16|8@1- (1,80) [-48|207] "" Vector__XXX
- SG_ Board_2_Temp_degC : 8|8@1- (1,80) [-48|207] "" Vector__XXX
- SG_ Board_1_Temp_degC : 0|8@1- (1,80) [-48|207] "" Vector__XXX
-
-BO_ 1394 EMCU_STATE_3_Left: 8 Vector__XXX
- SG_ EMachine_Speed_erpm : 44|20@1- (1,0) [-524288|524287] "" Vector__XXX
- SG_ Volt_Modulus_permil : 32|12@1+ (1,0) [0|4095] "" Vector__XXX
- SG_ Current_Q_A : 16|16@1- (0.03125,0) [-1024|1023.97] "" Vector__XXX
- SG_ Current_D_A : 0|16@1- (0.03125,0) [-1024|1023.97] "" Vector__XXX
-
-BO_ 1393 EMCU_STATE_2_Left: 3 Vector__XXX
- SG_ App_State_App : 17|7@1+ (1,0) [0|127] "" Vector__XXX
- SG_ EMCtrl_FOC_BitState : 9|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ PwrStg_BitState : 0|9@1+ (1,0) [0|511] "" Vector__XXX
-
-BO_ 1392 EMCU_STATE_1_Left: 5 Vector__XXX
- SG_ CPU_Load : 32|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ Uptime_ms : 0|32@1+ (1,0) [0|2704] "" Vector__XXX
-
-BO_ 1653 EMCU_SETPOINT_6_Left: 2 Vector__XXX
- SG_ PWM_Freq_KHz : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
-
-BO_ 1651 EMCU_SETPOINT_4_Left: 4 Vector__XXX
- SG_ Speed_erpm : 0|32@1- (1,0) [-2147480000|2147480000] "" Vector__XXX
-
-BO_ 1650 EMCU_SETPOINT_3_Left: 4 Vector__XXX
- SG_ Torque_Nm_Req : 16|16@1- (1,0) [-32768|32767] "" Vector__XXX
- SG_ E2E_P1_CNT : 12|4@1+ (1,0) [0|15] "" Vector__XXX
- SG_ E2E_P1_ZERO : 8|4@1+ (1,0) [0|15] "" Vector__XXX
- SG_ E2E_P1_CRC : 0|8@1+ (1,0) [0|255] "" Vector__XXX
-
-BO_ 1649 EMCU_SETPOINT_2_Left: 4 Vector__XXX
- SG_ Current_Q_A_Req : 16|16@1- (0.03125,0) [-1024|1023.97] "" Vector__XXX
- SG_ Current_D_A_Req : 0|16@1- (0.03125,0) [-1024|1023.97] "" Vector__XXX
-
-BO_ 1648 EMCU_SETPOINT_1_Left: 3 Vector__XXX
- SG_ App_State_Req : 16|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ E2E_P1_CNT : 12|4@1+ (1,0) [0|15] "" Vector__XXX
- SG_ E2E_P1_ZERO : 8|4@1+ (1,0) [0|15] "" Vector__XXX
- SG_ E2E_P1_CRC : 0|8@1+ (1,0) [0|255] "" Vector__XXX
-
-BO_ 2147485552 EMCU_DEBUG_1_Left: 2 Vector__XXX
- SG_ EMachine_Angle_fract16 : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
-
-BO_ 1376 EMCU_STATE_1_Right: 5 Vector__XXX
- SG_ CPU_Load : 32|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ Uptime_ms : 0|32@1+ (1,0) [0|2704] "" Vector__XXX
-
-BO_ 1377 EMCU_STATE_2_Right: 3 Vector__XXX
- SG_ App_State_App : 17|7@1+ (1,0) [0|127] "" Vector__XXX
- SG_ EMCtrl_FOC_BitState : 9|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ PwrStg_BitState : 0|9@1+ (1,0) [0|511] "" Vector__XXX
-
-BO_ 1378 EMCU_STATE_3_Right: 8 Vector__XXX
- SG_ EMachine_Speed_erpm : 44|20@1- (1,0) [-524288|524287] "" Vector__XXX
- SG_ Volt_Modulus_permil : 32|12@1+ (1,0) [0|4095] "" Vector__XXX
- SG_ Current_Q_A : 16|16@1- (0.03125,0) [-1024|1023.97] "" Vector__XXX
- SG_ Current_D_A : 0|16@1- (0.03125,0) [-1024|1023.97] "" Vector__XXX
-
-BO_ 1379 EMCU_STATE_4_Right: 5 Vector__XXX
- SG_ EMachine_Temp_2_degC : 32|8@1- (1,80) [-48|207] "" Vector__XXX
- SG_ EMachine_Temp_1_degC : 24|8@1- (1,80) [-48|207] "" Vector__XXX
- SG_ PwrStg_Temp_degC : 16|8@1- (1,80) [-48|207] "" Vector__XXX
- SG_ Board_2_Temp_degC : 8|8@1- (1,80) [-48|207] "" Vector__XXX
- SG_ Board_1_Temp_degC : 0|8@1- (1,80) [-48|207] "" Vector__XXX
-
-BO_ 1380 EMCU_STATE_5_Right: 2 Vector__XXX
- SG_ PosFb_Src_App : 12|4@1+ (1,0) [0|15] "" Vector__XXX
- SG_ Ctrl_Mode_App : 8|4@1+ (1,0) [0|15] "" Vector__XXX
- SG_ Ctrl_Type_App : 3|3@1+ (1,0) [0|7] "" Vector__XXX
- SG_ Cmd_Src_App : 0|3@1+ (1,0) [0|7] "" Vector__XXX
-
-BO_ 1381 EMCU_STATE_6_Right: 8 Vector__XXX
- SG_ ACBus_Voltage_V : 48|16@1- (1,0) [-32768|32767] "" Vector__XXX
- SG_ DCBus_Power_W : 32|16@1- (1,0) [-32768|32767] "" Vector__XXX
- SG_ ACBus_Power_W : 10|16@1- (32.767,0) [-1073710|1073680] "" Vector__XXX
- SG_ DCBus_Voltage_V : 0|10@1+ (1,0) [0|1023] "" Vector__XXX
-
-BO_ 1382 EMCU_STATE_7_Right: 2 Vector__XXX
- SG_ Dem : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
-
-BO_ 1383 EMCU_STATE_8_Right: 6 Vector__XXX
- SG_ Setpoint_App_Q_A : 32|16@1- (0.03125,0) [-1024|1023.97] "" Vector__XXX
- SG_ Setpoint_App_D_A : 16|16@1- (0.03125,0) [-1024|1023.97] "" Vector__XXX
- SG_ Torque_Max_Feas_Ndm : 0|16@1- (1,0) [-32768|32767] "" Vector__XXX
-
-BO_ 1384 EMCU_STATE_9_Right: 4 Vector__XXX
- SG_ Torque_Est_Nm : 16|16@1- (1,0) [-32768|32767] "" Vector__XXX
- SG_ E2E_P1_CNT : 12|4@1+ (1,0) [0|15] "" Vector__XXX
- SG_ E2E_P1_ZERO : 8|4@1+ (1,0) [0|15] "" Vector__XXX
- SG_ E2E_P1_CRC : 0|8@1+ (1,0) [0|255] "" Vector__XXX
-
-BO_ 1632 EMCU_SETPOINT_1_Right: 3 Vector__XXX
- SG_ App_State_Req : 16|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ E2E_P1_CNT : 12|4@1+ (1,0) [0|15] "" Vector__XXX
- SG_ E2E_P1_ZERO : 8|4@1+ (1,0) [0|15] "" Vector__XXX
- SG_ E2E_P1_CRC : 0|8@1+ (1,0) [0|255] "" Vector__XXX
-
-BO_ 1633 EMCU_SETPOINT_2_Right: 4 Vector__XXX
- SG_ Current_Q_A_Req : 16|16@1- (0.03125,0) [-1024|1023.97] "" Vector__XXX
- SG_ Current_D_A_Req : 0|16@1- (0.03125,0) [-1024|1023.97] "" Vector__XXX
-
-BO_ 1634 EMCU_SETPOINT_3_Right: 4 Vector__XXX
- SG_ Torque_Nm_Req : 16|16@1- (1,0) [-32768|32767] "" Vector__XXX
- SG_ E2E_P1_CNT : 12|4@1+ (1,0) [0|15] "" Vector__XXX
- SG_ E2E_P1_ZERO : 8|4@1+ (1,0) [0|15] "" Vector__XXX
- SG_ E2E_P1_CRC : 0|8@1+ (1,0) [0|255] "" Vector__XXX
-
-BO_ 1635 EMCU_SETPOINT_4_Right: 4 Vector__XXX
- SG_ Speed_erpm : 0|32@1- (1,0) [-2147480000|2147480000] "" Vector__XXX
-
-BO_ 1637 EMCU_SETPOINT_6_Right: 2 Vector__XXX
- SG_ PWM_Freq_KHz : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
-
-BO_ 2147485536 EMCU_DEBUG_1_Right: 2 Vector__XXX
- SG_ EMachine_Angle_fract16 : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
 
 BO_ 2147484162 BOOT_TX: 8 BOOT
  SG_ HEX_SIZE m1 : 40|24@1+ (1,0) [0|3] "" Vector__XXX
@@ -1344,9 +1348,12 @@ VAL_ 2147483686 DRIVING_MODE 0 "LINEAL" 1 "TORQUE_VECTORING" ;
 VAL_ 2147483686 LIMITER 0 "TORQUE" 1 "SPEED" 2 "POWER" ;
 VAL_ 2147483686 SCS_ENABLE 0 "DISABLE" 1 "ENABLE" ;
 VAL_ 2147483686 ENTRY 0 "SCS_ENABLE" 1 "R2D_BRAKE_VAL" 2 "LIMITER" 3 "DRIVING_MODE" 4 "TRACTION_CONTROL" 5 "TRQV_KP" 6 "TRQV_KI" 7 "TRQV_KD" 8 "TRQ_LIMIT" ;
+VAL_ 2147483985 POWER_ACCU 0 "OFF" 1 "ON" ;
+VAL_ 2147483985 MODE_ACCU 0 "AUTO" 1 "MANUAL" ;
+VAL_ 2147483985 TARGET_TEMP_ACCU 0 "" ;
 VAL_ 2147483985 MODE 0 "AUTO" 1 "MANUAL" ;
 VAL_ 2147483985 POWER 0 "OFF" 1 "ON" ;
-VAL_ 2147483985 ENTRY 0 "POWER" 1 "INTENSITY" 2 "MODE" 3 "TARGET_TEMP" ;
+VAL_ 2147483985 ENTRY 0 "POWER" 1 "INTENSITY" 2 "MODE" 3 "TARGET_TEMP" 4 "POWER_ACCU" 5 "INTENSITY_ACCU" 6 "MODE_ACCU" 7 "TARGET_TEMP_ACCU" ;
 VAL_ 2147483987 MODE 0 "AUTO" 1 "MANUAL" ;
 VAL_ 2147484162 HEX_SIZE 0 "" ;
 VAL_ 2147484162 HEX_CRC 0 "" ;
