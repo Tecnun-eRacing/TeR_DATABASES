@@ -750,10 +750,6 @@ BO_ 1128 BMS_TX_STATE_9: 3 Vector__XXX
    SG_ Cell_Temp_Min_degC : 8|8@1- (1,0) [-128|127] "" Vector__XXX
    SG_ Cell_Temp_Avg_degC : 0|8@1- (1,0) [-128|127] "" Vector__XXX
 
-BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
-BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
-BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
-BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
 VAL_ 864 App_State_Req 1 "POST" 2 "SLEEP" 3 "READY" 4 "HV_PRECHARGE" 5 "HV_READY" 6 "HV_CHARGING" 7 "HV_SHUTDOWN" 8 "FAULT";
 VAL_ 864 Contactor_1_Req 1 "Contactor ON" 0 "Contactor OFF";
 VAL_ 864 Contactor_2_Req 1 "Contactor ON" 0 "Contactor OFF";

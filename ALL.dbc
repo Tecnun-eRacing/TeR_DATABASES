@@ -280,6 +280,14 @@ BO_ 1637 EMCU_SETPOINT_6_Right: 2 Vector__XXX
 BO_ 2147485536 EMCU_DEBUG_1_Right: 2 Vector__XXX
  SG_ EMachine_Angle_fract16 : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
 
+BO_ 1136 BMS_TX_STATE_11: 8 Vector__XXX
+ SG_ SOH : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ SOC : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1129 BMS_TX_STATE_10: 4 Vector__XXX
+ SG_ IMD_Res_Neg_kohm : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ IMD_Res_Pos_kohm : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+
 BO_ 1047 BMS_TX_CMD_24: 6 Vector__XXX
  SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
  SG_ Cell15 m4 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
@@ -619,22 +627,28 @@ BO_ 1035 BMS_TX_CMD_12: 6 Vector__XXX
  SG_ Cell_Idx M : 0|4@1+ (1,0) [0|4095] "" Vector__XXX
 
 BO_ 864 BMS_RX_CTRL_1: 8 Vector__XXX
- SG_ BalancingThreshold : 13|12@1+ (1,405) [405|4500] "" Vector__XXX
- SG_ Balance_Auth : 12|1@1- (1,0) [0|1] "" Vector__XXX
- SG_ Contactor_4_Req : 11|1@1- (1,0) [0|1] "" Vector__XXX
- SG_ Contactor_3_Req : 10|1@1- (1,0) [0|1] "" Vector__XXX
- SG_ Contactor_2_Req : 9|1@1- (1,0) [0|1] "" Vector__XXX
- SG_ Contactor_1_Req : 8|1@1- (1,0) [0|1] "" Vector__XXX
- SG_ App_State_Req : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ IMD_En : 41|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ BalancingThreshold : 29|12@1+ (1,405) [405|4500] "" Vector__XXX
+ SG_ Balance_Auth : 28|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ Contactor_4_Req : 27|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ Contactor_3_Req : 26|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ Contactor_2_Req : 25|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ Contactor_1_Req : 24|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ DEM_Clear : 23|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ App_State_Req : 16|7@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ E2E_P1_ZERO : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ E2E_P1_CNT : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ E2E_P1_CRC : 0|8@1+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 1120 BMS_TX_STATE_1: 7 Vector__XXX
  SG_ CPU_2_Load : 48|8@1+ (1,0) [0|255] "" Vector__XXX
  SG_ CPU_1_Load : 40|8@1+ (1,0) [0|255] "" Vector__XXX
  SG_ CPU_0_Load : 32|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ Uptime_ms : 0|32@1+ (1,0) [0|4294970000] "" Vector__XXX
+ SG_ Uptime_ms : 0|32@1+ (1,0) [0|4294970000.0] "" Vector__XXX
 
 BO_ 1121 BMS_TX_STATE_2: 4 Vector__XXX
- SG_ Dem : 0|32@1+ (1,0) [0|4294970000] "" Vector__XXX
+ SG_ DEM_Present : 15|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ DEM_Code : 0|15@1+ (1,0) [0|32767] "" Vector__XXX
 
 BO_ 1034 BMS_TX_CMD_11: 6 Vector__XXX
  SG_ Cell12 m3 : 32|12@1+ (1,405) [405|4500] "" Vector__XXX
@@ -926,13 +940,13 @@ BO_ 1123 BMS_TX_STATE_4: 8 Vector__XXX
  SG_ Power_W : 48|16@1- (1,0) [0|0] "" Vector__XXX
  SG_ Volt_Synth_x10_V : 32|16@1+ (0.03052,0) [0|2000.13] "" Vector__XXX
  SG_ Curr_2_x10_A : 16|16@1- (0.03052,0) [-1000.08|1000.05] "" Vector__XXX
- SG_ Curr_1_x10_A : 0|16@1- (0.03052,0) [-1000.07936|1000.04884] "" Vector__XXX
+ SG_ Curr_1_x10_A : 0|16@1- (0.03052,0) [-1000.08|1000.05] "" Vector__XXX
 
 BO_ 1124 BMS_TX_STATE_5: 8 Vector__XXX
  SG_ Volt_KL30 : 48|16@1+ (1,0) [-32768|32767] "" Vector__XXX
- SG_ Volt_3_x10_V : 32|16@1- (0.03052,0) [-1000.07936|1000.04884] "" Vector__XXX
- SG_ Volt_2_x10_V : 16|16@1- (0.03052,0) [-1000.07936|1000.04884] "" Vector__XXX
- SG_ Volt_1_x10_V : 0|16@1- (0.03052,0) [-1000.07936|1000.04884] "" Vector__XXX
+ SG_ Volt_3_x10_V : 32|16@1- (0.03052,0) [-1000.08|1000.05] "" Vector__XXX
+ SG_ Volt_2_x10_V : 16|16@1- (0.03052,0) [-1000.08|1000.05] "" Vector__XXX
+ SG_ Volt_1_x10_V : 0|16@1- (0.03052,0) [-1000.08|1000.05] "" Vector__XXX
 
 BO_ 1125 BMS_TX_STATE_6: 7 Vector__XXX
  SG_ Cell_Max_Idx : 45|9@1+ (1,0) [0|511] "" Vector__XXX
@@ -942,32 +956,36 @@ BO_ 1125 BMS_TX_STATE_6: 7 Vector__XXX
  SG_ Cell_Min_V : 0|12@1+ (1,405) [405|4500] "" Vector__XXX
 
 BO_ 1122 BMS_TX_STATE_3: 2 Vector__XXX
+ SG_ HVIL_State : 12|4@1+ (1,0) [0|0] "" Vector__XXX
  SG_ DIO4_State : 11|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ DIO3_State : 10|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ DIO2_State : 9|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ DIO1_State : 8|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ App_State_App : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ App_State_App : 0|7@1+ (1,0) [0|255] "" Vector__XXX
 
-BO_ 1126 BMS_TX_STATE_7: 7 Vector__XXX
- SG_ Cell_Temp_Min_degC : 48|8@1- (1,-40) [-168|87] "" Vector__XXX
- SG_ Cell_Temp_Max_degC : 40|8@1- (1,-40) [-168|87] "" Vector__XXX
- SG_ Cell_Temp_Avg_degC : 32|8@1- (1,-40) [-168|87] "" Vector__XXX
- SG_ Temp_4_degC : 24|8@1+ (1,-40) [0|255] "" Vector__XXX
- SG_ Temp_3_degC : 16|8@1+ (1,-40) [0|255] "" Vector__XXX
- SG_ Temp_2_degC : 8|8@1+ (1,-40) [0|255] "" Vector__XXX
- SG_ Temp_1_degC : 0|8@1+ (1,-40) [-40|215] "" Vector__XXX
+BO_ 1126 BMS_TX_STATE_7: 4 Vector__XXX
+ SG_ Temp_4_degC : 24|8@1+ (1,-50) [-50|205] "" Vector__XXX
+ SG_ Temp_3_degC : 16|8@1+ (1,-50) [-50|205] "" Vector__XXX
+ SG_ Temp_2_degC : 8|8@1+ (1,-50) [-50|205] "" Vector__XXX
+ SG_ Temp_1_degC : 0|8@1+ (1,-50) [-50|205] "" Vector__XXX
 
 BO_ 1127 BMS_TX_STATE_8: 8 Vector__XXX
- SG_ Diag_Temp_3_Undertemp : 9|1@1- (1,0) [0|1] "" Vector__XXX
- SG_ Diag_Temp_3_Overtemp : 8|1@1- (1,0) [0|1] "" Vector__XXX
- SG_ Diag_Temp_2_Undertemp : 7|1@1- (1,0) [0|1] "" Vector__XXX
- SG_ Diag_Temp_2_Overtemp : 6|1@1- (1,0) [0|1] "" Vector__XXX
- SG_ Diag_Temp_1_Undertemp : 5|1@1- (1,0) [0|1] "" Vector__XXX
- SG_ Diag_Temp_1_Overtemp : 4|1@1- (1,0) [0|1] "" Vector__XXX
- SG_ Diag_Cell_Undervolt : 3|1@1- (1,0) [0|1] "" Vector__XXX
- SG_ Diag_Cell_Undertemp : 2|1@1- (1,0) [0|1] "" Vector__XXX
- SG_ Diag_Cell_Overvolt : 1|1@1- (1,0) [0|1] "" Vector__XXX
- SG_ Diag_Cell_Overtemp : 0|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ Diag_Temp_3_Undertemp : 15|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ Diag_Temp_3_Overtemp : 14|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ Diag_Temp_2_Undertemp : 13|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ Diag_Temp_2_Overtemp : 12|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ Diag_Temp_1_Undertemp : 11|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ Diag_Temp_1_Overtemp : 10|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ Diag_Cell_Undervolt : 9|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ Diag_Cell_Undertemp : 8|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ Diag_Cell_Overvolt : 7|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ Diag_Cell_Overtemp : 6|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ FB6 : 5|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FB5 : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FB4 : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FB3 : 2|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ FB2 : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ FB1 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 1128 BMS_TX_STATE_9: 3 Vector__XXX
  SG_ Cell_Temp_Max_degC : 16|8@1- (1,0) [-128|127] "" Vector__XXX
@@ -1328,12 +1346,12 @@ VAL_ 864 Contactor_4_Req 1 "Contactor ON" 0 "Contactor OFF" ;
 VAL_ 864 Contactor_3_Req 1 "Contactor ON" 0 "Contactor OFF" ;
 VAL_ 864 Contactor_2_Req 1 "Contactor ON" 0 "Contactor OFF" ;
 VAL_ 864 Contactor_1_Req 1 "Contactor ON" 0 "Contactor OFF" ;
-VAL_ 864 App_State_Req 9 "Reset" 8 "Fault" 7 "HV Shutdown" 6 "HV Charging" 5 "HV Ready" 4 "HV Precharge" 3 "Ready" 2 "Sleep" 1 "Self Test" 0 "Uninit" ;
+VAL_ 864 App_State_Req 1 "POST" 2 "SLEEP" 3 "READY" 4 "HV_PRECHARGE" 5 "HV_READY" 6 "HV_CHARGING" 7 "HV_SHUTDOWN" 8 "FAULT" ;
 VAL_ 1122 DIO4_State 1 "HIGH" 0 "LOW" ;
 VAL_ 1122 DIO3_State 1 "HIGH" 0 "LOW" ;
 VAL_ 1122 DIO2_State 1 "HIGH" 0 "LOW" ;
 VAL_ 1122 DIO1_State 1 "HIGH" 0 "LOW" ;
-VAL_ 1122 App_State_App 9 "RESET" 8 "Fault" 7 "HV Shutdown" 6 "HV Charging" 5 "HV Ready" 4 "HV Precharge" 3 "Ready" 2 "Sleep" 1 "Self Test" 0 "Uninit" ;
+VAL_ 1122 App_State_App 12 "Off" 11 "Shutdown" 10 "Fault Hard" 9 "Fault Soft" 8 "HV Shutdown" 7 "HV Charge" 6 "HV Precharge Charge" 5 "HV Ready" 4 "HV Precharge Ready" 3 "Standby" 2 "POST" 1 "Init" 0 "Unknown" ;
 VAL_ 1 ONOFF 0 "OFF" 1 "ON" ;
 VAL_ 1 CMD 14 "resetBMS" 1 "Calibrate_APPS_min" 2 "Calibrate_APPS_max" 5 "Calibrate_STEER_Leftest" 6 "Calibrate_STEER_Rightest" 8 "discharge" 9 "precharge" 10 "beep" 11 "ready2Drive" 0 "charge" 12 "startLog" 13 "endLog" ;
 VAL_ 18 CURRENT_OK 0 "FAULT" 1 "OK" ;
