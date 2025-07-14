@@ -232,7 +232,7 @@ BO_ 2147483686 ECU_CONFIG: 8 ECU
    SG_ TRQ_KI m6 : 8|32@5- (1,0) [0|1] "" Vector__XXX
    SG_ TRQ_KD m7 : 8|32@5- (1,0) [0|1] "" Vector__XXX
    SG_ TRQ_LIMIT m8 : 8|8@1+ (1,0) [0|1] "NM" Vector__XXX
-   SG_ EEPROM_CLEAR m9 : 8|8@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ EEPROM m9 : 8|8@1+ (1,0) [0|1] "" Vector__XXX
    SG_ FLAP_L_OFFSET m10 : 8|16@1- (1,0) [0|1] "º" Vector__XXX
    SG_ FLAP_R_OFFSET m11 : 8|16@1- (1,0) [0|1] "º" Vector__XXX
    SG_ FLAP_L_REVERSE m12 : 8|8@1+ (1,0) [0|1] "0" Vector__XXX
@@ -279,6 +279,10 @@ CM_ BU_ CHARGER "The Control Module for TeR Charger";
 CM_ BU_ REFRI "The refrigeration module";
 CM_ BO_ 1 "FUNCTION INDEX";
 CM_ BO_ 2 "RESPONSE of a command";
+BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
+BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
+BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
 VAL_ 1 CMD 14 "resetBMS" 1 "Calibrate_APPS_min" 2 "Calibrate_APPS_max" 5 "Calibrate_STEER_Leftest" 6 "Calibrate_STEER_Rightest" 8 "discharge" 9 "precharge" 10 "beep" 11 "ready2Drive" 0 "charge" 12 "startLog" 13 "endLog";
 VAL_ 1 ONOFF 0 "OFF" 1 "ON";
 VAL_ 18 VOLTAGES_OK 0 "FAULT" 1 "OK";
@@ -293,7 +297,7 @@ VAL_ 2147483686 SCS_ENABLE 0 "DISABLE" 1 "ENABLE";
 VAL_ 2147483686 LIMITER 0 "TORQUE" 1 "SPEED" 2 "POWER";
 VAL_ 2147483686 DRIVING_MODE 0 "LINEAL" 1 "TORQUE_VECTORING";
 VAL_ 2147483686 TRACTION_CONTROL 0 "OFF";
-VAL_ 2147483686 EEPROM_CLEAR 1 "CLEAR_AND_DEFAULT";
+VAL_ 2147483686 EEPROM 1 "CLEAR_AND_DEFAULT" 2 "READ";
 VAL_ 2147483686 FLAP_L_REVERSE 0 "NORMAL" 1 "REVERSE";
 VAL_ 2147483686 FLAP_R_REVERSE 0 "NORMAL" 1 "REVERSE";
 VAL_ 2147483686 FLAP_ENABLE 0 "OFF" 1 "ON";
