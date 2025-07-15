@@ -104,8 +104,8 @@ BO_ 1 COMMAND: 8 TER_CMDS
  SG_ kwLimit m193 : 8|8@1+ (1,0) [1|120] "kW" Vector__XXX
  SG_ CMD M : 0|8@1+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 4 BPPS: 1 PEDAL
- SG_ BPPS : 0|8@1+ (1,0) [0|1] "Bar" Vector__XXX
+BO_ 4 BPPS: 8 PEDAL
+ SG_ BPPS : 0|16@1+ (0.01,0) [0|1] "Bar" Vector__XXX
 
 BO_ 5 STEER: 8 PEDAL
  SG_ ANGLE : 0|16@1- (1,0) [-360|360] "Grad" Vector__XXX
