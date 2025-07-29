@@ -241,7 +241,7 @@ BO_ 2147483686 ECU_CONFIG: 8 ECU
    SG_ FLAP_PEDAL_SETPOINT m15 : 8|8@1+ (1,0) [0|1] "0" Vector__XXX
    SG_ REGEN_ENABLE m17 : 8|8@1+ (1,0) [0|1] "" Vector__XXX
    SG_ REGEN_MAX_TRQ m18 : 8|8@1+ (1,0) [0|1] "" Vector__XXX
-   SG_ REGEN_MAX_CELL_VOLT m19 : 8|16@1+ (0.01,0) [0|1] "" Vector__XXX
+   SG_ REGEN_MAX_CELL_VOLT m19 : 8|16@1+ (1,0) [0|1] "mV" Vector__XXX
    SG_ REGEN_MAX_CELL_TEMP m20 : 8|8@1+ (1,0) [0|1] "" Vector__XXX
    SG_ REGEN_MAX_CURRENT m21 : 8|8@1+ (1,0) [0|1] "" Vector__XXX
    SG_ REGEN_THR_SPEED m22 : 8|8@1+ (1,0) [0|1] "" Vector__XXX
@@ -285,6 +285,10 @@ CM_ BU_ CHARGER "The Control Module for TeR Charger";
 CM_ BU_ REFRI "The refrigeration module";
 CM_ BO_ 1 "FUNCTION INDEX";
 CM_ BO_ 2 "RESPONSE of a command";
+BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
+BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
+BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
 VAL_ 1 CMD 14 "resetBMS" 1 "Calibrate_APPS_min" 2 "Calibrate_APPS_max" 5 "Calibrate_STEER_Leftest" 6 "Calibrate_STEER_Rightest" 8 "discharge" 9 "precharge" 10 "beep" 11 "ready2Drive" 0 "charge" 12 "startLog" 13 "endLog";
 VAL_ 1 ONOFF 0 "OFF" 1 "ON";
 VAL_ 18 VOLTAGES_OK 0 "FAULT" 1 "OK";
