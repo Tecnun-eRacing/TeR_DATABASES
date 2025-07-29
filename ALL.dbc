@@ -1141,9 +1141,9 @@ BO_ 1127 BMS_TX_STATE_8: 8 Vector__XXX
  SG_ FB1 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 1128 BMS_TX_STATE_9: 3 Vector__XXX
- SG_ Cell_Temp_Max_degC : 16|8@1- (1,0) [-128|127] "" Vector__XXX
- SG_ Cell_Temp_Min_degC : 8|8@1- (1,0) [-128|127] "" Vector__XXX
- SG_ Cell_Temp_Avg_degC : 0|8@1- (1,0) [-128|127] "" Vector__XXX
+ SG_ Cell_Temp_Min_degC : 16|8@1- (1,-50) [-128|127] "" Vector__XXX
+ SG_ Cell_Temp_Max_degC : 8|8@1- (1,-50) [-128|127] "" Vector__XXX
+ SG_ Cell_Temp_Avg_degC : 0|8@1- (1,-50) [-128|127] "" Vector__XXX
 
 BO_ 1129 BMS_TX_STATE_10: 4 Vector__XXX
  SG_ IMD_Res_Neg_kohm : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
