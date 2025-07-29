@@ -738,9 +738,9 @@ BO_ 1127 BMS_TX_STATE_8: 8 Vector__XXX
    SG_ FB6 : 5|1@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 1128 BMS_TX_STATE_9: 3 Vector__XXX
-   SG_ Cell_Temp_Avg_degC : 0|8@1- (1,0) [-128|127] "" Vector__XXX
-   SG_ Cell_Temp_Max_degC : 16|8@1- (1,0) [-128|127] "" Vector__XXX
-   SG_ Cell_Temp_Min_degC : 8|8@1- (1,0) [-128|127] "" Vector__XXX
+   SG_ Cell_Temp_Avg_degC : 0|8@1- (1,-50) [-128|127] "" Vector__XXX
+   SG_ Cell_Temp_Max_degC : 8|8@1- (1,-50) [-128|127] "" Vector__XXX
+   SG_ Cell_Temp_Min_degC : 16|8@1- (1,-50) [-128|127] "" Vector__XXX
 
 BO_ 1129 BMS_TX_STATE_10: 4 Vector__XXX
    SG_ IMD_Res_Neg_kohm : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
@@ -750,6 +750,14 @@ BO_ 1136 BMS_TX_STATE_11: 8 Vector__XXX
    SG_ SOC : 0|8@1+ (1,0) [0|255] "" Vector__XXX
    SG_ SOH : 8|8@1+ (1,0) [0|255] "" Vector__XXX
 
+BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
+BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_DEF_ "GenMsgBackgroundColor" "#fcfcfc";
+BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
+BA_DEF_DEF_ "matchingcriteria" 0;
+BA_DEF_DEF_ "filterlabeling" 0;
 VAL_ 864 App_State_Req 1 "INIT" 2 "POST" 3 "STANDBY" 4 "HV_READY_PRECHARGE" 5 "HV_READY" 6 "HV_CHARGE_PRECHARGE" 7 "HV_CHARGE" 8 "HV_SHUTDOWN" 9 "SOFTFAULT" 10 "HARDFAULT";
 VAL_ 864 Contactor_1_Req 1 "Contactor ON" 0 "Contactor OFF";
 VAL_ 864 Contactor_2_Req 1 "Contactor ON" 0 "Contactor OFF";
