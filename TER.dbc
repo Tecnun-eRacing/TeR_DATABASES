@@ -278,6 +278,10 @@ BO_ 1020 rlTemp: 8 TireTemps
    SG_ TW3 : 39|16@0- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
    SG_ TW4 : 55|16@0- (0.1,0) [-3276.8|3276.7] "" Vector__XXX
 
+BO_ 43 TV_DEBUG: 8 ECU
+   SG_ yaw_ref : 0|16@1- (0.01,0) [0|1] "º" Vector__XXX
+   SG_ delta_trq : 16|8@1- (1,0) [0|1] "Nm" Vector__XXX
+
 CM_ BU_ STEER "The Steering Input MOdule";
 CM_ BU_ PEDAL "The Drivers Sensor Board";
 CM_ BU_ TER_CMDS "The Command Subsystem For TeR Vehicle";
@@ -289,6 +293,12 @@ CM_ BU_ CHARGER "The Control Module for TeR Charger";
 CM_ BU_ REFRI "The refrigeration module";
 CM_ BO_ 1 "FUNCTION INDEX";
 CM_ BO_ 2 "RESPONSE of a command";
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG";
+BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
+BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
+BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
+BA_ "GenMsgForegroundColor" BO_ 43 "#000000";
 VAL_ 1 CMD 14 "resetBMS" 1 "Calibrate_APPS_min" 2 "Calibrate_APPS_max" 5 "Calibrate_STEER_Leftest" 6 "Calibrate_STEER_Rightest" 8 "discharge" 9 "precharge" 10 "beep" 11 "ready2Drive" 0 "charge" 12 "startLog" 13 "endLog";
 VAL_ 1 ONOFF 0 "OFF" 1 "ON";
 VAL_ 2 CODE 1 "OK" 2 "ERROR" 3 "INVALID_STATE" 4 "OUT_OF_RANGE";
