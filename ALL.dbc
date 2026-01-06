@@ -1239,6 +1239,9 @@ CM_ BU_ CHARGER "The Control Module for TeR Charger";
 CM_ BU_ REFRI "The refrigeration module";
 CM_ BO_ 1 "FUNCTION INDEX";
 CM_ BO_ 2 "RESPONSE of a command";
+
+
+
 VAL_ 864 Contactor_4_Req 1 "Contactor ON" 0 "Contactor OFF" ;
 VAL_ 864 Contactor_3_Req 1 "Contactor ON" 0 "Contactor OFF" ;
 VAL_ 864 Contactor_2_Req 1 "Contactor ON" 0 "Contactor OFF" ;
@@ -1253,9 +1256,6 @@ VAL_ 514 HEX_SIZE 0 "" ;
 VAL_ 514 HEX_CRC 0 "" ;
 VAL_ 514 NODE_ID 0 "PEDAL" 1 "REFRI" 2 "LVBMS" 3 "ECU" 4 "STEER" ;
 VAL_ 514 BOOT_CMD 0 "BOOT_INIT" 1 "TRANSMIT_START" 2 "TRANSMIT_END" 3 "deprecated" ;
-VAL_ 513 NACK 0 "" ;
-VAL_ 513 ACK 0 "" ;
-VAL_ 513 PERCENT 0 "" ;
 VAL_ 513 BOOT_CMD 0 "ACK" 1 "NACK" 2 "PERCENT" ;
 VAL_ 1 ONOFF 0 "OFF" 1 "ON" ;
 VAL_ 1 CMD 14 "resetBMS" 1 "Calibrate_APPS_min" 2 "Calibrate_APPS_max" 5 "Calibrate_STEER_Leftest" 6 "Calibrate_STEER_Rightest" 8 "discharge" 9 "precharge" 10 "beep" 11 "ready2Drive" 0 "charge" 12 "startLog" 13 "endLog" ;
