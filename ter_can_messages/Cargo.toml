@@ -1,0 +1,10 @@
+[package]
+name = "ter_can_messages"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+[build-dependencies]
+bindgen = "0.71.0"
+can-dbc = "8.0.0"
