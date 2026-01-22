@@ -8,3 +8,4 @@ edition = "2024"
 [build-dependencies]
 bindgen = "0.71.0"
 can-dbc = "8.0.0"
+cc = "1.2.53"
