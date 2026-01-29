@@ -1181,13 +1181,13 @@ BO_ 1281 DV_driving_dynamics_2: 6 DV_DATA
  SG_ Acceleration_lateral : 16|16@1- (0.00195313,0) [0|1] "" Vector__XXX
  SG_ Acceleration_longitudinal : 0|16@1- (0.00195313,0) [0|1] "m/s2" Vector__XXX
 
-BO_ 0 NMT_node_control: 8 RES
+BO_ 0 RES_NMT_node_control: 8 RES
  SG_ adressed_node_id : 8|8@1+ (1,0) [0|1] "" Vector__XXX
  SG_ requested_state : 0|8@1+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 145 Sync: 8 RES
+BO_ 145 RES_Sync: 8 RES
 
-BO_ 401 PDO_tx: 8 RES
+BO_ 401 RES_PDO_tx: 8 RES
  SG_ race_mode : 63|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ pre_alarm_radio : 62|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ radio_quality : 48|8@1+ (1,0) [0|1] "" Vector__XXX
@@ -1196,40 +1196,40 @@ BO_ 401 PDO_tx: 8 RES
  SG_ K2 : 1|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ E_STOP_1 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 529 PDO_rx: 8 RES
+BO_ 529 RES_PDO_rx: 8 RES
 
-BO_ 1425 SDO_tx: 8 RES
+BO_ 1425 RES_SDO_tx: 8 RES
 
-BO_ 1553 SDO_rx: 8 RES
+BO_ 1553 RES_SDO_rx: 8 RES
 
-BO_ 1809 NMT_node_monitoring: 1 RES
+BO_ 1809 RES_NMT_node_monitoring: 1 RES
  SG_ data_byte : 0|8@1+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 2037 LSS_tx: 8 RES
+BO_ 2037 RES_LSS_tx: 8 RES
 
-BO_ 2038 LSS_rx: 8 RES
+BO_ 2038 RES_LSS_rx: 8 RES
 
-BO_ 2147483768 set_duty: 8 STEER_ACTUATOR
+BO_ 2147483768 steer_actuator_set_duty: 8 STEER_ACTUATOR
  SG_ actuator_duty_cycle : 7|32@0+ (1e-05,0) [0|1] "" Vector__XXX
 
-BO_ 2147484024 set_current_loop: 8 STEER_ACTUATOR
+BO_ 2147484024 steer_actuator_set_current_loop: 8 STEER_ACTUATOR
  SG_ actuator_current_loop : 7|32@0- (0.001,0) [0|1] "" Vector__XXX
 
-BO_ 2147484280 set_current_brake: 8 STEER_ACTUATOR
+BO_ 2147484280 steer_actuator_set_current_brake: 8 STEER_ACTUATOR
  SG_ actuator_current_brake : 7|32@0- (0.001,0) [0|1] "" Vector__XXX
 
-BO_ 2147484536 set_speed: 8 STEER_ACTUATOR
+BO_ 2147484536 steer_actuator_set_speed: 8 STEER_ACTUATOR
  SG_ actuator_speed : 7|32@0- (1,0) [-100000|100000] "erpms" Vector__XXX
 
-BO_ 2147484792 set_position: 8 STEER_ACTUATOR
+BO_ 2147484792 steer_actuator_set_position: 8 STEER_ACTUATOR
  SG_ actuator_position : 7|32@0- (0.0001,0) [-360000000.0|360000000.0] "" Vector__XXX
 
-BO_ 2147485304 set_position_speed_loop: 8 STEER_ACTUATOR
+BO_ 2147485304 steer_actuator_set_position_spee: 8 STEER_ACTUATOR
  SG_ actuator_acceleration_loop : 55|16@0+ (10,0) [0|1] "" Vector__XXX
  SG_ actuator_speed_loop : 39|16@0+ (10,0) [0|1] "" Vector__XXX
  SG_ actuator_position_loop : 7|32@0- (0.0001,0) [0|1] "" Vector__XXX
 
-BO_ 2147494264 actuator_status: 8 STEER_ACTUATOR
+BO_ 2147494264 steer_actuator_status: 8 STEER_ACTUATOR
  SG_ error_code : 63|8@0+ (1,0) [0|1] "" Vector__XXX
  SG_ temperature : 55|8@0- (1,0) [0|1] "" Vector__XXX
  SG_ current : 39|16@0- (0.01,0) [0|1] "" Vector__XXX
@@ -1313,8 +1313,6 @@ CM_ BU_ RES "Remote Emergency System Message Definition";
 CM_ BU_ ASB "Autonomous System Brake board";
 CM_ BO_ 1 "FUNCTION INDEX";
 CM_ BO_ 2 "RESPONSE of a command";
-
-
 VAL_ 864 Contactor_4_Req 1 "Contactor ON" 0 "Contactor OFF" ;
 VAL_ 864 Contactor_3_Req 1 "Contactor ON" 0 "Contactor OFF" ;
 VAL_ 864 Contactor_2_Req 1 "Contactor ON" 0 "Contactor OFF" ;
