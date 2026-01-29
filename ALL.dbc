@@ -33,7 +33,7 @@ NS_ :
 
 BS_:
 
-BU_: BOOT STEER PEDAL TER_CMDS FRONT_AXLE IMU LVBMS ECU CHARGER TireTemps REFRI PC PS10750_20
+BU_: BOOT STEER PEDAL TER_CMDS FRONT_AXLE IMU LVBMS ECU CHARGER TireTemps REFRI DV_DATA RES STEER_ACTUATOR ASB PC PS10750_20
 
 
 BO_ 864 BMS_RX_CTRL_1: 8 Vector__XXX
@@ -957,7 +957,6 @@ BO_ 16 LV_VOLTAGES: 8 LVBMS
  SG_ V1 : 0|10@1+ (0.01,0) [0|1] "V" Vector__XXX
 
 BO_ 17 LV_TEMPS: 6 LVBMS
- SG_ T3 : 32|16@1+ (0.1,0) [0|1] "Grad" Vector__XXX
  SG_ T2 : 16|16@1+ (0.1,0) [0|1] "Grad" Vector__XXX
  SG_ T1 : 0|16@1+ (0.1,0) [0|1] "Grad" Vector__XXX
 
@@ -977,10 +976,6 @@ BO_ 18 LV_STATUS: 8 LVBMS
 BO_ 19 LV_INFO: 8 LVBMS
  SG_ battDuration : 12|12@1+ (1,0) [0|1] "min" Vector__XXX
  SG_ SOC : 0|12@1+ (0.1,0) [0|1] "%" Vector__XXX
-
-BO_ 35 Front_Susp: 8 FRONT_AXLE
- SG_ flDisp : 16|16@1- (0.1,0) [0|1] "mm" Vector__XXX
- SG_ frDisp : 0|16@1- (0.1,0) [0|1] "mm" Vector__XXX
 
 BO_ 36 Front_TempsR: 8 FRONT_AXLE
  SG_ TempL : 16|16@1+ (0.1,0) [0|1] "grad" Vector__XXX
@@ -1052,58 +1047,58 @@ BO_ 42 Rear_Susp: 8 FRONT_AXLE
  SG_ rrDisp : 16|16@1- (0.1,0) [0|1] "mm" Vector__XXX
  SG_ rlDisp : 0|16@1- (0.1,0) [0|1] "mm" Vector__XXX
 
-BO_ 277 Front_RPM: 8 FRONT_AXLE
+BO_ 20 Front_RPM: 8 FRONT_AXLE
  SG_ RPM_R : 16|16@1+ (1,0) [0|1] "" Vector__XXX
  SG_ RPM_L : 0|16@1+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 278 Front_V: 8 FRONT_AXLE
+BO_ 21 Front_V: 8 FRONT_AXLE
  SG_ vx_av : 24|12@1+ (0.01,0) [0|1] "" Vector__XXX
  SG_ vx_r : 12|12@1+ (0.01,0) [0|1] "" Vector__XXX
  SG_ vx_l : 0|12@1+ (0.01,0) [0|1] "" Vector__XXX
 
-BO_ 279 YPR: 8 IMU
+BO_ 22 YPR: 8 IMU
  SG_ YAW : 40|20@1- (0.01,0) [0|1] "" Vector__XXX
  SG_ ROLL : 20|20@1- (0.01,0) [0|1] "" Vector__XXX
  SG_ PITCH : 0|20@1- (0.01,0) [0|1] "" Vector__XXX
 
-BO_ 280 AngRate: 8 IMU
+BO_ 23 AngRate: 8 IMU
  SG_ Yaw_Rate_z : 40|20@1- (0.001,0) [0|1] "" Vector__XXX
  SG_ Pitch_Rate_y : 20|20@1- (0.001,0) [0|1] "" Vector__XXX
  SG_ Roll_Rate_x : 0|20@1- (0.001,0) [0|1] "" Vector__XXX
 
-BO_ 281 GPS_Lat_Long: 8 IMU
+BO_ 24 GPS_Lat_Long: 8 IMU
  SG_ Longitude : 32|32@1- (1e-07,0) [0|1] "" Vector__XXX
  SG_ Latitude : 0|32@1- (1e-07,0) [0|1] "" Vector__XXX
 
-BO_ 288 GPS_Altitude_Pres: 8 IMU
+BO_ 25 GPS_Altitude_Pres: 8 IMU
  SG_ Barometric_Pressure : 32|16@1- (1e-07,0) [0|1] "" Vector__XXX
  SG_ Altidude : 0|32@1- (1e-07,0) [0|1] "" Vector__XXX
 
-BO_ 289 Accel: 8 IMU
+BO_ 26 Accel: 8 IMU
  SG_ a_z : 32|16@1- (0.001,0) [0|1] "" Vector__XXX
  SG_ a_y : 16|16@1- (0.001,0) [0|1] "" Vector__XXX
  SG_ a_x : 0|16@1- (0.001,0) [0|1] "" Vector__XXX
 
-BO_ 290 Mag: 8 IMU
+BO_ 27 Mag: 8 IMU
  SG_ Heading : 0|16@1- (0.01,0) [0|1] "" Vector__XXX
 
-BO_ 291 VelBody: 8 IMU
+BO_ 28 VelBody: 8 IMU
  SG_ v_z : 32|16@1- (0.001,0) [0|1] "" Vector__XXX
  SG_ v_y : 16|16@1- (0.001,0) [0|1] "" Vector__XXX
  SG_ v_x : 0|16@1- (0.001,0) [0|1] "" Vector__XXX
 
-BO_ 292 ImuStatus: 8 IMU
+BO_ 29 ImuStatus: 8 IMU
  SG_ VelU : 32|16@1- (0.001,0) [0|1] "" Vector__XXX
  SG_ PosU : 16|16@1- (0.001,0) [0|1] "" Vector__XXX
  SG_ Status : 0|16@1- (1,0) [0|1] "" Vector__XXX
 
-BO_ 336 REFRI_TEMPS: 8 REFRI
+BO_ 30 REFRI_TEMPS: 8 REFRI
  SG_ TL_OUT : 30|10@1+ (0.1,0) [0|1] "C" Vector__XXX
  SG_ TL_IN : 20|10@1+ (0.1,0) [0|1] "C" Vector__XXX
  SG_ TR_OUT : 10|10@1+ (0.1,0) [0|1] "C" Vector__XXX
  SG_ TR_IN : 0|10@1+ (0.1,0) [0|1] "C" Vector__XXX
 
-BO_ 337 REFRI_CONFIG: 8 REFRI
+BO_ 31 REFRI_CONFIG: 8 REFRI
  SG_ TARGET_TEMP_ACCU m7 : 8|8@1+ (1,0) [0|1] "ÂºC" Vector__XXX
  SG_ TARGET_TEMP m3 : 8|8@1+ (1,0) [0|1] "ÂºC" Vector__XXX
  SG_ POWER_ACCU m4 : 8|8@1+ (1,0) [0|1] "" Vector__XXX
@@ -1114,21 +1109,23 @@ BO_ 337 REFRI_CONFIG: 8 REFRI
  SG_ INTENSITY m1 : 8|8@1+ (1,0) [0|100] "%" Vector__XXX
  SG_ ENTRY M : 0|8@1+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 338 REFRI_RPM: 8 REFRI
+BO_ 32 REFRI_RPM: 8 REFRI
  SG_ ACCU_RPM : 32|16@1+ (1,0) [0|1] "rpm" Vector__XXX
  SG_ R_RPM : 16|16@1+ (1,0) [0|1] "rpm" Vector__XXX
  SG_ L_RPM : 0|16@1+ (1,0) [0|1] "rpm" Vector__XXX
 
-BO_ 339 REFRI_STATUS: 8 REFRI
+BO_ 33 REFRI_STATUS: 8 REFRI
  SG_ MODE : 16|2@1+ (1,0) [0|1] "" Vector__XXX
  SG_ CURRENT : 0|16@1+ (0.1,0) [0|1] "" Vector__XXX
 
-BO_ 517 CHRG_STATUS: 8 CHARGER
- SG_ SL : 26|1@1+ (1,0) [0|1] "A" Vector__XXX
- SG_ IMD : 25|1@1+ (1,0) [0|1] "A" Vector__XXX
- SG_ AMS : 24|1@1+ (1,0) [0|1] "A" Vector__XXX
- SG_ Current : 18|6@1+ (1,0) [0|1] "A" Vector__XXX
- SG_ Voltage : 8|10@1+ (1,0) [0|1] "V" Vector__XXX
+BO_ 48 CHRG_STATUS: 8 CHARGER
+ SG_ AMS : 50|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ IMD : 49|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SL : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Curve : 40|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Mode : 32|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Current : 24|8@1+ (0.1,0) [0|1] "" Vector__XXX
+ SG_ Voltage : 8|16@1+ (1,0) [0|1] "V" Vector__XXX
  SG_ State : 0|8@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 1008 flTemp: 8 TireTemps
@@ -1159,35 +1156,109 @@ BO_ 43 TV_DEBUG: 8 ECU
  SG_ delta_trq : 16|8@1- (1,0) [0|1] "Nm" Vector__XXX
  SG_ yaw_ref : 0|16@1- (0.01,0) [0|1] "deg" Vector__XXX
 
-BO_ 0 Send_Object: 8 PC
- SG_ Send_Coil_DC_Output m405 : 31|16@0+ (1,0) [0|0] "" Vector__XXX
- SG_ Send_Coil_Remote_On_Off m402 : 31|16@0+ (1,0) [0|0] "" Vector__XXX
- SG_ Send_Power m502 : 31|16@0+ (0.095368887,0) [0|5100] "W" Vector__XXX
- SG_ Send_Voltage m500 : 31|16@0+ (0.014305333,0) [0|765] "V" Vector__XXX
- SG_ Send_Current m501 : 31|16@0+ (0.000381476,0) [0|20.4] "A" Vector__XXX
- SG_ Send_Protection_OCP m553 : 31|16@0+ (0.000381476,0) [0|22] "A" Vector__XXX
- SG_ Send_Protection_OPP m556 : 31|16@0+ (0.095368887,0) [0|5500] "W" Vector__XXX
- SG_ Send_Protection_OVP m550 : 31|16@0+ (0.014305333,0) [0|825] "V" Vector__XXX
- SG_ Send_Limit_Umax m9000 : 31|16@0+ (0.014305333,0) [0|765] "V" Vector__XXX
- SG_ Send_Limit_Umin m9001 : 31|16@0+ (0.014305333,0) [0|765] "V" Vector__XXX
- SG_ Send_Limit_Pmax m9004 : 31|16@0+ (0.095368887,0) [0|5100] "W" Vector__XXX
- SG_ Send_Limit_Imax m9002 : 31|16@0+ (0.000381476,0) [0|20.4] "A" Vector__XXX
- SG_ Send_Limit_Imin m9003 : 31|16@0+ (0.000381476,0) [0|20.4] "A" Vector__XXX
- SG_ Send_Coil_Ack_Alarms m411 : 31|16@0+ (1,0) [0|0] "" Vector__XXX
- SG_ Send_Coil_AI_REM_SB_Action m418 : 31|16@0+ (1,0) [0|0] "" Vector__XXX
- SG_ Send_Coil_AI_REM_SB_Level m417 : 31|16@0+ (1,0) [0|0] "" Vector__XXX
- SG_ Send_Coil_AI_VREF m416 : 31|16@0+ (1,0) [0|0] "" Vector__XXX
- SG_ Send_Coil_DC_After_PF_Alarm m407 : 31|16@0+ (1,0) [0|0] "" Vector__XXX
- SG_ Send_Coil_DC_After_Power_On m408 : 31|16@0+ (1,0) [0|0] "" Vector__XXX
- SG_ Send_Coil_Restart m410 : 31|16@0+ (1,0) [0|0] "" Vector__XXX
- SG_ Send_MS_Coil_Enable_MS m653 : 31|16@0+ (1,0) [0|0] "" Vector__XXX
- SG_ Send_MS_Coil_Init_MS m654 : 31|16@0+ (1,0) [0|0] "" Vector__XXX
- SG_ Send_MS_Coil_Link_Mode m650 : 31|16@0+ (1,0) [0|0] "" Vector__XXX
- SG_ Send_Coil_DC_After_Remote m425 : 31|16@0+ (1,0) [0|0] "" Vector__XXX
- SG_ Send_MS_Coil_Termination m666 : 31|16@0+ (1,0) [0|0] "" Vector__XXX
- SG_ Send_MS_Coil_Termination_BIAS m667 : 31|16@0+ (1,0) [0|0] "" Vector__XXX
- SG_ Byte_Value_0x01 : 23|8@0+ (1,0) [1|1] "" Vector__XXX
- SG_ Send_Mux M : 7|16@0+ (1,0) [0|0] ""  PS10750_20
+BO_ 1280 DV_driving_dynamics_1: 8 DV_DATA
+ SG_ Motor_moment_target : 56|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Motor_moment_actual : 48|8@1+ (1,0) [0|1] "%" Vector__XXX
+ SG_ Brake_hydr_target : 40|8@1+ (1,0) [0|1] "Âº" Vector__XXX
+ SG_ Brake_hydr_actual : 32|8@1+ (1,0) [0|1] "%" Vector__XXX
+ SG_ Steering_angle_target : 24|8@1- (0.5,0) [0|1] "Âº" Vector__XXX
+ SG_ Steering_angle_actual : 16|8@1- (0.5,0) [0|1] "" Vector__XXX
+ SG_ Speed_target : 8|8@1+ (1,0) [0|1] "km/h" Vector__XXX
+ SG_ Speed_actual : 0|8@1+ (1,0) [0|1] "km/h" Vector__XXX
+
+BO_ 1283 DV_system_status: 5 DV_DATA
+ SG_ Cones_count_all : 23|17@1+ (1,0) [0|130000] "" Vector__XXX
+ SG_ Cones_count_actual : 15|8@1+ (1,0) [0|256] "" Vector__XXX
+ SG_ Lap_counter : 11|4@1+ (1,0) [0|16] "" Vector__XXX
+ SG_ ASB_redundancy_state : 9|2@1+ (1,0) [0|6] "" Vector__XXX
+ SG_ Steering_state : 8|1@1+ (1,0) [0|6] "" Vector__XXX
+ SG_ AMI_state : 5|3@1+ (1,0) [0|6] "" Vector__XXX
+ SG_ AS_EBS_state : 3|2@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ AS_status : 0|3@1+ (1,0) [0|5] "" Vector__XXX
+
+BO_ 1281 DV_driving_dynamics_2: 6 DV_DATA
+ SG_ Yaw_rate : 32|16@1+ (0.0078125,0) [0|1] "Âº/s" Vector__XXX
+ SG_ Acceleration_lateral : 16|16@1- (0.00195313,0) [0|1] "" Vector__XXX
+ SG_ Acceleration_longitudinal : 0|16@1- (0.00195313,0) [0|1] "m/s2" Vector__XXX
+
+BO_ 0 NMT_node_control: 8 RES
+ SG_ adressed_node_id : 8|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ requested_state : 0|8@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 145 Sync: 8 RES
+
+BO_ 401 PDO_tx: 8 RES
+ SG_ race_mode : 63|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ pre_alarm_radio : 62|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ radio_quality : 48|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ E_STOP_2 : 31|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ K3 : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ K2 : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ E_STOP_1 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 529 PDO_rx: 8 RES
+
+BO_ 1425 SDO_tx: 8 RES
+
+BO_ 1553 SDO_rx: 8 RES
+
+BO_ 1809 NMT_node_monitoring: 1 RES
+ SG_ data_byte : 0|8@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2037 LSS_tx: 8 RES
+
+BO_ 2038 LSS_rx: 8 RES
+
+BO_ 2147483768 set_duty: 8 STEER_ACTUATOR
+ SG_ actuator_duty_cycle : 7|32@0+ (1e-05,0) [0|1] "" Vector__XXX
+
+BO_ 2147484024 set_current_loop: 8 STEER_ACTUATOR
+ SG_ actuator_current_loop : 7|32@0- (0.001,0) [0|1] "" Vector__XXX
+
+BO_ 2147484280 set_current_brake: 8 STEER_ACTUATOR
+ SG_ actuator_current_brake : 7|32@0- (0.001,0) [0|1] "" Vector__XXX
+
+BO_ 2147484536 set_speed: 8 STEER_ACTUATOR
+ SG_ actuator_speed : 7|32@0- (1,0) [-100000|100000] "erpms" Vector__XXX
+
+BO_ 2147484792 set_position: 8 STEER_ACTUATOR
+ SG_ actuator_position : 7|32@0- (0.0001,0) [-360000000.0|360000000.0] "" Vector__XXX
+
+BO_ 2147485304 set_position_speed_loop: 8 STEER_ACTUATOR
+ SG_ actuator_acceleration_loop : 55|16@0+ (10,0) [0|1] "" Vector__XXX
+ SG_ actuator_speed_loop : 39|16@0+ (10,0) [0|1] "" Vector__XXX
+ SG_ actuator_position_loop : 7|32@0- (0.0001,0) [0|1] "" Vector__XXX
+
+BO_ 2147494264 actuator_status: 8 STEER_ACTUATOR
+ SG_ error_code : 63|8@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ temperature : 55|8@0- (1,0) [0|1] "" Vector__XXX
+ SG_ current : 39|16@0- (0.01,0) [0|1] "" Vector__XXX
+ SG_ speed : 23|16@0- (10,0) [0|1] "" Vector__XXX
+ SG_ position : 7|16@0- (0.1,0) [0|1] "" Vector__XXX
+
+BO_ 2147483683 Front_Susp: 8 FRONT_AXLE
+ SG_ frDisp : 16|16@1- (0.1,0) [0|1] "mm" Vector__XXX
+ SG_ flDisp : 0|16@1- (0.1,0) [0|1] "mm" Vector__XXX
+
+BO_ 2147483697 CHRG_REQ: 8 CHARGER
+ SG_ mode_req : 0|8@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147483654 DV_Dynamic_Req: 8 ECU
+ SG_ steer_angle_req : 32|32@1- (0.0001,0) [-360000000.0|360000000.0] "Âº" Vector__XXX
+ SG_ trq_req : 0|32@1- (1,0) [-1|1] "" Vector__XXX
+
+BO_ 2147483655 DV_Mission_Req: 8 ECU
+ SG_ DV_Mission_Req : 0|8@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147483656 ASB_STATUS: 8 ASB
+ SG_ ASB_redundancy : 8|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ASB_EBS_state : 0|8@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147483658 ASB_EBS_state_req: 8 ASB
+ SG_ state_req : 0|8@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147483659 ASB_redundancy_req: 8 ASB
+ SG_ state_req : 0|8@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 258 Cyclic_Read_Set_Values: 8 PS10750_20
  SG_ Read_Power_Cyclic : 39|16@0+ (0.095368887,0) [0|5100] "W"  PC
@@ -1237,9 +1308,11 @@ CM_ BU_ LVBMS "The LV battery Management System";
 CM_ BU_ ECU "The VCU for TeR Vehicle";
 CM_ BU_ CHARGER "The Control Module for TeR Charger";
 CM_ BU_ REFRI "The refrigeration module";
+CM_ BU_ DV_DATA "data required for the competition in DV";
+CM_ BU_ RES "Remote Emergency System Message Definition";
+CM_ BU_ ASB "Autonomous System Brake board";
 CM_ BO_ 1 "FUNCTION INDEX";
 CM_ BO_ 2 "RESPONSE of a command";
-
 
 
 VAL_ 864 Contactor_4_Req 1 "Contactor ON" 0 "Contactor OFF" ;
@@ -1267,39 +1340,40 @@ VAL_ 18 STATUS 0 "FAULT" 1 "OK" ;
 VAL_ 37 STATE 0 "WAIT_SL" 1 "READY2PRECH" 2 "PRECHARGING" 3 "PRECHARGED" 4 "DRIVING" ;
 VAL_ 38 TRACTION_CONTROL 0 "OFF" ;
 VAL_ 38 SCS_ENABLE 0 "DISABLE" 1 "ENABLE" ;
-VAL_ 38 REGEN_MODE 0 "APPS" 1 "BPPS" ;
+VAL_ 38 REGEN_MODE 0 "APPS" 1 "DV" ;
 VAL_ 38 REGEN_ENABLE 1 "ENABLE" 0 "DISABLE" ;
 VAL_ 38 LIMITER 0 "TORQUE" 1 "SPEED" 2 "POWER" ;
 VAL_ 38 FLAP_R_REVERSE 0 "NORMAL" 1 "REVERSE" ;
 VAL_ 38 FLAP_L_REVERSE 0 "NORMAL" 1 "REVERSE" ;
 VAL_ 38 FLAP_ENABLE 0 "OFF" 1 "ON" ;
-VAL_ 38 EEPROM 1 "CLEAR_AND_DEFAULT" 2 "READ" ;
+VAL_ 38 EEPROM 1 "CLEAR_AND_DEFAULT" 2 "READ_ALL" ;
 VAL_ 38 DRIVING_MODE 0 "LINEAL" 1 "TORQUE_VECTORING" ;
 VAL_ 38 ENTRY 0 "SCS_ENABLE" 1 "R2D_BRAKE_VAL" 2 "LIMITER" 3 "DRIVING_MODE" 4 "TRACTION_CONTROL" 5 "TRQV_KP" 6 "TRQV_KI" 7 "TRQV_KD" 8 "TRQ_LIMIT" 9 "EEPROM" 10 "FLAP_L_OFFSET" 11 "FLAP_R_OFFSET" 12 "FLAP_L_REVERSE" 13 "FLAP_R_REVERSE" 14 "FLAP_ENABLE" 15 "FLAP_PEDAL_SETPOINT" 16 "REGEN_ENABLE" 17 "REGEN_MAX_TRQ" 18 "REGEN_MAX_CELL_VOLT" 19 "REGEN_MAX_CELL_TEMP" 20 "REGEN_MAX_CURRENT" 21 "REGEN_THR_SPEED" 22 "REGEN_THR_RPM" 23 "REGEN_TRQ_SLOPE" 24 "REGEN_MODE" 25 "REGEN_MAX_POSITIVE_TRQ_THR" ;
-VAL_ 337 TARGET_TEMP_ACCU 0 "" ;
-VAL_ 337 POWER_ACCU 0 "OFF" 1 "ON" ;
-VAL_ 337 POWER 0 "OFF" 1 "ON" ;
-VAL_ 337 MODE_ACCU 0 "AUTO" 1 "MANUAL" ;
-VAL_ 337 MODE 0 "AUTO" 1 "MANUAL" ;
-VAL_ 337 ENTRY 0 "POWER" 1 "INTENSITY" 2 "MODE" 3 "TARGET_TEMP" 4 "POWER_ACCU" 5 "INTENSITY_ACCU" 6 "MODE_ACCU" 7 "TARGET_TEMP_ACCU" ;
-VAL_ 339 MODE 0 "AUTO" 1 "MANUAL" ;
-VAL_ 517 State 0 "IDLE" 1 "READY" 2 "PRECHARGING" 3 "PRECHARGED" 4 "CHARGING" ;
-VAL_ 0 Send_Coil_DC_Output 65280 "on" 0 "off" ;
-VAL_ 0 Send_Coil_Remote_On_Off 65280 "on" 0 "off" ;
-VAL_ 0 Send_Coil_Ack_Alarms 65280 "acknowledge" ;
-VAL_ 0 Send_Coil_AI_REM_SB_Action 65280 "DC auto" 0 "DC off" ;
-VAL_ 0 Send_Coil_AI_REM_SB_Level 65280 "inverted" 0 "normal" ;
-VAL_ 0 Send_Coil_AI_VREF 65280 "5V" 0 "10V" ;
-VAL_ 0 Send_Coil_DC_After_PF_Alarm 65280 "auto-on" 0 "off" ;
-VAL_ 0 Send_Coil_DC_After_Power_On 65535 "off" 65534 "restore" ;
-VAL_ 0 Send_Coil_Restart 65280 "execute" ;
-VAL_ 0 Send_MS_Coil_Enable_MS 65280 "on" 0 "off" ;
-VAL_ 0 Send_MS_Coil_Init_MS 65280 "Start init" ;
-VAL_ 0 Send_MS_Coil_Link_Mode 65280 "Master" 0 "Slave" ;
-VAL_ 0 Send_Coil_DC_After_Remote 65280 "on" 0 "off" ;
-VAL_ 0 Send_MS_Coil_Termination 65280 "on" 0 "off" ;
-VAL_ 0 Send_MS_Coil_Termination_BIAS 65280 "on" 0 "off" ;
-VAL_ 0 Send_Mux 667 "Master-slave: BIAS" 666 "Master-slave: Termination" 425 "DC output after remote" 654 "Master-slave: Init MS" 653 "Master-slave: Enable MS" 650 "Master-slave: Link mode" 9004 "Upper limit of power set value" 9003 "Lower limit of current set value" 9002 "Upper limit of current set value" 9001 "Lower limit of voltage set value" 9000 "Upper limit of voltage set value" 556 "Overpower protection threshold" 553 "Overcurrent protection threshold" 550 "Overvoltage protection threshold" 501 "Set current value" 500 "Set voltage value" 418 "AI: REM-SB action" 417 "AI: REM-SB level" 416 "AI: Reference voltage (pin VREF)" 411 "Acknowledge alarms" 410 "Restart of the device" 408 "DC output after power ON" 407 "DC output after PF alarm" 405 "DC output" 171 "User text" 502 "Set power value" 402 "Remote mode" ;
+VAL_ 31 TARGET_TEMP_ACCU 0 "" ;
+VAL_ 31 POWER_ACCU 0 "OFF" 1 "ON" ;
+VAL_ 31 POWER 0 "OFF" 1 "ON" ;
+VAL_ 31 MODE_ACCU 0 "AUTO" 1 "MANUAL" ;
+VAL_ 31 MODE 0 "AUTO" 1 "MANUAL" ;
+VAL_ 31 ENTRY 0 "POWER" 1 "INTENSITY" 2 "MODE" 3 "TARGET_TEMP" 4 "POWER_ACCU" 5 "INTENSITY_ACCU" 6 "MODE_ACCU" 7 "TARGET_TEMP_ACCU" ;
+VAL_ 33 MODE 0 "AUTO" 1 "MANUAL" ;
+VAL_ 48 Curve 0 "CURVE_1" 1 "CURVE_2" 2 "CURVE_3" 3 "CURVE_4" 4 "CURVE_5" 5 "MANUAL" ;
+VAL_ 48 Mode 0 "AUTO" 1 "MANUAL" ;
+VAL_ 48 State 0 "IDLE" 1 "READY" 2 "PRECHARGING" 3 "PRECHARGED" 4 "CHARGING" ;
+VAL_ 1283 ASB_redundancy_state 1 "ASB_redundancy_state_deactivated" 2 "ASB_redundancy_state_engaged" 3 "ASB_redundancy_state_initial_checkup_passed" ;
+VAL_ 1283 Steering_state 0 "unavailable" 1 "available" ;
+VAL_ 1283 AMI_state 1 "AMI_state_acceleration" 2 "AMI_state_skidpad" 3 "AMI_state_trackdrive" 4 "AMI_state_braketest" 5 "AMI_state_inspection" 6 "AMI_state_autocross" ;
+VAL_ 1283 AS_EBS_state 1 "AS_EBS_state_deactivated" 2 "AS_EBS_state_initial_checkup_passed" 3 "AS_EBS_state_activated" ;
+VAL_ 1283 AS_status 1 "AS_status_off" 2 "AS_status_ready" 3 "AS_status_driving" 4 "AS_status_emergency" 5 "AS_status_finished" ;
+VAL_ 0 adressed_node_id 0 "ALL" ;
+VAL_ 0 requested_state 1 "OPERATIONAL_MODE" ;
+VAL_ 1809 data_byte 0 "ALIVE" ;
+VAL_ 2147494264 error_code 0 "OK" 1 "OVERTEMP" 2 "OVERCURRENT" 3 "OVERVOLTAGE" 4 "UNDERVOLTAGE" 5 "ENCODER_FAULT" 6 "POWERSTAGE_OVERTEMP" 7 "MOTOR_STALL" ;
+VAL_ 2147483697 mode_req 0 "AUTO" 1 "MANUAL" ;
+VAL_ 2147483655 DV_Mission_Req 0 "MANUAL" 1 "ACCELERATION" 2 "SKIDPAD" 3 "TRACKDRIVE" 4 "BRAKETEST" 5 "INSPECTION" 6 "AUTOCROSS" ;
+VAL_ 2147483656 ASB_redundancy 0 "DEACTIVATED" 1 "INITIAL_CHECK_PASSED" 2 "ACTIVATED" ;
+VAL_ 2147483656 ASB_EBS_state 0 "DEACTIVATED" 1 "INITIAL_CHECK_PASSED" 2 "ACTIVATED" ;
+VAL_ 2147483658 state_req 0 "DISABLED" 1 "ENABLED" ;
+VAL_ 2147483659 state_req 0 "DISABLED" 1 "ENABLED" ;
 VAL_ 256 Read_Status_Reg_Act_Cyclic 1 "CR" 3 "CP" 2 "CC" 0 "CV" ;
 VAL_ 256 Read_Status_DC_Output_Cyclic 1 "on" 0 "off" ;
 VAL_ 256 Read_Status_MS_Type_Cyclic 1 "Master" 0 "Slave" ;
@@ -1316,9 +1390,5 @@ VAL_ 256 Read_Status_Alarms_Cyclic 1 "Alarm" 0 "No alarm" ;
 VAL_ 256 Read_Coil_DC_Output_Cyclic 1 "on" 0 "off" ;
 VAL_ 256 Read_Status_Remote_Cyclic 1 "on" 0 "off" ;
 
-SIG_GROUP_ 0 Master_Slave 1 : Send_MS_Coil_Termination_BIAS Send_MS_Coil_Termination Send_MS_Coil_Link_Mode Send_MS_Coil_Init_MS Send_MS_Coil_Enable_MS;
-SIG_GROUP_ 0 Limits 1 : Send_Limit_Imin Send_Limit_Imax Send_Limit_Pmax Send_Limit_Umin Send_Limit_Umax;
-SIG_GROUP_ 0 Protection 1 : Send_Protection_OVP Send_Protection_OPP Send_Protection_OCP;
-SIG_GROUP_ 0 Set_Values 1 : Send_Current Send_Voltage Send_Power;
-SIG_GROUP_ 0 Control 1 : Send_Coil_DC_After_Remote Send_Coil_Restart Send_Coil_DC_After_Power_On Send_Coil_DC_After_PF_Alarm Send_Coil_AI_VREF Send_Coil_AI_REM_SB_Level Send_Coil_AI_REM_SB_Action Send_Coil_Ack_Alarms Send_Coil_Remote_On_Off Send_Coil_DC_Output;
+
 
