@@ -370,7 +370,7 @@ BO_ 2147483697 CHRG_REQ: 8 CHARGER
    SG_ mode_req : 0|8@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 2147483654 DV_Dynamic_Req: 8 ECU
-   SG_ trq_req : 0|32@5- (1,0) [-1|1] "" Vector__XXX
+   SG_ trq_req : 0|32@5- (0.0001,0) [-1|1] "" Vector__XXX
    SG_ steer_angle_req : 32|32@1- (0.0001,0) [-3.6e+08|3.6e+08] "º" Vector__XXX
 
 BO_ 2147483655 DV_Mission_Req: 8 ECU
@@ -378,7 +378,7 @@ BO_ 2147483655 DV_Mission_Req: 8 ECU
 
 BO_ 2147483656 ASB_STATUS: 8 ASB
    SG_ ASB_EBS_state : 0|8@1+ (1,0) [0|1] "" Vector__XXX
-   SG_ ASB_redundancy : 8|8@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ ASB_redundancy_state : 8|8@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 2147483658 ASB_EBS_state_req: 8 ASB
    SG_ state_req : 0|8@1+ (1,0) [0|1] "" Vector__XXX
@@ -400,6 +400,14 @@ CM_ BU_ RES "Remote Emergency System Message Definition";
 CM_ BU_ ASB "Autonomous System Brake board";
 CM_ BO_ 1 "FUNCTION INDEX";
 CM_ BO_ 2 "RESPONSE of a command";
+BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
+BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
+BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
+BA_DEF_DEF_ "matchingcriteria" 0;
+BA_DEF_DEF_ "filterlabeling" 0;
 VAL_ 1 CMD 14 "resetBMS" 1 "Calibrate_APPS_min" 2 "Calibrate_APPS_max" 5 "Calibrate_STEER_Leftest" 6 "Calibrate_STEER_Rightest" 8 "discharge" 9 "precharge" 10 "beep" 11 "ready2Drive" 0 "charge" 12 "startLog" 13 "endLog";
 VAL_ 1 ONOFF 0 "OFF" 1 "ON";
 VAL_ 2 CODE 1 "OK" 2 "ERROR" 3 "INVALID_STATE" 4 "OUT_OF_RANGE";
@@ -442,6 +450,6 @@ VAL_ 2147494264 error_code 0 "OK" 1 "OVERTEMP" 2 "OVERCURRENT" 3 "OVERVOLTAGE" 4
 VAL_ 2147483697 mode_req 0 "AUTO" 1 "MANUAL";
 VAL_ 2147483655 DV_Mission_Req 0 "MANUAL" 1 "ACCELERATION" 2 "SKIDPAD" 3 "TRACKDRIVE" 4 "BRAKETEST" 5 "INSPECTION" 6 "AUTOCROSS";
 VAL_ 2147483656 ASB_EBS_state 0 "DEACTIVATED" 1 "INITIAL_CHECK_PASSED" 2 "ACTIVATED";
-VAL_ 2147483656 ASB_redundancy 0 "DEACTIVATED" 1 "INITIAL_CHECK_PASSED" 2 "ACTIVATED";
+VAL_ 2147483656 ASB_redundancy_state 0 "DEACTIVATED" 1 "INITIAL_CHECK_PASSED" 2 "ACTIVATED";
 VAL_ 2147483658 state_req 0 "DISABLED" 1 "ENABLED";
 VAL_ 2147483659 state_req 0 "DISABLED" 1 "ENABLED";
