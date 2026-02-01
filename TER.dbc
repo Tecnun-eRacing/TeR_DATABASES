@@ -104,7 +104,7 @@ BO_ 36 Front_TempsR: 8 FRONT_AXLE
    SG_ TempL : 16|16@1+ (0.1,0) [0|1] "grad" Vector__XXX
    SG_ TempR : 0|16@1+ (0.1,0) [0|1] "grad" Vector__XXX
 
-BO_ 37 TER_STATUS: 4 ECU
+BO_ 37 TER_STATUS: 8 ECU
    SG_ AMS : 11|1@1+ (1,0) [0|1] "" Vector__XXX
    SG_ APPS : 16|1@1+ (1,0) [0|1] "" Vector__XXX
    SG_ BSPD : 9|1@1+ (1,0) [0|0] "" Vector__XXX
@@ -431,6 +431,7 @@ BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
 BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
 BA_DEF_DEF_ "matchingcriteria" 0;
 BA_DEF_DEF_ "filterlabeling" 0;
+BA_ "GenMsgForegroundColor" BO_ 37 "#000000";
 BA_ "GenMsgForegroundColor" BO_ 6 "#000000";
 BA_ "GenMsgForegroundColor" BO_ 12 "#000000";
 BA_ "GenMsgForegroundColor" BO_ 13 "#000000";
