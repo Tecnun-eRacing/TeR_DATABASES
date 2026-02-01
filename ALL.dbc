@@ -33,7 +33,7 @@ NS_ :
 
 BS_:
 
-BU_: BOOT STEER PEDAL TER_CMDS FRONT_AXLE IMU LVBMS ECU CHARGER TireTemps REFRI DV_DATA RES STEER_ACTUATOR ASB PC PS10750_20
+BU_: BOOT STEER PEDAL TER_CMDS FRONT_AXLE IMU LVBMS ECU CHARGER TireTemps REFRI DV RES STEER_ACTUATOR ASB PC PS10750_20
 
 
 BO_ 864 BMS_RX_CTRL_1: 8 Vector__XXX
@@ -981,7 +981,9 @@ BO_ 36 Front_TempsR: 8 FRONT_AXLE
  SG_ TempL : 16|16@1+ (0.1,0) [0|1] "grad" Vector__XXX
  SG_ TempR : 0|16@1+ (0.1,0) [0|1] "grad" Vector__XXX
 
-BO_ 37 TER_STATUS: 4 ECU
+BO_ 37 TER_STATUS: 8 ECU
+ SG_ MISSION_STATUS : 35|3@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MISSION : 32|3@1+ (1,0) [0|1] "" Vector__XXX
  SG_ LEFT_INV : 25|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ RIGHT_INV : 24|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ REFRI : 18|1@1+ (1,0) [0|1] "" Vector__XXX
@@ -997,6 +999,7 @@ BO_ 37 TER_STATUS: 4 ECU
  SG_ STATE : 0|4@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 38 ECU_CONFIG: 8 ECU
+ SG_ DV_MISSION_REQ m26 : 8|8@1+ (1,0) [0|1] "" Vector__XXX
  SG_ TRQ_LIMIT m8 : 8|8@1+ (1,0) [0|1] "NM" Vector__XXX
  SG_ TRQ_KP m5 : 8|32@1- (1,0) [0|1] "" Vector__XXX
  SG_ TRQ_KI m6 : 8|32@1- (1,0) [0|1] "" Vector__XXX
@@ -1157,7 +1160,7 @@ BO_ 43 TV_DEBUG: 8 ECU
  SG_ delta_trq : 16|8@1- (1,0) [0|1] "Nm" Vector__XXX
  SG_ yaw_ref : 0|16@1- (0.01,0) [0|1] "deg" Vector__XXX
 
-BO_ 1280 DV_driving_dynamics_1: 8 DV_DATA
+BO_ 1280 DV_driving_dynamics_1: 8 ECU
  SG_ Motor_moment_target : 56|8@1+ (1,0) [0|1] "" Vector__XXX
  SG_ Motor_moment_actual : 48|8@1+ (1,0) [0|1] "%" Vector__XXX
  SG_ Brake_hydr_target : 40|8@1+ (1,0) [0|1] "Âº" Vector__XXX
@@ -1167,7 +1170,7 @@ BO_ 1280 DV_driving_dynamics_1: 8 DV_DATA
  SG_ Speed_target : 8|8@1+ (1,0) [0|1] "km/h" Vector__XXX
  SG_ Speed_actual : 0|8@1+ (1,0) [0|1] "km/h" Vector__XXX
 
-BO_ 1283 DV_system_status: 5 DV_DATA
+BO_ 1283 DV_system_status: 5 ECU
  SG_ Cones_count_all : 23|17@1+ (1,0) [0|130000] "" Vector__XXX
  SG_ Cones_count_actual : 15|8@1+ (1,0) [0|256] "" Vector__XXX
  SG_ Lap_counter : 11|4@1+ (1,0) [0|16] "" Vector__XXX
@@ -1177,7 +1180,7 @@ BO_ 1283 DV_system_status: 5 DV_DATA
  SG_ AS_EBS_state : 3|2@1+ (1,0) [0|5] "" Vector__XXX
  SG_ AS_status : 0|3@1+ (1,0) [0|5] "" Vector__XXX
 
-BO_ 1281 DV_driving_dynamics_2: 6 DV_DATA
+BO_ 1281 DV_driving_dynamics_2: 6 ECU
  SG_ Yaw_rate : 32|16@1+ (0.0078125,0) [0|1] "Âº/s" Vector__XXX
  SG_ Acceleration_lateral : 16|16@1- (0.00195313,0) [0|1] "" Vector__XXX
  SG_ Acceleration_longitudinal : 0|16@1- (0.00195313,0) [0|1] "m/s2" Vector__XXX
@@ -1237,29 +1240,41 @@ BO_ 2147494264 steer_actuator_status: 8 STEER_ACTUATOR
  SG_ speed : 23|16@0- (10,0) [0|1] "" Vector__XXX
  SG_ position : 7|16@0- (0.1,0) [0|1] "" Vector__XXX
 
-BO_ 2147483683 Front_Susp: 8 FRONT_AXLE
+BO_ 35 Front_Susp: 8 FRONT_AXLE
  SG_ frDisp : 16|16@1- (0.1,0) [0|1] "mm" Vector__XXX
  SG_ flDisp : 0|16@1- (0.1,0) [0|1] "mm" Vector__XXX
 
-BO_ 2147483697 CHRG_REQ: 8 CHARGER
+BO_ 49 CHRG_REQ: 8 CHARGER
  SG_ mode_req : 0|8@1+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 2147483654 DV_Dynamic_Req: 8 ECU
+BO_ 6 DV_Dynamic_Req_1: 8 ECU
  SG_ steer_angle_req : 32|32@1- (0.0001,0) [-360000000.0|360000000.0] "Âº" Vector__XXX
  SG_ trq_req : 0|32@1- (0.0001,0) [-1|1] "" Vector__XXX
 
-BO_ 2147483655 DV_Mission_Req: 8 ECU
- SG_ DV_Mission_Req : 0|8@1+ (1,0) [0|1] "" Vector__XXX
-
-BO_ 2147483656 ASB_STATUS: 8 ASB
+BO_ 8 ASB_STATUS: 8 ASB
  SG_ ASB_redundancy_state : 8|8@1+ (1,0) [0|1] "" Vector__XXX
  SG_ ASB_EBS_state : 0|8@1+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 2147483658 ASB_EBS_state_req: 8 ASB
+BO_ 10 ASB_EBS_state_req: 8 ASB
  SG_ state_req : 0|8@1+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 2147483659 ASB_redundancy_req: 8 ASB
+BO_ 11 ASB_redundancy_req: 8 ASB
  SG_ state_req : 0|8@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 12 DV_status: 8 DV
+ SG_ MISSION_CURRENT : 37|3@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LAP_COUNTER : 33|4@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ CONES_COUNT_ALL : 16|17@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ CONES_COUNT_ACTUAL : 8|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MISSION_STATUS : 0|8@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 13 DV_Dynamic_Req_2: 8 ECU
+ SG_ ASB_EBS_REQ : 8|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ASB_REDUNDANT_REQ : 0|8@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 14 DV_CONFIG: 8 DV
+ SG_ MISSION_REQ m0 : 8|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ENTRY M : 0|8@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 258 Cyclic_Read_Set_Values: 8 PS10750_20
  SG_ Read_Power_Cyclic : 39|16@0+ (0.095368887,0) [0|5100] "W"  PC
@@ -1309,12 +1324,16 @@ CM_ BU_ LVBMS "The LV battery Management System";
 CM_ BU_ ECU "The VCU for TeR Vehicle";
 CM_ BU_ CHARGER "The Control Module for TeR Charger";
 CM_ BU_ REFRI "The refrigeration module";
-CM_ BU_ DV_DATA "data required for the competition in DV";
+CM_ BU_ DV "status from dv controller";
 CM_ BU_ RES "Remote Emergency System Message Definition";
 CM_ BU_ ASB "Autonomous System Brake board";
 CM_ BO_ 1 "FUNCTION INDEX";
 CM_ BO_ 2 "RESPONSE of a command";
 CM_ SG_ 38 EEPROM "write_here_the_config_id_to_request_value_from_eeprom,_otherwhise_use_value_table_for_options";
+CM_ BO_ 6 "torque and steer request messages from dv";
+CM_ BO_ 12 "dv computer status";
+CM_ BO_ 13 "asb request messages from dv";
+CM_ SG_ 14 MISSION_REQ "Request_mission_from_DV_computer";
 VAL_ 864 Contactor_4_Req 1 "Contactor ON" 0 "Contactor OFF" ;
 VAL_ 864 Contactor_3_Req 1 "Contactor ON" 0 "Contactor OFF" ;
 VAL_ 864 Contactor_2_Req 1 "Contactor ON" 0 "Contactor OFF" ;
@@ -1337,7 +1356,10 @@ VAL_ 18 CURRENT_OK 0 "FAULT" 1 "OK" ;
 VAL_ 18 TEMPS_OK 0 "FAULT" 1 "OK" ;
 VAL_ 18 VOLTAGES_OK 0 "FAULT" 1 "OK" ;
 VAL_ 18 STATUS 0 "FAULT" 1 "OK" ;
+VAL_ 37 MISSION_STATUS 0 "NONE" 1 "SELECTED" 2 "RUNNING" 3 "FINISHED" ;
+VAL_ 37 MISSION 0 "NONE" 1 "MANUAL" 2 "ACCELERATION" 3 "SKIDPAD" 4 "TRACKDRIVE" 5 "BRAKETEST" 6 "INSPECTION" 7 "AUTOCROSS" ;
 VAL_ 37 STATE 0 "WAIT_SL" 1 "READY2PRECH" 2 "PRECHARGING" 3 "PRECHARGED" 4 "DRIVING" ;
+VAL_ 38 DV_MISSION_REQ 0 "MANUAL" 1 "ACCELERATION" 2 "SKIDPAD" 3 "TRACKDRIVE" 4 "BRAKETEST" 5 "INSPECTION" 6 "AUTOCROSS" ;
 VAL_ 38 TRACTION_CONTROL 0 "OFF" ;
 VAL_ 38 SCS_ENABLE 0 "DISABLE" 1 "ENABLE" ;
 VAL_ 38 REGEN_MODE 0 "APPS" 1 "FREE" ;
@@ -1348,8 +1370,7 @@ VAL_ 38 FLAP_L_REVERSE 0 "NORMAL" 1 "REVERSE" ;
 VAL_ 38 FLAP_ENABLE 0 "OFF" 1 "ON" ;
 VAL_ 38 EEPROM 252 "CLEAR_AND_DEFAULT_ALL" 255 "READ_ALL" 254 "SAVE_ALL" ;
 VAL_ 38 DRIVING_MODE 0 "LINEAL" 1 "TORQUE_VECTORING" 2 "REMOTE_TORQUE_REQUEST" ;
-VAL_ 38 ENTRY 0 "SCS_ENABLE" 1 "R2D_BRAKE_VAL" 2 "LIMITER" 3 "DRIVING_MODE" 4 "TRACTION_CONTROL" 5 "TRQV_KP" 6 "TRQV_KI" 7 "TRQV_KD" 8 "TRQ_LIMIT" 9 "EEPROM" 10 "FLAP_L_OFFSET" 11 "FLAP_R_OFFSET" 12 "FLAP_L_REVERSE" 13 "FLAP_R_REVERSE" 14 "FLAP_ENABLE" 15 "FLAP_PEDAL_SETPOINT" 16 "REGEN_ENABLE" 17 "REGEN_MAX_TRQ" 18 "REGEN_MAX_CELL_VOLT" 19 "REGEN_MAX_CELL_TEMP" 20 "REGEN_MAX_CURRENT" 21 "REGEN_THR_SPEED" 22 "REGEN_THR_RPM" 23 "REGEN_TRQ_SLOPE" 24 "REGEN_MODE" 25 "REGEN_MAX_POSITIVE_TRQ_THR" ;
-VAL_ 31 TARGET_TEMP_ACCU 0 "" ;
+VAL_ 38 ENTRY 0 "SCS_ENABLE" 1 "R2D_BRAKE_VAL" 2 "LIMITER" 3 "DRIVING_MODE" 4 "TRACTION_CONTROL" 5 "TRQV_KP" 6 "TRQV_KI" 7 "TRQV_KD" 8 "TRQ_LIMIT" 9 "EEPROM" 10 "FLAP_L_OFFSET" 11 "FLAP_R_OFFSET" 12 "FLAP_L_REVERSE" 13 "FLAP_R_REVERSE" 14 "FLAP_ENABLE" 15 "FLAP_PEDAL_SETPOINT" 16 "REGEN_ENABLE" 17 "REGEN_MAX_TRQ" 18 "REGEN_MAX_CELL_VOLT" 19 "REGEN_MAX_CELL_TEMP" 20 "REGEN_MAX_CURRENT" 21 "REGEN_THR_SPEED" 22 "REGEN_THR_RPM" 23 "REGEN_TRQ_SLOPE" 24 "REGEN_MODE" 25 "REGEN_MAX_POSITIVE_TRQ_THR" 26 "DV_MISSION_REQ" ;
 VAL_ 31 POWER_ACCU 0 "OFF" 1 "ON" ;
 VAL_ 31 POWER 0 "OFF" 1 "ON" ;
 VAL_ 31 MODE_ACCU 0 "AUTO" 1 "MANUAL" ;
@@ -1368,12 +1389,16 @@ VAL_ 0 adressed_node_id 0 "ALL" ;
 VAL_ 0 requested_state 1 "OPERATIONAL_MODE" ;
 VAL_ 1809 data_byte 0 "ALIVE" ;
 VAL_ 2147494264 error_code 0 "OK" 1 "OVERTEMP" 2 "OVERCURRENT" 3 "OVERVOLTAGE" 4 "UNDERVOLTAGE" 5 "ENCODER_FAULT" 6 "POWERSTAGE_OVERTEMP" 7 "MOTOR_STALL" ;
-VAL_ 2147483697 mode_req 0 "AUTO" 1 "MANUAL" ;
-VAL_ 2147483655 DV_Mission_Req 0 "MANUAL" 1 "ACCELERATION" 2 "SKIDPAD" 3 "TRACKDRIVE" 4 "BRAKETEST" 5 "INSPECTION" 6 "AUTOCROSS" ;
-VAL_ 2147483656 ASB_redundancy_state 0 "DEACTIVATED" 1 "INITIAL_CHECK_PASSED" 2 "ACTIVATED" ;
-VAL_ 2147483656 ASB_EBS_state 0 "DEACTIVATED" 1 "INITIAL_CHECK_PASSED" 2 "ACTIVATED" ;
-VAL_ 2147483658 state_req 0 "DISABLED" 1 "ENABLED" ;
-VAL_ 2147483659 state_req 0 "DISABLED" 1 "ENABLED" ;
+VAL_ 49 mode_req 0 "AUTO" 1 "MANUAL" ;
+VAL_ 8 ASB_redundancy_state 0 "DEACTIVATED" 1 "INITIAL_CHECK_PASSED" 2 "ACTIVATED" ;
+VAL_ 8 ASB_EBS_state 0 "DEACTIVATED" 1 "INITIAL_CHECK_PASSED" 2 "ACTIVATED" ;
+VAL_ 10 state_req 0 "DISABLED" 1 "ENABLED" ;
+VAL_ 11 state_req 0 "DISABLED" 1 "ENABLED" ;
+VAL_ 12 MISSION_CURRENT 0 "MANUAL" 1 "ACCELERATION" 2 "SKIDPAD" 3 "TRACKDRIVE" 4 "BRAKETEST" 5 "INSPECTION" 6 "AUTOCROSS" ;
+VAL_ 12 MISSION_STATUS 0 "NONE" 1 "SELECTED" 2 "RUNNING" 3 "FINISHED" ;
+VAL_ 13 ASB_EBS_REQ 0 "OFF" 1 "ON" ;
+VAL_ 13 ASB_REDUNDANT_REQ 0 "OFF" 1 "ON" ;
+VAL_ 14 MISSION_REQ 0 "MANUAL" 1 "ACCELERATION" 2 "SKIDPAD" 3 "TRACKDRIVE" 4 "BRAKETEST" 5 "INSPECTION" 6 "AUTOCROSS" ;
 VAL_ 256 Read_Status_Reg_Act_Cyclic 1 "CR" 3 "CP" 2 "CC" 0 "CV" ;
 VAL_ 256 Read_Status_DC_Output_Cyclic 1 "on" 0 "off" ;
 VAL_ 256 Read_Status_MS_Type_Cyclic 1 "Master" 0 "Slave" ;
