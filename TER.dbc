@@ -150,7 +150,6 @@ BO_ 38 ECU_CONFIG: 8 ECU
    SG_ TRQ_KP m5 : 8|32@5- (1,0) [0|1] "" Vector__XXX
    SG_ TRQ_LIMIT m8 : 8|8@1+ (1,0) [0|1] "NM" Vector__XXX
    SG_ DV_MISSION_REQ m26 : 8|8@1+ (1,0) [0|1] "" Vector__XXX
-   SG_ DV_MISSION_REQ m0 : 8|8@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 39 WheelInfo: 8 ECU
    SG_ rlRPM : 24|16@1- (1,0) [0|1] "" Vector__XXX
