@@ -982,13 +982,12 @@ BO_ 36 Front_TempsR: 8 FRONT_AXLE
  SG_ TempR : 0|16@1+ (0.1,0) [0|1] "grad" Vector__XXX
 
 BO_ 37 TER_STATUS: 8 ECU
- SG_ MISSION_STATUS : 35|3@1+ (1,0) [0|1] "" Vector__XXX
- SG_ MISSION : 32|3@1+ (1,0) [0|1] "" Vector__XXX
  SG_ LEFT_INV : 25|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ RIGHT_INV : 24|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ REFRI : 18|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ IMU : 17|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ APPS : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TRQ_ENABLED : 13|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ ASMS : 12|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ AMS : 11|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ IMD : 10|1@1+ (1,0) [0|0] "" Vector__XXX
@@ -1261,8 +1260,8 @@ BO_ 10 ASB_EBS_state_req: 8 ASB
 BO_ 11 ASB_redundancy_req: 8 ASB
  SG_ state_req : 0|8@1+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 12 DV_status: 8 DV
- SG_ MISSION_CURRENT : 37|3@1+ (1,0) [0|1] "" Vector__XXX
+BO_ 12 DV_info: 8 DV
+ SG_ MISSION : 37|3@1+ (1,0) [0|1] "" Vector__XXX
  SG_ LAP_COUNTER : 33|4@1+ (1,0) [0|1] "" Vector__XXX
  SG_ CONES_COUNT_ALL : 16|17@1+ (1,0) [0|1] "" Vector__XXX
  SG_ CONES_COUNT_ACTUAL : 8|8@1+ (1,0) [0|1] "" Vector__XXX
@@ -1329,6 +1328,7 @@ CM_ BU_ RES "Remote Emergency System Message Definition";
 CM_ BU_ ASB "Autonomous System Brake board";
 CM_ BO_ 1 "FUNCTION INDEX";
 CM_ BO_ 2 "RESPONSE of a command";
+CM_ SG_ 37 TRQ_ENABLED "indicates_if_the_car_will_respond_to_trq_input_from_any_source";
 CM_ SG_ 38 EEPROM "write_here_the_config_id_to_request_value_from_eeprom,_otherwhise_use_value_table_for_options";
 CM_ BO_ 6 "torque and steer request messages from dv";
 CM_ BO_ 12 "dv computer status";
@@ -1350,14 +1350,13 @@ VAL_ 514 NODE_ID 0 "PEDAL" 1 "REFRI" 2 "LVBMS" 3 "ECU" 4 "STEER" ;
 VAL_ 514 BOOT_CMD 0 "BOOT_INIT" 1 "TRANSMIT_START" 2 "TRANSMIT_END" 3 "deprecated" ;
 VAL_ 513 BOOT_CMD 0 "ACK" 1 "NACK" 2 "PERCENT" ;
 VAL_ 1 ONOFF 0 "OFF" 1 "ON" ;
-VAL_ 1 CMD 14 "resetBMS" 1 "Calibrate_APPS_min" 2 "Calibrate_APPS_max" 5 "Calibrate_STEER_Leftest" 6 "Calibrate_STEER_Rightest" 8 "discharge" 9 "precharge" 10 "beep" 11 "ready2Drive" 0 "charge" 12 "startLog" 13 "endLog" ;
+VAL_ 1 CMD 14 "precharge_dv" 1 "Calibrate_APPS_min" 2 "Calibrate_APPS_max" 5 "Calibrate_STEER_Leftest" 6 "Calibrate_STEER_Rightest" 8 "discharge" 9 "precharge" 10 "beep" 11 "ready2Drive" 0 "" 12 "startLog" 13 "endLog" 15 "ready2Drive_dv" ;
 VAL_ 2 CODE 1 "OK" 2 "ERROR" 3 "INVALID_STATE" 4 "OUT_OF_RANGE" ;
 VAL_ 18 CURRENT_OK 0 "FAULT" 1 "OK" ;
 VAL_ 18 TEMPS_OK 0 "FAULT" 1 "OK" ;
 VAL_ 18 VOLTAGES_OK 0 "FAULT" 1 "OK" ;
 VAL_ 18 STATUS 0 "FAULT" 1 "OK" ;
-VAL_ 37 MISSION_STATUS 0 "NONE" 1 "SELECTED" 2 "RUNNING" 3 "FINISHED" ;
-VAL_ 37 MISSION 0 "NONE" 1 "MANUAL" 2 "ACCELERATION" 3 "SKIDPAD" 4 "TRACKDRIVE" 5 "BRAKETEST" 6 "INSPECTION" 7 "AUTOCROSS" ;
+VAL_ 37 TRQ_ENABLED 0 "OFF" 1 "ON" ;
 VAL_ 37 STATE 0 "WAIT_SL" 1 "READY2PRECH" 2 "PRECHARGING" 3 "PRECHARGED" 4 "DRIVING" ;
 VAL_ 38 DV_MISSION_REQ 0 "MANUAL" 1 "ACCELERATION" 2 "SKIDPAD" 3 "TRACKDRIVE" 4 "BRAKETEST" 5 "INSPECTION" 6 "AUTOCROSS" ;
 VAL_ 38 TRACTION_CONTROL 0 "OFF" ;
@@ -1394,7 +1393,7 @@ VAL_ 8 ASB_redundancy_state 0 "DEACTIVATED" 1 "INITIAL_CHECK_PASSED" 2 "ACTIVATE
 VAL_ 8 ASB_EBS_state 0 "DEACTIVATED" 1 "INITIAL_CHECK_PASSED" 2 "ACTIVATED" ;
 VAL_ 10 state_req 0 "DISABLED" 1 "ENABLED" ;
 VAL_ 11 state_req 0 "DISABLED" 1 "ENABLED" ;
-VAL_ 12 MISSION_CURRENT 0 "MANUAL" 1 "ACCELERATION" 2 "SKIDPAD" 3 "TRACKDRIVE" 4 "BRAKETEST" 5 "INSPECTION" 6 "AUTOCROSS" ;
+VAL_ 12 MISSION 0 "MANUAL" 1 "ACCELERATION" 2 "SKIDPAD" 3 "TRACKDRIVE" 4 "BRAKETEST" 5 "INSPECTION" 6 "AUTOCROSS" ;
 VAL_ 12 MISSION_STATUS 0 "NONE" 1 "SELECTED" 2 "RUNNING" 3 "FINISHED" ;
 VAL_ 13 ASB_EBS_REQ 0 "OFF" 1 "ON" ;
 VAL_ 13 ASB_REDUNDANT_REQ 0 "OFF" 1 "ON" ;
