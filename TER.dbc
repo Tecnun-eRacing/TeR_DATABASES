@@ -118,7 +118,7 @@ BO_ 37 TER_STATUS: 8 ECU
    SG_ SL : 8|1@1+ (1,0) [0|1] "" Vector__XXX
    SG_ STATE : 0|4@1+ (1,0) [0|1] "" Vector__XXX
    SG_ ASMS : 12|1@1+ (1,0) [0|1] "" Vector__XXX
-   SG_ TRQ_ENABLED : 13|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ AS_ALLOWED : 13|1@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 38 ECU_CONFIG: 8 ECU
    SG_ DRIVING_MODE m3 : 8|8@1+ (1,0) [0|1] "" Vector__XXX
@@ -415,12 +415,16 @@ CM_ BU_ RES "Remote Emergency System Message Definition";
 CM_ BU_ ASB "Autonomous System Brake board";
 CM_ BO_ 1 "FUNCTION INDEX";
 CM_ BO_ 2 "RESPONSE of a command";
-CM_ SG_ 37 TRQ_ENABLED "indicates_if_the_car_will_respond_to_trq_input_from_any_source";
+CM_ SG_ 37 AS_ALLOWED "indicates_if_the_car_will_respond_nput_from_dv";
 CM_ SG_ 38 EEPROM "write_here_the_config_id_to_request_value_from_eeprom,_otherwhise_use_value_table_for_options";
 CM_ BO_ 6 "torque and steer request messages from dv";
 CM_ BO_ 12 "dv computer status";
 CM_ BO_ 13 "asb request messages from dv";
 CM_ SG_ 14 MISSION_REQ "Request_mission_from_DV_computer";
+BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
+BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
+BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
 VAL_ 1 CMD 14 "resetBMS" 1 "Calibrate_APPS_min" 2 "Calibrate_APPS_max" 5 "Calibrate_STEER_Leftest" 6 "Calibrate_STEER_Rightest" 8 "discharge" 9 "precharge" 10 "beep" 11 "ready2Drive" 0 "charge" 12 "startLog" 13 "endLog" 16 "precharge_dv" 15 "ready2Drive_dv";
 VAL_ 1 ONOFF 0 "OFF" 1 "ON";
 VAL_ 2 CODE 1 "OK" 2 "ERROR" 3 "INVALID_STATE" 4 "OUT_OF_RANGE";
@@ -429,7 +433,7 @@ VAL_ 18 STATUS 0 "FAULT" 1 "OK";
 VAL_ 18 TEMPS_OK 0 "FAULT" 1 "OK";
 VAL_ 18 VOLTAGES_OK 0 "FAULT" 1 "OK";
 VAL_ 37 STATE 0 "WAIT_SL" 1 "READY2PRECH" 2 "PRECHARGING" 3 "PRECHARGED" 4 "DRIVING";
-VAL_ 37 TRQ_ENABLED 0 "OFF" 1 "ON";
+VAL_ 37 AS_ALLOWED 0 "OFF" 1 "ON";
 VAL_ 38 DRIVING_MODE 0 "LINEAL" 1 "TORQUE_VECTORING" 2 "REMOTE_TORQUE_REQUEST";
 VAL_ 38 EEPROM 252 "CLEAR_AND_DEFAULT_ALL" 255 "READ_ALL" 254 "SAVE_ALL";
 VAL_ 38 ENTRY 0 "SCS_ENABLE" 1 "R2D_BRAKE_VAL" 2 "LIMITER" 3 "DRIVING_MODE" 4 "TRACTION_CONTROL" 5 "TRQV_KP" 6 "TRQV_KI" 7 "TRQV_KD" 8 "TRQ_LIMIT" 9 "EEPROM" 10 "FLAP_L_OFFSET" 11 "FLAP_R_OFFSET" 12 "FLAP_L_REVERSE" 13 "FLAP_R_REVERSE" 14 "FLAP_ENABLE" 15 "FLAP_PEDAL_SETPOINT" 16 "REGEN_ENABLE" 17 "REGEN_MAX_TRQ" 18 "REGEN_MAX_CELL_VOLT" 19 "REGEN_MAX_CELL_TEMP" 20 "REGEN_MAX_CURRENT" 21 "REGEN_THR_SPEED" 22 "REGEN_THR_RPM" 23 "REGEN_TRQ_SLOPE" 24 "REGEN_MODE" 25 "REGEN_MAX_POSITIVE_TRQ_THR" 26 "DV_MISSION_REQ";
