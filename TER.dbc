@@ -421,7 +421,7 @@ CM_ BO_ 6 "torque and steer request messages from dv";
 CM_ BO_ 12 "dv computer status";
 CM_ BO_ 13 "asb request messages from dv";
 CM_ SG_ 14 MISSION_REQ "Request_mission_from_DV_computer";
-VAL_ 1 CMD 14 "resetBMS" 1 "Calibrate_APPS_min" 2 "Calibrate_APPS_max" 5 "Calibrate_STEER_Leftest" 6 "Calibrate_STEER_Rightest" 8 "discharge" 9 "precharge" 10 "beep" 11 "ready2Drive" 0 "charge" 12 "startLog" 13 "endLog" 14 "precharge_dv" 15 "ready2Drive_dv" 0 "";
+VAL_ 1 CMD 14 "resetBMS" 1 "Calibrate_APPS_min" 2 "Calibrate_APPS_max" 5 "Calibrate_STEER_Leftest" 6 "Calibrate_STEER_Rightest" 8 "discharge" 9 "precharge" 10 "beep" 11 "ready2Drive" 0 "charge" 12 "startLog" 13 "endLog" 16 "precharge_dv" 15 "ready2Drive_dv";
 VAL_ 1 ONOFF 0 "OFF" 1 "ON";
 VAL_ 2 CODE 1 "OK" 2 "ERROR" 3 "INVALID_STATE" 4 "OUT_OF_RANGE";
 VAL_ 18 CURRENT_OK 0 "FAULT" 1 "OK";
