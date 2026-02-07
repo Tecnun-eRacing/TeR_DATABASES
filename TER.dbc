@@ -119,6 +119,7 @@ BO_ 37 TER_STATUS: 8 ECU
    SG_ STATE : 0|4@1+ (1,0) [0|1] "" Vector__XXX
    SG_ ASMS : 12|1@1+ (1,0) [0|1] "" Vector__XXX
    SG_ AS_ALLOWED : 13|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ SL_RELAY : 14|1@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 38 ECU_CONFIG: 8 ECU
    SG_ DRIVING_MODE m3 : 8|8@1+ (1,0) [0|1] "" Vector__XXX
@@ -426,6 +427,10 @@ CM_ SG_ 8 ASB_ENERGY_STATUS "is_AS_brake_energy_available";
 CM_ BO_ 12 "dv computer status";
 CM_ BO_ 13 "asb request messages from dv";
 CM_ SG_ 14 MISSION_REQ "Request_mission_from_DV_computer";
+BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
+BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
+BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
 VAL_ 1 CMD 14 "resetBMS" 1 "Calibrate_APPS_min" 2 "Calibrate_APPS_max" 5 "Calibrate_STEER_Leftest" 6 "Calibrate_STEER_Rightest" 8 "discharge" 9 "precharge" 10 "beep" 11 "ready2Drive" 0 "charge" 12 "startLog" 13 "endLog" 16 "precharge_dv" 15 "ready2Drive_dv";
 VAL_ 1 ONOFF 0 "OFF" 1 "ON";
 VAL_ 2 CODE 1 "OK" 2 "ERROR" 3 "INVALID_STATE" 4 "OUT_OF_RANGE";
