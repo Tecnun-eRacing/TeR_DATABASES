@@ -1251,6 +1251,7 @@ BO_ 6 DV_Dynamic_Req_1: 8 ECU
  SG_ trq_req : 0|32@1- (0.0001,0) [-1|1] "" Vector__XXX
 
 BO_ 8 ASB_STATUS: 8 ASB
+ SG_ ASB_ENERGY_STATUS : 24|8@1+ (1,0) [0|1] "" Vector__XXX
  SG_ ASB_BREAK_STATUS : 16|8@1+ (1,0) [0|1] "" Vector__XXX
  SG_ ASB_redundancy_state : 8|8@1+ (1,0) [0|1] "" Vector__XXX
  SG_ ASB_EBS_state : 0|8@1+ (1,0) [0|1] "" Vector__XXX
@@ -1334,6 +1335,7 @@ CM_ BO_ 2 "RESPONSE of a command";
 CM_ SG_ 37 AS_ALLOWED "indicates_if_the_car_will_respond_nput_from_dv";
 CM_ SG_ 38 EEPROM "write_here_the_config_id_to_request_value_from_eeprom,_otherwhise_use_value_table_for_options";
 CM_ BO_ 6 "torque and steer request messages from dv";
+CM_ SG_ 8 ASB_ENERGY_STATUS "is_AS_brake_energy_available";
 CM_ BO_ 12 "dv computer status";
 CM_ BO_ 13 "asb request messages from dv";
 CM_ SG_ 14 MISSION_REQ "Request_mission_from_DV_computer";
@@ -1392,6 +1394,7 @@ VAL_ 0 requested_state 1 "OPERATIONAL_MODE" ;
 VAL_ 1809 data_byte 0 "ALIVE" ;
 VAL_ 2147494264 error_code 0 "OK" 1 "OVERTEMP" 2 "OVERCURRENT" 3 "OVERVOLTAGE" 4 "UNDERVOLTAGE" 5 "ENCODER_FAULT" 6 "POWERSTAGE_OVERTEMP" 7 "MOTOR_STALL" ;
 VAL_ 49 mode_req 0 "AUTO" 1 "MANUAL" ;
+VAL_ 8 ASB_ENERGY_STATUS 0 "UNAVAILABLE" 1 "AVAILABLE" ;
 VAL_ 8 ASB_BREAK_STATUS 0 "OFF" 1 "ON" ;
 VAL_ 8 ASB_redundancy_state 0 "DEACTIVATED" 1 "INITIAL_CHECK_PASSED" 2 "ACTIVATED" ;
 VAL_ 8 ASB_EBS_state 0 "DEACTIVATED" 1 "INITIAL_CHECK_PASSED" 2 "ACTIVATED" ;
