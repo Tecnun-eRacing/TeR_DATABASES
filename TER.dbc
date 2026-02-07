@@ -380,6 +380,7 @@ BO_ 8 ASB_STATUS: 8 ASB
    SG_ ASB_EBS_state : 0|8@1+ (1,0) [0|1] "" Vector__XXX
    SG_ ASB_redundancy_state : 8|8@1+ (1,0) [0|1] "" Vector__XXX
    SG_ ASB_BREAK_STATUS : 16|8@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ ASB_ENERGY_STATUS : 24|8@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 10 ASB_EBS_state_req: 8 ASB
    SG_ state_req : 0|8@1+ (1,0) [0|1] "" Vector__XXX
@@ -421,9 +422,14 @@ CM_ BO_ 2 "RESPONSE of a command";
 CM_ SG_ 37 AS_ALLOWED "indicates_if_the_car_will_respond_nput_from_dv";
 CM_ SG_ 38 EEPROM "write_here_the_config_id_to_request_value_from_eeprom,_otherwhise_use_value_table_for_options";
 CM_ BO_ 6 "torque and steer request messages from dv";
+CM_ SG_ 8 ASB_ENERGY_STATUS "is_AS_brake_energy_available";
 CM_ BO_ 12 "dv computer status";
 CM_ BO_ 13 "asb request messages from dv";
 CM_ SG_ 14 MISSION_REQ "Request_mission_from_DV_computer";
+BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
+BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
+BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
 VAL_ 1 CMD 14 "resetBMS" 1 "Calibrate_APPS_min" 2 "Calibrate_APPS_max" 5 "Calibrate_STEER_Leftest" 6 "Calibrate_STEER_Rightest" 8 "discharge" 9 "precharge" 10 "beep" 11 "ready2Drive" 0 "charge" 12 "startLog" 13 "endLog" 16 "precharge_dv" 15 "ready2Drive_dv";
 VAL_ 1 ONOFF 0 "OFF" 1 "ON";
 VAL_ 2 CODE 1 "OK" 2 "ERROR" 3 "INVALID_STATE" 4 "OUT_OF_RANGE";
@@ -468,6 +474,7 @@ VAL_ 49 mode_req 0 "AUTO" 1 "MANUAL";
 VAL_ 8 ASB_EBS_state 0 "DEACTIVATED" 1 "INITIAL_CHECK_PASSED" 2 "ACTIVATED";
 VAL_ 8 ASB_redundancy_state 0 "DEACTIVATED" 1 "INITIAL_CHECK_PASSED" 2 "ACTIVATED";
 VAL_ 8 ASB_BREAK_STATUS 0 "OFF" 1 "ON";
+VAL_ 8 ASB_ENERGY_STATUS 0 "UNAVAILABLE" 1 "AVAILABLE";
 VAL_ 10 state_req 0 "DISABLED" 1 "SELF_CHECK" 2 "ENABLED";
 VAL_ 11 state_req 0 "DISABLED" 1 "SELF_CHECK" 2 "ENABLED";
 VAL_ 12 MISSION_STATUS 0 "NONE" 1 "SELECTED" 2 "RUNNING" 3 "FINISHED";
