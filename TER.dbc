@@ -32,7 +32,7 @@ NS_ :
     SG_MUL_VAL_
 
 BS_: 
-BU_: STEER PEDAL TER_CMDS FRONT_AXLE IMU LVBMS ECU CHARGER TireTemps REFRI DV RES STEER_ACTUATOR ASB 
+BU_: STEER PEDAL TER_CMDS FRONT_AXLE IMU LVBMS ECU CHARGER TireTemps REFRI DV RES STEER_ACTUATOR ASB BOOTLOADER 
 BO_ 1 COMMAND: 8 TER_CMDS
    SG_ CMD M : 0|8@1+ (1,0) [0|1] "" Vector__XXX
    SG_ ONOFF m64 : 8|8@1+ (1,0) [0|1] "" Vector__XXX
@@ -407,6 +407,18 @@ BO_ 14 DV_CONFIG: 8 DV
 BO_ 15 ASB_brake_req: 8 ASB
    SG_ BRAKE : 0|8@1+ (1,0) [0|1] "" Vector__XXX
 
+BO_ 771 BOOTLOADER_RESERVED: 8 BOOTLOADER
+
+BO_ 772 BOOTLOADER_RESERVED: 8 BOOTLOADER
+
+BO_ 773 BOOTLOADER_RESERVED: 8 BOOTLOADER
+
+BO_ 774 BOOTLOADER_RESERVED: 8 BOOTLOADER
+
+BO_ 775 BOOTLOADER_RESERVED: 8 BOOTLOADER
+
+BO_ 776 BOOTLOADER_RESERVED: 8 BOOTLOADER
+
 CM_ BU_ STEER "The Steering Input MOdule";
 CM_ BU_ PEDAL "The Drivers Sensor Board";
 CM_ BU_ TER_CMDS "The Command Subsystem For TeR Vehicle";
@@ -419,6 +431,7 @@ CM_ BU_ REFRI "The refrigeration module";
 CM_ BU_ DV "status from dv controller";
 CM_ BU_ RES "Remote Emergency System Message Definition";
 CM_ BU_ ASB "Autonomous System Brake board";
+CM_ BU_ BOOTLOADER "Bootloader reserved signals";
 CM_ BO_ 1 "FUNCTION INDEX";
 CM_ BO_ 2 "RESPONSE of a command";
 CM_ SG_ 37 AS_ALLOWED "indicates_if_the_car_will_respond_nput_from_dv";
@@ -428,6 +441,11 @@ CM_ SG_ 8 ASB_ENERGY_STATUS "is_AS_brake_energy_available";
 CM_ BO_ 12 "dv computer status";
 CM_ BO_ 13 "asb request messages from dv";
 CM_ SG_ 14 MISSION_REQ "Request_mission_from_DV_computer";
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG";
+BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
+BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_DEF_DEF_ "GenMsgBackgroundColor" "#141618";
+BA_DEF_DEF_ "GenMsgForegroundColor" "#fcfcfc";
 VAL_ 1 CMD 14 "resetBMS" 1 "Calibrate_APPS_min" 2 "Calibrate_APPS_max" 5 "Calibrate_STEER_Leftest" 6 "Calibrate_STEER_Rightest" 8 "discharge" 9 "precharge" 10 "beep" 11 "ready2Drive" 0 "charge" 12 "startLog" 13 "endLog" 16 "precharge_dv" 15 "ready2Drive_dv";
 VAL_ 1 ONOFF 0 "OFF" 1 "ON";
 VAL_ 2 CODE 1 "OK" 2 "ERROR" 3 "INVALID_STATE" 4 "OUT_OF_RANGE";
@@ -480,4 +498,9 @@ VAL_ 12 MISSION 0 "MANUAL" 1 "ACCELERATION" 2 "SKIDPAD" 3 "TRACKDRIVE" 4 "BRAKET
 VAL_ 13 ASB_BRAKE_REQ 0 "DISABLED" 1 "ENABLED";
 VAL_ 14 MISSION_REQ 0 "MANUAL" 1 "ACCELERATION" 2 "SKIDPAD" 3 "TRACKDRIVE" 4 "BRAKETEST" 5 "INSPECTION" 6 "AUTOCROSS";
 VAL_ 15 BRAKE 0 "DISABLED" 1 "ENABLED";
+
+
+
+
+
 
