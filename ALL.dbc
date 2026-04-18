@@ -33,7 +33,7 @@ NS_ :
 
 BS_:
 
-BU_: PC PS10750_20 STEER PEDAL TER_CMDS FRONT_AXLE IMU LVBMS ECU CHARGER TireTemps REFRI DV RES STEER_ACTUATOR ASB BOOT AMS
+BU_: PC PS10750_20 STEER PEDAL TER_CMDS FRONT_AXLE IMU LVBMS ECU CHARGER TireTemps REFRI DV RES STEER_ACTUATOR ASB BOOTLOADER BOOT AMS
 
 
 BO_ 1400 EMCU_STATE_9_Left: 4 Vector__XXX
@@ -671,6 +671,18 @@ BO_ 14 DV_CONFIG: 8 DV
 
 BO_ 15 ASB_brake_req: 8 ASB
  SG_ BRAKE : 0|8@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 771 BOOTLOADER_RESERVED: 8 BOOTLOADER
+
+BO_ 772 BOOTLOADER_RESERVED: 8 BOOTLOADER
+
+BO_ 773 BOOTLOADER_RESERVED: 8 BOOTLOADER
+
+BO_ 774 BOOTLOADER_RESERVED: 8 BOOTLOADER
+
+BO_ 775 BOOTLOADER_RESERVED: 8 BOOTLOADER
+
+BO_ 776 BOOTLOADER_RESERVED: 8 BOOTLOADER
 
 BO_ 514 BOOT_TX: 8 BOOT
  SG_ HEX_SIZE m1 : 40|24@1+ (1,0) [0|3] "" Vector__XXX
@@ -1428,6 +1440,7 @@ CM_ BU_ REFRI "The refrigeration module";
 CM_ BU_ DV "status from dv controller";
 CM_ BU_ RES "Remote Emergency System Message Definition";
 CM_ BU_ ASB "Autonomous System Brake board";
+CM_ BU_ BOOTLOADER "Bootloader reserved signals";
 CM_ BU_ AMS "Accumulator Management System for FS vehicle";
 CM_ SG_ 37 AS_ALLOWED "indicates_if_the_car_will_respond_nput_from_dv";
 CM_ SG_ 38 EEPROM "write_here_the_config_id_to_request_value_from_eeprom,_otherwhise_use_value_table_for_options";
