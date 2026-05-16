@@ -196,9 +196,38 @@ BO_ 2147484933 bms_req: 8 AMS
 BO_ 2147484934 bms_status: 8 AMS
    SG_ bms_state : 0|8@1+ (1,0) [0|1] "" Vector__XXX
    SG_ balancing_go : 8|8@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ FAULT_FLAGS : 32|32@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ CONTACTOR_POS_REQ : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ CONTACTOR_NEG_REQ : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ CONTACTOR_PRECH_REQ : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ CONTACTOR_POS_FB : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ CONTACTOR_NEG_FB : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ CONTACTOR_PRECH_FB : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ AMS_STATUS : 22|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ IMD_STATUS : 23|1@1+ (1,0) [0|1] "" Vector__XXX
+   SG_ CONTACTOR_VOLTAGE : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147484935 bms_soc_status: 8 AMS
+   SG_ SOC : 0|16@1+ (1,0) [0|1] "" Vector__XXX
 
 CM_ BU_ AMS "Accumulator Management System for FS vehicle";
+BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
+BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
+BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
+BA_ "GenMsgForegroundColor" BO_ 2147484935 "#000000";
 VAL_ 2147484928 cell_id 0 "cell_voltages_1_4" 1 "cell_voltages_5_8" 2 "cell_voltages_9_12" 3 "cell_voltages_13_16" 4 "cell_voltages_17_20" 5 "cell_voltages_21_24" 6 "cell_voltages_25_28" 7 "cell_voltages_29_32" 8 "cell_voltages_33_36" 9 "cell_voltages_37_40" 10 "cell_voltages_41_44" 11 "cell_voltages_45_48" 12 "cell_voltages_49_52" 13 "cell_voltages_53_56" 14 "cell_voltages_57_60" 15 "cell_voltages_61_64" 16 "cell_voltages_65_68" 17 "cell_voltages_69_72" 18 "cell_voltages_73_76" 19 "cell_voltages_77_80" 20 "cell_voltages_81_84" 21 "cell_voltages_85_88" 22 "cell_voltages_89_92" 23 "cell_voltages_93_96";
 VAL_ 2147484929 temp_id 0 "temp_1_6" 1 "temp_7_12" 2 "temp_13_18" 3 "temp_19_24" 4 "temp_25_30" 5 "temp_31_32";
+VAL_ 2147484933 state_req 2 "READY_REQ" 3 "RUNNING_REQ" 4 "CHARGING_REQ" 5 "STOP_REQ" 8 "RESET_REQ";
 VAL_ 2147484933 balancing_go 0 "DISABLE_BALANCING" 1 "ENABLE_BALANCING";
+VAL_ 2147484934 bms_state 0 "POST" 1 "INIT" 2 "READY" 3 "PRECHARGING" 4 "RUNNING" 5 "CHARGING" 6 "FAULT";
 VAL_ 2147484934 balancing_go 0 "OFF" 1 "ON";
+VAL_ 2147484934 CONTACTOR_POS_REQ 0 "OFF_REQ" 1 "ON_REQ";
+VAL_ 2147484934 CONTACTOR_NEG_REQ 0 "OFF_REQ" 1 "ON_REQ";
+VAL_ 2147484934 CONTACTOR_PRECH_REQ 0 "OFF_REQ" 1 "ON_REQ";
+VAL_ 2147484934 CONTACTOR_POS_FB 0 "OFF" 1 "ON";
+VAL_ 2147484934 CONTACTOR_NEG_FB 0 "OFF" 1 "ON";
+VAL_ 2147484934 CONTACTOR_PRECH_FB 0 "OFF" 1 "ON";
+VAL_ 2147484934 AMS_STATUS 0 "FAULT" 1 "OK";
+VAL_ 2147484934 IMD_STATUS 0 "FAULT" 1 "OK";
+VAL_ 2147484934 CONTACTOR_VOLTAGE 0 "FAULT" 1 "OK";
