@@ -597,7 +597,7 @@ BO_ 2147484932 hv_measurements_status: 8 AMS
  SG_ HV_BAT_MEAS : 0|16@1+ (0.03278,0) [0|1] "" Vector__XXX
 
 BO_ 2147484933 bms_req: 8 AMS
- SG_ balancing_threshold_mV : 16|12@1+ (1,500) [0|1] "mV" Vector__XXX
+ SG_ balancing_threshold_mV : 16|12@1+ (1,0) [0|1] "mV" Vector__XXX
  SG_ balancing_go : 8|8@1+ (1,0) [0|1] "" Vector__XXX
  SG_ state_req : 0|8@1+ (1,0) [0|1] "" Vector__XXX
 

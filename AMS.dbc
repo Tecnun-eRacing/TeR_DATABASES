@@ -211,14 +211,6 @@ BO_ 2147484935 bms_soc_status: 8 AMS
    SG_ SOC : 0|16@1+ (1,0) [0|1] "" Vector__XXX
 
 CM_ BU_ AMS "Accumulator Management System for FS vehicle";
-BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
-BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
-BA_DEF_ BO_ "matchingcriteria" INT 0 0;
-BA_DEF_ BO_ "filterlabeling" INT 0 0;
-BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
-BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
-BA_DEF_DEF_ "matchingcriteria" 0;
-BA_DEF_DEF_ "filterlabeling" 0;
 VAL_ 2147484928 cell_id 0 "cell_voltages_1_4" 1 "cell_voltages_5_8" 2 "cell_voltages_9_12" 3 "cell_voltages_13_16" 4 "cell_voltages_17_20" 5 "cell_voltages_21_24" 6 "cell_voltages_25_28" 7 "cell_voltages_29_32" 8 "cell_voltages_33_36" 9 "cell_voltages_37_40" 10 "cell_voltages_41_44" 11 "cell_voltages_45_48" 12 "cell_voltages_49_52" 13 "cell_voltages_53_56" 14 "cell_voltages_57_60" 15 "cell_voltages_61_64" 16 "cell_voltages_65_68" 17 "cell_voltages_69_72" 18 "cell_voltages_73_76" 19 "cell_voltages_77_80" 20 "cell_voltages_81_84" 21 "cell_voltages_85_88" 22 "cell_voltages_89_92" 23 "cell_voltages_93_96";
 VAL_ 2147484929 temp_id 0 "temp_1_6" 1 "temp_7_12" 2 "temp_13_18" 3 "temp_19_24" 4 "temp_25_30" 5 "temp_31_32";
 VAL_ 2147484933 state_req 2 "READY_REQ" 3 "RUNNING_REQ" 4 "CHARGING_REQ" 5 "STOP_REQ" 8 "RESET_REQ";
