@@ -717,7 +717,7 @@ BO_ 1025 Cell_Temperatures: 8 AMS
  SG_ temp_id M : 0|16@1+ (1,0) [0|5] "" Vector__XXX
 
 BO_ 1026 Cell_voltage_status: 8 AMS
- SG_ cell_delta_volt : 52|12@1+ (1,500) [0|1] "mV" Vector__XXX
+ SG_ cell_delta_volt : 52|12@1+ (1,0) [0|1] "mV" Vector__XXX
  SG_ cell_min_volt_id : 44|8@1+ (1,500) [0|1] "" Vector__XXX
  SG_ cell_max_volt_id : 36|8@1+ (1,500) [0|1] "" Vector__XXX
  SG_ cell_min_volt : 24|12@1+ (1,500) [0|1] "mV" Vector__XXX
