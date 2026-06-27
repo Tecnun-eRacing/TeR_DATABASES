@@ -757,6 +757,7 @@ BO_ 1031 bms_soc_status: 8 AMS
  SG_ SOC : 0|16@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 1032 bms_config: 8 AMS
+ SG_ SOC_CALIBRATE_OCV m2 : 8|8@1+ (1,0) [0|1] "" Vector__XXX
  SG_ BALANCING_THRESHOLD_MV m1 : 8|16@1+ (1,0) [0|1] "mV" Vector__XXX
  SG_ BALANCING_GO m0 : 8|8@1+ (1,0) [0|1] "" Vector__XXX
  SG_ ENTRY M : 0|8@1+ (1,0) [0|1] "" Vector__XXX
@@ -1372,8 +1373,9 @@ VAL_ 1030 CONTACTOR_NEG_REQ 0 "OFF_REQ" 1 "ON_REQ" ;
 VAL_ 1030 CONTACTOR_POS_REQ 0 "OFF_REQ" 1 "ON_REQ" ;
 VAL_ 1030 balancing_go 0 "OFF" 1 "ON" ;
 VAL_ 1030 bms_state 0 "POST" 1 "INIT" 2 "READY" 3 "PRECHARGING" 4 "RUNNING" 5 "CHARGING" 6 "FAULT" ;
+VAL_ 1032 SOC_CALIBRATE_OCV 0 "OFF" 1 "ON" ;
 VAL_ 1032 BALANCING_GO 0 "OFF" 1 "ON" ;
-VAL_ 1032 ENTRY 0 "BALANCING_GO" 1 "BALANCING_THRESHOLD_MV" ;
+VAL_ 1032 ENTRY 0 "BALANCING_GO" 1 "BALANCING_THRESHOLD_MV" 2 "SOC_CALIBRATE_OCV" ;
 VAL_ 256 Read_Status_Reg_Act_Cyclic 1 "CR" 3 "CP" 2 "CC" 0 "CV" ;
 VAL_ 256 Read_Status_DC_Output_Cyclic 1 "on" 0 "off" ;
 VAL_ 256 Read_Status_MS_Type_Cyclic 1 "Master" 0 "Slave" ;
