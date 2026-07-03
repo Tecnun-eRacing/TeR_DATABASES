@@ -1334,7 +1334,7 @@ VAL_ 48 Mode 0 "AUTO" 1 "MANUAL" ;
 VAL_ 48 State 0 "IDLE" 1 "READY" 2 "PRECHARGING" 3 "PRECHARGED" 4 "CHARGING" ;
 VAL_ 1283 ASB_redundancy_state 1 "ASB_redundancy_state_deactivated" 2 "ASB_redundancy_state_engaged" 3 "ASB_redundancy_state_initial_checkup_passed" ;
 VAL_ 1283 Steering_state 0 "unavailable" 1 "available" ;
-VAL_ 1283 AMI_state 1 "AMI_state_acceleration" 2 "AMI_state_skidpad" 3 "AMI_state_trackdrive" 4 "AMI_state_braketest" 5 "AMI_state_inspection" 6 "AMI_state_autocross" ;
+VAL_ 1283 AMI_state 1 "AMI_state_acceleration" 2 "AMI_state_skidpad" 3 "AMI_state_trackdrive" 4 "AMI_state_braketest" 5 "AMI_state_inspection" 6 "AMI_state_autocross" 0 "AMI_state_manual" ;
 VAL_ 1283 AS_EBS_state 1 "AS_EBS_state_deactivated" 2 "AS_EBS_state_initial_checkup_passed" 3 "AS_EBS_state_activated" ;
 VAL_ 1283 AS_status 1 "AS_status_off" 2 "AS_status_ready" 3 "AS_status_driving" 4 "AS_status_emergency" 5 "AS_status_finished" ;
 VAL_ 0 adressed_node_id 0 "ALL" ;
