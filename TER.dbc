@@ -421,7 +421,7 @@ BO_ 776 BOOTLOADER_RESERVED_6: 8 BOOTLOADER
 
 BO_ 2147483682 ASB_Brake_Pressure: 8 ASB
    SG_ LEFT_PRESSURE_SENSOR_BAR : 0|16@1+ (0.01,0) [0|1] "Bar" Vector__XXX
-   SG_ RIGHT_PRESSURE_SENSOR_BAR : 0|16@1+ (0.01,0) [0|1] "Bar" Vector__XXX
+   SG_ RIGHT_PRESSURE_SENSOR_BAR : 16|16@1+ (0.01,0) [0|1] "Bar" Vector__XXX
 
 CM_ BU_ STEER "The Steering Input MOdule";
 CM_ BU_ PEDAL "The Drivers Sensor Board";
